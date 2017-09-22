@@ -1,0 +1,84 @@
+<div  class="filterContainer"  (click)="filterBlock = !filterBlock"></div>
+ <div class="filter" [hidden]="!filterBlock">
+     <filters [participantList] = 'participantList'  [filterCriteria] = 'filterCriteria' (onFilterUpdate) = 'updateFilter($event)' (onCloseFilter) = 'filterBlock = !filterBlock'></filters>
+</div>
+<div class="levelsViewHeader">
+   <ol class="breadcrumb">
+      <li class="breadcrumb-item" *ngFor="let level of reportLevels">{{level}}</li>
+   </ol>
+   <button type="button" class="btn btn-primary levelsReordering" (click)="showLevelsReorderingPopup()">Reorder Levels</button>
+</div>
+<div class="loadIcon" *ngIf="levelsloadingIcon"><img src="../assets/images/ey_loading_new.gif"></div>
+<div class="loadIcon" *ngIf="noData">No Data.</div>
+<div style="max-height:536px;overflow:auto"
+ infiniteScroll
+[infiniteScrollDistance]="1"
+[infiniteScrollThrottle]="500"
+(scrolled)="loadMoreLevelPanels(1)"
+[scrollWindow]="false"  class="level_c01">
+<accordion [closeOthers]='true' >
+   <accordion-group (onToggle)="toggleArrowsofFirstLevel(firstLevel)"  *ngFor='let firstLevel of firstHierarchy'  (click)= 'accordionSelected(firstLevel,"","","")'> 
+   <accordion-heading>
+      <div class="levelOpenClose" [ngClass]="firstLevel.isClicked ? 'levelOpen':'levelclose'"></div>
+      <span *ngIf="firstLevel.id ==  loggedInId">Me</span>
+      <span *ngIf="firstLevel.id !=  loggedInId">{{firstLevel.name}}</span>
+      <span class="levelCount">({{firstLevel.count}})</span>
+      <span class="showSendMessage" *ngIf="reportLevels[0] == 'participant' && firstLevel.is_own_connection == 1" (click)="sendMsgToParticipant(firstLevel)"></span>	
+   </accordion-heading>
+   <accordion>
+      <div style="max-height:200px;overflow:auto" 
+      infiniteScroll
+      [infiniteScrollDistance]="1"
+      [infiniteScrollThrottle]="500"
+      (scrolled)="loadMoreLevelPanels(2)"
+      [scrollWindow]="false"  class="level_c02">
+      <accordion-group (onToggle)="toggleArrows(secondLevel)" [disabled]="reportLevels.length == 2" *ngFor='let secondLevel of firstLevel[firstLevel.name]' (click)= 'accordionSelected(firstLevel,secondLevel,"","")'>
+      <accordion-heading>                      
+         <div *ngIf="reportLevels.length != 2" class="levelOpenClose"  [ngClass]="secondLevel.isClicked ? 'levelOpen':'levelclose'"></div>
+         <span *ngIf="secondLevel.id ==  loggedInId">Me</span>
+         <span *ngIf="secondLevel.id !=  loggedInId">{{secondLevel.name}}</span>
+         <span class="levelCount">({{secondLevel.count}})</span>
+         <span class="showSendMessage" *ngIf="reportLevels[1] == 'participant' && secondLevel.is_own_connection == 1" (click)="sendMsgToParticipant(secondLevel)"></span>	
+      </accordion-heading>
+      <accordion>
+         <div style="max-height:200px;overflow:auto" 
+         infiniteScroll
+         [infiniteScrollDistance]="1"
+         [infiniteScrollThrottle]="500"
+         (scrolled)="loadMoreLevelPanels(3)"
+         [scrollWindow]="false"  class="level_c03">
+         <accordion-group (onToggle)="toggleArrows(thirdLevel)" [disabled]="reportLevels.length == 3" *ngFor='let thirdLevel of secondLevel[secondLevel.name]' (click)= 'accordionSelected(firstLevel,secondLevel,thirdLevel,"")'>
+         <accordion-heading>   
+            <div  *ngIf="reportLevels.length != 3" class="levelOpenClose" [ngClass]="thirdLevel.isClicked ? 'levelOpen':'levelclose'"></div>
+            <span *ngIf="thirdLevel.id ==  loggedInId">Me</span>
+            <span *ngIf="thirdLevel.id !=  loggedInId">{{thirdLevel.name}}</span>
+            <span class="levelCount">({{thirdLevel.count}})</span>
+            <span class="showSendMessage" *ngIf="reportLevels[2] == 'participant' && thirdLevel.is_own_connection == 1" (click)="sendMsgToParticipant(thirdLevel)"></span>	
+         </accordion-heading>
+         <accordion>
+            <div style="max-height:50px;overflow:auto" 
+            infiniteScroll
+            [infiniteScrollDistance]="1"
+            [infiniteScrollThrottle]="500"
+            (scrolled)="loadMoreLevelPanels(4)"
+            [scrollWindow]="false"  class="level_c04">
+            <accordion-group [disabled]="true" *ngFor='let fourthLevel of thirdLevel[thirdLevel.name]' (click)= 'accordionSelected(firstLevel,secondLevel,thirdLevel,fourthLevel)'>
+            <accordion-heading>   
+               <span *ngIf="fourthLevel.id ==  loggedInId">Me</span>
+               <span *ngIf="fourthLevel.id !=  loggedInId">{{fourthLevel.name}}</span>
+               <span class="levelCount">({{fourthLevel.count}})</span>
+               <span class="showSendMessage" *ngIf="reportLevels[3] == 'participant' && fourthLevel.is_own_connection == 1" (click)="sendMsgToParticipant(fourthLevel)"></span>	
+            </accordion-heading>
+            </accordion-group>
+            </div>
+         </accordion>
+         </accordion-group>
+         </div>
+      </accordion>
+      </accordion-group>
+      </div>
+   </accordion>
+   </accordion-group>                  
+</accordion>
+</div>
+

@@ -1,0 +1,8974 @@
+/*
+
+Document name    : style.css
+Created on       : 7/09/2015
+Author           : Merin Bose
+Description      : This Document contains css code for the project
+
+*/
+
+
+/* site specific styles starts */
+
+/*my changes*/
+.evy_aboutme_tab_Container{
+    width:1245px;
+    height:615px;
+    /*border: 1px solid #000000;*/
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+.evy_aboutme_section .evy_aboutme_tab_menu{
+    width: 129px;
+    height: 100%;
+    padding: 0px !important;
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+
+.evy_aboutme_tab_menu ul li{
+    float: none;
+    border: 1px solid #dbdbdb;
+    background: whitesmoke;
+    height: 70px;
+    width: 117px;
+    margin-left: 10px;
+    /*position: relative;*/
+}
+
+.evy_aboutme_tab_menu .nav > li > a > img{
+   position:absolute;
+   text-align: center;
+   top:10px;
+}
+
+.evy_aboutme_tab_menu ul li button{
+width: 100%;
+    height: 100%;
+    border: none;
+    background-color: whitesmoke;
+    padding: 0px;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 9px;
+}
+
+
+
+.tab-wrapper{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 0 0 0 130px;
+    height: 650px;
+}
+.tab-content{
+    height: 100%;
+    background-color: white;
+}
+
+.tab-content > .tab-pane{
+    margin: 10px;
+}
+.evy_aboutme_tab_menu ul .active{
+width: 126px;
+    margin-left: 0px;
+    height: 125px;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(245, 245, 245);
+}
+.evy_aboutme_tab_menu .nav > li > button > .imgOnActive{
+    display: none;
+}
+.evy_aboutme_tab_menu .nav > li > button > .tab_name{
+    display: none;
+}
+.evy_aboutme_tab_menu .nav > li > .coverBorder{
+    position: absolute;
+    right: -2px;
+    height: inherit;
+    width:2px;
+    display: none;
+}
+.evy_aboutme_tab_menu ul li.active .imgOnActive{
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 29px;
+}
+.evy_aboutme_tab_menu ul li.active > button{
+    margin-left: 1px;
+}
+.evy_aboutme_tab_menu ul li.active .circleImg{
+        top: 20px;
+    left: 40px;
+}
+
+.evy_aboutme_tab_menu ul li.active .mapImg{
+top: 27px;
+    left: 16px;
+}
+
+.evy_aboutme_tab_menu ul li.active .coverBorder{
+    display: block;
+    top: 27px;
+    left: 16px;
+}
+
+.evy_aboutme_tab_menu ul li.active .tab_name{
+    display: inline-block;
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    width: 100%;
+
+}
+.evy_aboutme_tab_menu ul li.active img:nth-of-type(2){
+    display: none;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.evy_insights_viewreport_main_cl01{
+    border: none !important;
+}
+
+.evy_insights_viewreport_main_cl03 .evy_insights_viewreport_main_piechart_c01{
+    display:block !important;
+}
+.evy_insights_viewreport_main_cl03 .evy_insights_viewreport_main_piechart_c01 > canvas{
+    display: -webkit-inline-box;
+}
+.evy_insights_viewreport_main_cl03 .evy_insights_viewreport_main_piechart_c01{
+    display:block !important;
+}
+.evy_insights_viewreport_main_sub_cl02{
+    height:100% !important;
+}
+
+.evy_insights_viewreport_main_table .evy_map{
+border:none !important;
+height: 630px !important;
+}
+
+.evy_nwvisualization .vis-network{
+    height: 630px !important;
+}
+
+
+/*----------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    /*min-height:100%;
+    position:relative;*/
+
+}
+
+html, body {
+    height: 100%;
+}
+
+/*.evy_index_body{
+    height: auto;
+    position: relative;
+}
+
+.evy_index_body .container-fluid:after{
+    content: none;
+}
+
+.evy_index_table{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}*/
+
+
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.evy_norton{
+    position: absolute;
+    right: 10%;
+    z-index: 11;
+    bottom: -5px;
+    margin-right: 0px !important;
+}
+
+.evy_norton img{
+    width: 100px;
+    height: 72px;
+}
+
+.container-fluid{
+    min-height: 100%;
+    margin-bottom: -71px;
+}
+
+.container-fluid:after {
+  content: "";
+  display: block;
+}
+
+.container-fluid:after{
+    height: 71px;
+}
+
+footer {
+    height: 71px;
+}
+
+body{ /* body styles */
+    /*background-color:#F6f6f6;*/
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100%;
+    font-size: 14px;
+    color:#4d4d4f;
+    position: relative;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h5{
+    margin: 0px;
+}
+
+label{
+    font-weight: normal;
+}
+
+textarea{
+    resize: vertical;
+    border-radius: 0px;
+    width: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid #dbdbdb;
+}
+
+.form-control {
+    background-color: #F5F5F5;
+}
+
+.clear{/* clear*/
+    clear:both;
+}
+
+input[type=button], .btn, .btn:active, .btn:focus, .btn.active, .btn:focus:active{
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type='radio']:active, input[type='radio']:focus, input[type='radio'].active,
+input[type='radio']:checked{
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.checkbox-custom:checked + .evy_signup_lbl_cl01.checkbox-custom-label:before, .checkbox-custom + .evy_signup_lbl_cl01.checkbox-custom-label:before{
+    /*background-color: #F5F5F5;*/
+}
+
+.btn-primary[disabled]{
+    background-color: #f58220;
+    border: none;
+}
+
+/* page styles starts*/
+
+.evy_user_request label, .evy_user_notification label, /*.evy_user_request .badge, .evy_user_notification .badge,*/
+#evy_aboutme_rltn_id01, #evy_aboutme_contact_id01, #evy_aboutme_pflvstr_id01, .btn_add_new, .btn_edit, .btn_edit_pfl,
+.btn_delete, .btn_skype_icon, .btn_twitter_icon, .btn_dwnld, .evy_accept i, .evy_decline i, .evy_msg i, .evy_close i,
+i.evy_add_contact_bck, .evy_tile_view, .evy_list_view, #evy_rltn_icon1 i, .evy_rltn_icon2 i, .evy_rltn_icon3 i,
+#evy_rltn_icon4 i, #evy_rltn_icon5 i, .evy_relationship_cl01 .panel .panel-heading a:after,
+.evy_community_invite_cl01 .panel .panel-heading a:after, .evy_relationship_cl01 .panel .panel-heading a.collapsed:after,
+.evy_community_invite_cl01 .panel .panel-heading a.collapsed:after, .evy_dtpckr .evy_calendar, .evy_invite span,
+.evy_cnct span, .evy_expand, #evy_insight_cnctn_id01, .evy_insight_tile01 #evy_insight_cnctn_id01, #evy_insight_contact_id01, .evy_compare, .evy_map_change,
+.evy_pdf, .evy_filter, .evy_compare_orng, .evy_msg i, .evy_decline i, .evy_accept i, .evy_tendative i, .evy_pull_down_arrow,
+.evy_preference_arrow, .evy_preference_cl02 .panel.panel-default .panel-title:before,
+.evy_preference_cl02 .panel.panel-default .panel-title.collapsed:before, .evy_shared_cnctn_icon,
+.evy_preference_cl01 input[type='radio']:checked, .evy_accordion_expand, .evy_accordion_collapse, #evy_rltn_icon6 i,
+.evy_cmprsn_icon, .evy_cmprsn_icon2, .evy_cmprsn_arrow, .evy_cmprsn_cnctn, #evy_rltn_icon7 i, .evy_rltn_icon8 i,  .evy_rltn_icon9 i, .evy_rltn_icon10 i, .evy_rltn_icon11 i,
+.evy_rltn_icon12 i, .evy_rltn_icon13 i, .evy_country_view_count_cl05 .arrow, .evy_insights_map_marker .arrow,.glyphicon-chevron-left, .glyphicon-chevron-right,
+.evy_preference_expand, .evy_envoy_icon_actve i, .evy_envoy_icon_inactve i, .evy_user_community label,
+#evy_aboutme_id01 .evy_rltn_icon2 i, .evy_icon_connect i, .evy_envoy_icon_nonuser i,
+.evy_insights_map_marker .caret, .evy_icons .evy_rltn_icon3 i, .evy_badge_arrow, .evy_icon_preferred i,
+.evy_active_star, .evy_inactive_star, .evy_rprt_pfl, .evy_email_dltbtn .btn_add, .evy_triangle-left, .evy_triangle-right, 
+.evy_insights_search, .evy_insight_nav_radio input[type='radio']:checked,
+.evy_insights_selectfilter .radio input[type='radio']:checked,.btn_gplus_icon, .btn_fb_icon, 
+.btn_insta_icon, .btn_ln_icon, .btn_pin_icon, .btn_contact_mobile_icon,
+.btn_contact_work_icon, .btn_contact_home_icon, .btn_contact_fax_icon, .btn_contact_other_icon, .btn_contact_email_icon{
+    background-image: url("../images/evy_sprite_41.png") !important;
+    background-repeat: no-repeat;
+}
+
+/*.evy_logo_expand_hvr{
+display: none;
+width: 170px;
+height: 170px;
+position: absolute;
+z-index: 9999;
+top: -15px;
+left: 30px;
+border: 1px solid #dbdbdc;
+}*/
+
+.evy_userpfl_hover{
+    width: 32px;
+    height: 32px;
+    /* display: inline; */
+    margin-right: 8px;
+    object-fit: cover;
+    /*border: 1px solid #dbdbdb;*/
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+.evy_pfl_hover{
+    position: relative;
+}
+
+.evy_userpfl_hover:hover .evy_logo_expand_hvr,
+.evy_pfl_hover:hover .evy_logo_expand_hvr,
+.evy_postchat_body_chat_img:hover .evy_logo_expand_hvr{
+    display: block;
+}
+
+.evy_community_member_main .evy_logo_expand_hvr,
+.evy_postchat_body_chat_img .evy_logo_expand_hvr{
+    top: 0px;
+}
+
+.has-error .form-control{ /*validation error message style*/
+    border-color: #ff4040 !important;
+    background-color: #f9f2f4 !important;
+}
+
+.evy_actvty_load .evy_load_icon{
+    margin-top: 0px;
+}
+
+.evy_load_icon{
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 50px;
+}
+
+.evy_load_icon_md{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.evy_load_icon_sml{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.checkbox-custom:checked + .evy_signup_lbl_cl01.checkbox-custom-label:before, 
+.checkbox-custom + .evy_signup_lbl_cl01.checkbox-custom-label:before{
+    /*top: -20px;*/
+    position: relative;
+    /*left: -30px;*/
+}
+
+.form-control{
+    background-color: #F5F5F5;
+}
+
+.form-control::-webkit-input-placeholder{ /*form placeholder color*/
+    color: #a6a6a6;
+}
+
+.form-control::-moz-placeholder{/*form placeholder color*/
+    color: #a6a6a6;
+}
+
+.form-control:-moz-placeholder{/*form placeholder color*/
+    color: #a6a6a6;
+}
+
+.form-control:-ms-input-placeholder{/*form placeholder color*/
+    color: #a6a6a6;
+}
+
+/* page styles ends*/
+
+
+/***********About me page styles starts************/
+
+
+.evy_aboutme_section{
+    height: auto;
+    /*background-color: #F5F5F5;*/
+    background-color: #fff;
+    /*position: relative;*/
+    /*min-height: 720px;*/
+}
+
+.evy_aboutme_tab{
+    max-width: 1306px;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+    padding-bottom: 0px;
+    min-height: 60px;
+}
+
+.evy_aboutme_tab select{
+    display: none;
+}
+
+.evy_aboutme_tab .nav-tabs{
+    background-color: #4d4d4f;
+    height: 40px;
+    border: none;
+}
+
+.evy_aboutme_tab .nav-tabs>li{
+    /* background-image: url("../images/img_tab_border.png"); */
+    background-position: right;
+    margin-bottom: 0px;
+    background-repeat: repeat-y;
+    display: table;
+}
+
+.evy_aboutme_tab .nav-tabs>li:first-child, .evy_aboutme_tab .nav-tabs>li.evy_tab_cl01{
+    border: none;
+    background-image: none;
+}
+
+.evy_aboutme_tab .nav-tabs>li>a{
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 14px;
+    background: #686869;
+    float: left;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.evy_aboutme_tab_cl01{
+    display: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.evy_aboutme_tab_cl01 li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.evy_aboutme_tab_cl01 li a{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.evy_tab_cl01{
+    cursor: pointer;
+}
+
+.evy_aboutme_tab .nav-tabs>li.evy_tab_cl01 {
+    margin-top: 10px;
+}
+
+.evy_aboutme_tab .nav-tabs>li.evy_tab_cl01 >a{
+    background: none;
+    /* background-image: url("../images/img_tab_border.png"); */
+    background-repeat: repeat-y;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.evy_aboutme_tab .nav-tabs>li.evy_tab_cl01 > a:last-child{
+    background-image: none;
+}
+
+.evy_aboutme_section .evy_aboutme_tab .nav-tabs>li.evy_tab_cl01 > a:last-child{
+    /* background-image: url("../images/img_tab_border.png"); */
+}
+
+.evy_aboutme_tab .nav-tabs>li ul{
+    padding: 0px;
+}
+
+.evy_aboutme_tab .nav-tabs>li ul li.active a{
+    background-color: #4d4d4f !important;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_aboutme_tab .nav-tabs>li.active{
+    /* background-image: url("../images/img_tab_active.png"); */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 39px;
+}
+
+.evy_aboutme_tab .nav-tabs>li.active>a{
+    color: #fff;
+    cursor: pointer;
+    background-color: #f58220;
+    border: none;
+    font-weight: bold;
+    float: none !important;
+    min-height: 40px;
+}
+
+.evy_aboutme_tab .nav-tabs li.active img{
+    display: block;
+    margin: auto;
+}
+
+.evy_aboutme_tab .nav-tabs .open>a, .evy_aboutme_tab .nav-tabs .open>a:hover, .evy_aboutme_tab .nav-tabs .open>a:focus{
+    background: none;
+}
+
+.evy_aboutme_content{
+    max-width: 1306px;
+    margin: auto;
+    padding: 20px 30px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.evy_aboutme_content .row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.evy_aboutme_content .col-md-4, .evy_aboutme_content .col-md-8, .evy_aboutme_content .col-md-6, .evy_aboutme_content .col-lg-4,
+.evy_aboutme_content .col-md-12, .evy_aboutme_content .col-md-7, .evy_aboutme_content .col-md-5{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.evy_btn_remove{
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    padding: 6px 12px;
+    background-color: #7A7A7C;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.modal-dialog{
+    max-width: 600px;
+}
+
+.modal-body{
+    padding: 0px;
+    top: 1px;
+}
+
+/*.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal.in .modal-dialog{
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}*/
+
+.modal-footer{
+    padding: 0px;
+    border-top: none !important;
+}
+
+.modal-header{
+    background-color: #4d4d4f;
+    color: #fff;
+    border: none;
+}
+
+.evy_video_popup_modal .modal-dialog{
+    width: 600px;
+    height: 338px;
+/*    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) !important;
+    -ms-transform: translate(-50%,-50%) !important;
+    transform: translate(-50%,-50%) !important;*/
+}
+
+.evy_video_popup_modal .modal-content{
+    box-shadow: none;
+}
+
+.evy_video_popup_modal .modal-body{
+    height: 338px;
+}
+
+.evy_video_popup_modal iframe{
+    height: 338px;
+    width: 600px;
+}
+
+.modal-content{
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 6px rgba(0,0,0,.4);
+}
+
+.modal-backdrop.in {
+    opacity: 0.7;
+    background-color: #FFF;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03{
+    padding: 24px 20px 0px 20px;
+}
+
+/*form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup{
+    height: 650px;
+    overflow: auto;
+    width: 602px;
+    padding-right: 20px;
+}*/
+
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-webkit-scrollbar {
+    width: 3px;
+}
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-moz-scrollbar{
+    width: 3px;
+}
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-moz-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+form.evy_aboutme_pfledit_cl03 .evy_add_contact_popup::-moz-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.evy_form_edit_email {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+
+.evy_form_edit_email label{
+    width: 100%;
+}
+
+.evy_form_edit_email input{
+    width: 65%;
+    float: left;
+}
+.evy_form_edit_email .radio{
+    float: left;
+}
+
+.evy_form_edit_email .radio label{
+    padding-left: 35px;
+}
+
+.evy_form_edit_email .radio input[type=radio]{
+    width: 15px;
+}
+
+.evy_email_dltbtn{
+    float: left;
+    margin-left: 10px;
+    border-left: 1px solid #dbdbdb;
+    top: 7px;
+    position: relative;
+    height: 26px;
+}
+
+.evy_email_dltbtn .btn_add{
+    width: 12px;
+    height: 26px;
+    background-position: -183px -22px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    display: inline-block;
+    margin-left: 10px;
+    top: 7px;
+    position: relative;
+}
+
+.evy_phne_add{
+    border-left: none;
+    border-right: none !important;
+    float: left;
+    position: relative;
+    padding-right: 0px !important;
+    margin-left: 0px;
+}
+
+.evy_custom_phn_add{
+    /*right: 130px !important;*/
+}
+
+.evy_email_dltbtn .btn_delete{
+    margin-left: 10px;
+    /*  width: 14px;
+    height: 26px;*/
+    padding: 0px;
+    /*background-position: -60px -96px;*/
+    background-position: -61px -102px;
+    width: 12px;
+    height: 14px;
+}
+
+.evy_email_dltbtn .btn_delete:hover{
+    /*width: 14px !important;*/
+}
+
+.evy_form_edit_email .btn_delete:hover{
+   /* width: 26px;
+    height: 26px;*/
+}
+
+.evy_aboutme_pfledit_cl03 a{
+    color: #d2d2d3;
+}
+
+.evy_form_new_link{
+    width: 100%;
+    float: none;
+}
+
+.evy_form_new_link a{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.evy_form_edit_phn{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.evy_form_edit_phn label{
+    width: 100%;
+}
+
+.evy_form_edit_phn input{
+    width: 25%;
+    float: left;
+    border-right: none;
+}
+
+.evy_form_edit_email input.evy_mail_checkbox{
+    width: 25% !important;
+    float: left;
+    margin-left: 22px;
+}
+
+.evy_form_edit_phn select.evy_cntry_code{
+    width: 22%;
+}
+
+.evy_form_edit_phn select{
+    width: 25%;
+    float: left;
+}
+
+.evy_form_edit_phn .radio{
+    float: left;
+}
+
+.evy_form_edit_phn .radio label{
+    padding-left: 36px;
+}
+
+.evy_form_edit_phn .radio input[type=radio]{
+    width: 15px;
+}
+
+.evy_aboutme_edit_cl01 .form-group.has-error .help-block{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.evy_form_edit_addr{
+    overflow: hidden;
+}
+
+.evy_form_edit_addr label{
+    width: 100%;
+}
+
+.evy_form_edit_addr input{
+    width: 31%;
+    float: left;
+    margin-right: 18px;
+}
+
+.evy_form_edit_addr input:last-child{
+    margin-right: 0px;
+}
+
+.evy_form_edit_addr_cl01{
+    width: 31%;
+    float: left;
+    margin-right: 18px;
+}
+
+.evy_form_edit_addr_cl01:last-child{
+    margin-right: 0px;
+}
+
+.evy_aboutme_pfledit_formbtn{
+    clear: both;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+}
+
+.evy_pfledit_footer{
+    background-color: #4d4d4f;
+    top: 0px;
+    position: relative;
+    padding-top: 0px;
+}
+
+.add_modal-footer .evy_aboutme_pfledit_formbtn{
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+
+#evy_aboutme_pfledit_formbtn{
+    background-color: #4d4d4f;
+}
+
+.evy_aboutme_pfledit_formbtn .btn, .evy_aboutme_pfledit_formbtn .btn:hover,
+.evy_aboutme_pfledit_formbtn .btn:active, .evy_aboutme_pfledit_formbtn .btn:focus{
+    margin-top: 0px;
+}
+
+.evy_aboutme_cl05{
+    overflow: hidden;
+}
+
+.evy_dtpckr{
+    width: 55%;
+}
+
+.evy_dtpckr input{
+    float: left;
+    width: 100%;
+}
+
+.evy_dtpckr .input-group-btn {
+    float: left;
+    margin-left: -38px;
+}
+
+.evy_dtpckr .evy_calendar{
+    /*background-position: -90px -377px;*/
+    background-position: -67px -413px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.evy_dtpckr .dropdown-menu{
+    right: auto !important;
+    left: 68px !important;
+    padding: 10px;
+    margin: 0px;
+}
+
+.evy_dtpckr .dropdown-menu li:last-child{
+    /*display: none;*/
+}
+
+#evy_aboutme_edit_id02 .evy_dtpckr .dropdown-menu li:last-child, #evy_aboutme_edit_id07 .evy_dtpckr .dropdown-menu li:last-child,
+#evy_aboutme_edit_id05 .evy_dtpckr .dropdown-menu li:last-child, #evy_aboutme_edit_id03 .evy_dtpckr .dropdown-menu li:last-child{
+    display: block !important;
+}
+
+#evy_aboutme_edit_id02 .evy_dtpckr .dropdown-menu li:last-child button.btn-info, #evy_aboutme_edit_id02 .evy_dtpckr .dropdown-menu li:last-child button.btn-success,
+#evy_aboutme_edit_id07 .evy_dtpckr .dropdown-menu li:last-child button.btn-info, #evy_aboutme_edit_id07 .evy_dtpckr .dropdown-menu li:last-child button.btn-success,
+#evy_aboutme_edit_id05 .evy_dtpckr .dropdown-menu li:last-child button.btn-info, #evy_aboutme_edit_id05 .evy_dtpckr .dropdown-menu li:last-child button.btn-success,
+#evy_aboutme_edit_id03 .evy_dtpckr .dropdown-menu li:last-child button.btn-info, #evy_aboutme_edit_id03 .evy_dtpckr .dropdown-menu li:last-child button.btn-success{
+    display: none;
+}
+
+#evy_aboutme_edit_id02 .evy_dtpckr .dropdown-menu li:last-child button.btn-danger, #evy_aboutme_edit_id07 .evy_dtpckr .dropdown-menu li:last-child button.btn-danger,
+#evy_aboutme_edit_id05 .evy_dtpckr .dropdown-menu li:last-child button.btn-danger, #evy_aboutme_edit_id03 .evy_dtpckr .dropdown-menu li:last-child button.btn-danger{
+    border-radius: 4px !important;
+}
+
+.evy_dtpckr table tr th .btn{
+    border-radius: 0px;
+}
+
+.evy_dtpckr table thead tr:nth-child(2) th{
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+.evy_dtpckr .btn-default, .evy_dtpckr .btn-default:hover, .evy_dtpckr .btn-default:focus, .evy_dtpckr .btn-default:active,
+.evy_dtpckr .btn-default.active, .evy_dtpckr .open>.dropdown-toggle.btn-default{
+    color: #00719e;
+    border-radius: 0px;
+    border-right: none;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.evy_pfl_img{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+}
+
+.evy_pfl_img img{
+    float: left;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    z-index: 9;
+}
+
+.evy_rprt_pfl{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-position: 0px -1587px;
+    top: 33%;
+    left: 34%;
+}
+
+.evy_prospectplus_icon{
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -128px -2730px;
+    position: absolute;
+    left: 18px;
+    bottom: 9px;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+}
+
+.evy_hdr_prospectplus_icon{
+    background-image: url(../images/evy_sprite_41.png);
+    background-position: -177px -2730px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: -18px;
+    bottom: 8px;
+    display: inline-block;
+}
+
+.evy_aboutme_details{
+    background: #4d4d4f;
+    padding: 20px;
+    padding-top: 50px;
+    padding-left: 195px;
+    color: #fff;
+    width: 100%;
+    min-height: 175px;
+    height: auto;
+    line-height: 20px;
+}
+
+.evy_profile_bckground .evy_aboutme_details{
+    background: rgba(0,0,0, 0.35);
+}
+
+.evy_aboutme_details h3{
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 26px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.evy_aboutme_details h5{
+    font-size: 18px;
+    margin: 0px;
+    line-height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.evy_aboutme_details span{
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    color: #dddddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.evy_aboutme_cl02{
+    display: none;
+}
+
+.evy_aboutme_cl02, .evy_aboutme_cl04{
+    width: 100%;
+    float: left;
+    min-height: 176px;
+}
+
+.evy_aboutme_cl04{
+    background: -webkit-linear-gradient(180deg, #f5a01f, #ee8325); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, #f5a01f, #ee8325); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #f5a01f, #ee8325); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #f5a01f, #ee8325); /* Standard syntax */
+    cursor: pointer;
+}
+
+#evy_pfl_dashbrd_id01{
+    min-height: 176px;
+    border: none;
+    background-color: #00709E;
+}
+
+#evy_pfl_dashbrd_id02{
+    border: none;
+}
+
+#evy_pfl_dashbrd_id02 .evy_insight_tile03{
+    /* background: url("../images/shrd_cnctn_bg.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.evy_aboutme_pflvstr{
+    padding: 30px 15px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.evy_aboutme_cl03{
+    width: 100%;
+    height: 88.5px;
+    cursor: pointer;
+}
+
+.evy_aboutme_cl06{
+    padding: 0px !important;
+    border-right: 0.9px solid #3AACB6 !important;
+}
+
+.evy_aboutme_cl03 .evy_insight_cnctn, .evy_aboutme_cl03 .evy_insight_contact{
+    padding: 20px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.evy_aboutme_cl03 .evy_insight_cnctn{
+    padding: 20px 6px !important;
+}
+
+.evy_aboutme_rltn{
+    background-color: #fff;
+    padding-left: 20px;
+    padding-top: 21px;
+    float: left;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+#evy_aboutme_rltn_id01{
+    background-position: -19px -843px;
+    width: 44px;
+    height: 44px;
+    float: left;
+}
+
+#evy_aboutme_rltn_id02, #evy_aboutme_contact_id02, #evy_aboutme_pflvstr_id03{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#evy_aboutme_rltn_id02 label{
+    display: block;
+    margin-bottom: 0px;
+    line-height: 27px;
+    color: #4d4d4f;
+    font-size: 14px;
+}
+
+#evy_aboutme_contact_id02 label{
+    display: block;
+    margin-bottom: 0px;
+    line-height: 27px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#evy_aboutme_contact_id03{
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+    color: #fff;
+    font-size: 14px;
+    top: -13px;
+    position: relative;
+}
+
+#evy_aboutme_rltn_id03{
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+    position: relative;
+    padding-top: 24px;
+    color:#4d4d4f;
+    float: left;
+    cursor: pointer;
+}
+
+#evy_aboutme_rltn_id03 label{
+    cursor: pointer;
+}
+
+#evy_aboutme_pflvstr_id03 label{
+    display: block;
+    color: #fff;
+    font-size: 44px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.evy_aboutme_rltn_cl01, .evy_aboutme_contact_cl01{
+    font-size: 32px !important;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    /*cursor: pointer;*/
+}
+
+#evy_aboutme_contact_id01{
+    background-position: -41px -129px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#evy_aboutme_pflvstr_id01{
+    background-position: -82px -129px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    top: 4px;
+    position: relative;
+}
+
+#evy_aboutme_pflvstr_id02{
+    display: block;
+    border-top: 1px dashed #fff;
+    padding: 15px;
+    margin: 0px 20px 0 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#evy_aboutme_pflvstr_id02 label{
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.evy_aboutme_contact{
+    background-color: #00719e;
+    padding: 20px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+.evy_aboutme_content_label{
+    background-color: #7a7a7c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    width: auto;
+    display: inline-block;
+    padding: 5px 15px;
+    position: absolute;
+    left: -8px;
+    height: auto;
+    top: -1px;
+}
+
+.evy_aboutme_content_add_btn{
+    text-align: center;
+    padding: 65px 0px;
+    margin: 0px 28px;
+}
+
+.evy_aboutme_content_add_btn .btn{
+    color: #00719e;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    white-space: normal;
+}
+
+.evy_aboutme_edit{
+    width: 100%;
+}
+
+.evy_aboutme_edit_cl01{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_edit_cl01{
+    padding: 0px;
+    position: relative;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_edit_cl01 .items{
+    width: 100%;
+}
+
+.evy_aboutme_edit_cl01 h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.evy_aboutme_edit_cl01 .form-group{
+    margin-bottom: 10px;
+}
+
+.evy_aboutme_edit_cl01 .form-group:last-child{
+    margin-bottom: 0px;
+}
+
+.evy_aboutme_edit_cl01 .form-group label{
+    font-weight: normal;
+    color: #5f5f61;
+}
+
+.evy_aboutme_edit_cl01 .form-group .form-control{
+    border-radius: 0px;
+    color: #4d4d4f;
+}
+
+.evy_aboutme_edit_cl01 .form-group .evy_work_cmpny_load{
+    width: 50px;
+    margin: auto;
+    z-index: 9
+}
+
+.evy_aboutme_edit_cl01 .form-group .evy_work_cmpny_load img.evy_load_icon{
+    margin-top: 40px !important;
+}
+
+.evy_cmpany_list_cl02 .evy_work_cmpny_img_upload{
+    position: relative;
+}
+
+.evy_cmpany_list_cl02 .evy_work_cmpny_img_upload .evy_load_icon {
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    border: none !important;
+    left: 70px;
+}
+
+.evy_cmpany_list{
+    position: relative;
+}
+
+.evy_cmpany_list_cl01{
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    background-color: #F5F5F5;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: table !important;
+}
+
+.evy_cmpany_list_cl02{
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+    padding: 10px;
+}
+
+.evy_cmpany_list_cl03{
+    width: 60%;
+    border-left: 1px solid #dbdbdb;
+    padding: 10px;
+    min-height: 170px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 170px;
+    max-height: 100%;
+}
+
+.evy_cmpany_list_cl02 .evy_cmpany_carousel{
+    border: none;
+    height: 120px;
+    padding: 0px;
+}
+
+.evy_cmpany_list_cl02 .evy_cmpany_carousel .evy_cmpany_carousel_slide img{
+    max-width: 145px;
+    height: 110px;
+    border: 1px solid #dbdbdb;
+    margin: auto;
+}
+
+.evy_cmpany_list_cl02 .evy_cmpany_carousel .evy_cmpany_carousel_slide li{
+    list-style-type: none;
+    width: 170px;
+    height: 110px;
+    margin: auto;
+}
+
+.evy_cmpany_setlogo{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.evy_cmpany_setlogo a{
+    color: #00719e;
+}
+
+#evy_aboutme_content_id01 .evy_edit_overflow, #evy_aboutme_content_id03 .evy_edit_overflow,
+#evy_aboutme_content_id010 .evy_edit_overflow{
+    top: -35px !important;
+    right: 20px !important;
+}
+
+#evy_aboutme_content_id04 .evy_edit_overflow,
+#evy_aboutme_content_id011 .evy_edit_overflow{
+    right: 0px;
+    top: -35px;
+}
+
+#evy_aboutme_id01 .evy_edit_overflow{
+    top: 25px;
+    right: 20px;
+}
+
+#evy_aboutme_id01 .evy_rltn_icon2 i{
+    width: 4px;
+    height: 19px;
+    background-position: -139px -911px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+#evy_aboutme_id01 .evy_rltn_edit_dlt{
+    top: -10px;
+}
+
+#evy_aboutme_id01 .evy_rltn_edit_dlt_cl01{
+    top: 20px;
+}
+
+.evy_edit_lngage{
+    background-color: #F5F5F5;
+    overflow: hidden;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #DBDBDB;
+    color: #A0A0A0;
+}
+
+.evy_edit_lngage_cl01{
+    width: 21%;
+    float: left;
+}
+
+.evy_edit_lngage_cl01:first-child{
+    width: 35%;
+}
+
+.evy_edit_lngage_cl02{
+    overflow: hidden;
+}
+
+.evy_edit_lngage_cl02 span:first-child{
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.evy_edit_lngage_cl02 span{
+    float: left;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.evy_edit_lngage_cl02 span:last-child{
+    border-right: none;
+}
+
+#evy_aboutme_edit_id06 .evy_edit_lngage_cl02 label{
+    width: 45px;
+}
+
+.evy_edit_lngage_cl02 label{
+    width: 100px;
+    float: left;
+}
+
+.evy_lng_sepretor{
+    float: left;
+    width: 10px !important;
+}
+
+.evy_edit_lngage_cl02 i{
+    color: #f58220;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.evy_lng_rtng{
+    float: left;
+    margin-left: 20px;
+}
+
+.evy_lng_rtng .evy_active_star{
+    width: 14px;
+    height: 12px;
+    background-position: -64px -1564px;
+    display: inline-block;
+}
+
+.evy_lng_rtng .evy_inactive_star{
+    width: 15px;
+    height: 12px;
+    background-position: -47px -1564px;
+    display: inline-block;
+}
+
+#evy_aboutme_content_id06 .evy_aboutme_education_content:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.evy_aboutme_education_content{
+    word-wrap: break-word;
+}
+
+#evy_aboutme_content_id04 .evy_aboutme_bsns_content,
+#evy_aboutme_content_id011 .evy_aboutme_bsns_content{
+    width: 100%;
+    margin: 0px;
+}
+
+.evy_edit_overflow{
+    position: absolute;
+    right: 15px;
+}
+
+.evy_cntct_ph{
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.evy_icon_preferred{
+    position: relative;
+    float: left;
+}
+
+.evy_icon_preferred i{
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    background-position: -29px -1348px;
+    margin-right: 10px;
+    top: 1px;
+    position: relative;
+}
+
+.evy_phn_prfrd{
+    min-width: 190px;
+    max-width: 190px;
+    word-wrap: break-word;
+}
+
+.evy_cntct_ph_cl01 {
+    position: relative;
+    float: left;
+    word-wrap: break-word;
+    width: 90%;
+}
+
+.evy_cntct_ph_cl01 span{
+    display: inline !important;
+    border-left: 1px solid #dbdbdc;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+
+.evy_cntct_ph_cl02{
+    padding-left: 23px;
+}
+
+.evy_cntct_ph_cl03{
+    padding-left: 21px;
+}
+
+.evy_nck_name{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.evy_cntct_info{
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 35px;
+    min-height: 25px;
+}
+
+.evy_cntct_info:nth-child(even){
+    /*border: none;
+    padding-left: 10px;
+    padding-right: 0px;*/
+}
+
+.evy_cntct_eml{
+    width: 100%;
+    padding-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.evy_cntct_eml span{
+    /*margin-bottom: 5px;*/
+}
+
+.evy_cntct_eml .evy_icon_preferred{
+    height: auto;
+}
+
+.evy_cntct_eml .evy_icon_preferred i{
+    margin-top: 0px;
+}
+
+.evy_aboutme_edit_cl01 .items{
+    position: absolute;
+    background-color: #fff;
+    width: 93.4%;
+    border: 1px solid #dbdbdb;
+    margin-top: 0px;
+    z-index:6;
+}
+
+.evy_aboutme_edit_cl01  .items .item{
+    padding: 5px 10px;
+}
+
+.evy_aboutme_edit_cl01  .items .item:hover{
+    background-color: #1e90ff;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn, #evy_aboutme_edit_id04 .evy_form_edit_email{
+    margin-bottom: 15px;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn:last-child, #evy_aboutme_edit_id04 .evy_form_edit_email:last-child{
+    margin-bottom: 0px;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn .radio, #evy_aboutme_edit_id04 .evy_form_edit_email .radio{
+    margin-bottom: 0px;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn .btn_field_dlt, #evy_aboutme_edit_id04 .evy_form_edit_email .btn_field_dlt{
+    top: 7px;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn select.evy_cntry_code{
+    margin-left: 0px;
+    border-right: 0px;
+    line-height: 28px;
+}
+
+#evy_aboutme_edit_id04 .evy_form_edit_phn select{
+    width: 21%;
+    line-height: 28px;
+}
+
+#evy_aboutme_edit_id06 .evy_form_edit{
+    width: 31%;
+    margin-right: 19px;
+}
+
+#evy_aboutme_edit_id06 .evy_form_edit:last-child{
+    margin-right: 0px;
+}
+
+.evy_form_edit{
+    width: 48%;
+    float: left;
+    margin-right: 22px;
+}
+
+.evy_form_edit:last-child{
+    margin-right: 0px;
+}
+
+.evy_form_ph{
+    overflow: hidden;
+}
+
+.evy_form_ph label{
+    width: 100%;
+}
+
+.evy_form_ph input{
+    width: 52%;
+    float: left;
+}
+
+.evy_form_ph select.evy_cntry_code{
+    width: 18%;
+}
+
+.evy_form_ph select{
+    width: 30%;
+    float: left;
+}
+
+.evy_form_staddr input{
+    margin-bottom: 10px;
+}
+
+.btn_form_save, .btn_form_save:hover, .btn_form_save:active, .btn_form_save:focus{
+    background-color: #f58220;
+    border: none;
+    margin-right: 10px;
+    padding: 6px 25px;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn_form_cancel, .btn_form_cancel:hover, .btn_form_cancel:active, .btn_form_cancel:focus{
+    background-color: #7a7a7c;
+    border: none;
+    padding: 6px 25px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.evy_form_date label, .evy_form_dob label{
+    width: 100%;
+}
+
+.evy_form_date select{
+    width: 48%;
+    float: left;
+    margin-right: 21px;
+}
+
+.evy_form_date select:last-child, .evy_form_dob select:last-child{
+    margin-right: 0px;
+}
+
+.evy_form_date input[type=checkbox]{
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.evy_option_company{
+    float:left;
+    width:auto;
+    margin-bottom: 7px;
+}
+
+.evy_option_company input[type=checkbox]{
+    float:none;
+    width:auto
+}
+
+.evy_form_dob select{
+    width: 30%;
+    float: left;
+    margin-right: 12px;
+}
+
+.evy_form_dob input{
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+}
+
+button.close{
+    opacity: 1;
+}
+
+button.close:hover{
+    background:none;
+    opacity: 1;
+}
+
+button.close label{
+    color: #00719e;
+    font-size: 13px;
+    margin-right: 10px;
+    bottom: 4px;
+    position: relative;
+}
+
+button.close span{
+    color: #fff;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.evy_form_img_upload{
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+}
+
+.evy_form_img_upload img{
+    width: 68px;
+    height: 65px;
+    float: left;
+    border-right: 1px solid #dbdbdb;
+}
+
+.evy_form_img_upload_cl01{
+    float: left;
+    height: 65px;
+    margin-bottom: 0px !important;
+}
+
+.evy_form_img_upload_cl01 .evy_upload_btn{
+    margin-top: 16px;
+    margin-left: 20px;
+    background-color: #f58220;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    padding: 6px 12px;
+    text-align: center;
+    width: 125px;
+    color: #fff;
+}
+
+.evy_upload_btn{
+    margin-top: 16px;
+    margin-left: 20px;
+    background-color: #f58220;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    padding: 6px 12px;
+    text-align: center;
+    width: 125px;
+    color: #fff;
+}
+
+.evy_upload_btn .evy_load_icon_sml{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    border: none !important;
+}
+
+.evy_aboutme_add{
+    width: 100%;
+}
+
+.evy_dlt_cnfrmtn{
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+footer{
+    /*background-color: #F5F5F5;*/
+    background-color: #fff;
+}
+
+.evy_aboutme_footer{
+    margin: auto;
+    padding: 10px 30px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.evy_aboutme_footer ul{
+    padding-left: 0px;
+    width: 720px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+.evy_aboutme_footer ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: #4d4d4f;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.evy_aboutme_footer ul li:last-child{
+    margin-right: 0px;
+    color: #888;
+}
+
+.evy_aboutme_footer ul li a{
+    color: #4d4d4f;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.evy_aboutme_navcl01{
+    position: relative;
+    z-index:1;
+}
+
+.evy_aboutme_navcl02 li{
+    float: left;
+}
+
+.evy_aboutme_navcl02 ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.evy_aboutme_navcl02 .dropdown-menu li{
+    width: 100% !important;
+    margin-right: 0px;
+}
+
+.evy_aboutme_navcl02 .dropdown-menu li a{
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_aboutme_navcl02 .dropdown-menu li.active a{
+    background: none;
+    color: #4d4d4f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.ui-grid-header{
+    /*height: 65px;*/
+    overflow: hidden;
+    background-color: #F5F5F5 !important;
+    min-height: 40px;
+}
+
+.evy_aboutme_content_cl01{
+    margin-top: 50px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.evy_snapshot_video{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+
+.evy_no_snapshot_video{
+    width: 100%;
+    padding: 0px 20px;
+    word-wrap: break-word;
+}
+
+.evy_aboutme_content_cl01 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.evy_aboutme_snapshot_content{
+    padding: 0px 20px 20px 20px;
+    display: inline-block;
+    word-wrap: break-word;
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.evy_aboutme_icons_cl01{
+    color: #00719e;
+    font-size: 11px;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.evy_aboutme_icons_cl01 span{
+    color: #00719e;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.evy_cnctn_lbl{
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.evy_cnctn_rqst_secondary{
+    font-weight: normal !important;
+}
+
+.btn_add_new{
+    width: 26px;
+    height: 26px;
+    background-position: -27px -96px;
+    border-radius: 0px;
+    margin-left: 10px;
+    border: none;
+    right: -2px;
+    position: relative;
+    top: -1px;
+}
+
+.btn_edit{
+    width: 26px;
+    height: 26px;
+    background-position: 0px -96px;
+    border-radius: 0px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn_edit:hover, .btn_edit:active, .btn_edit:focus, .btn_field_dlt:hover, .btn_field_dlt:active, .btn_field_dlt:focus{
+    background-color: transparent;
+    border: none;
+}
+
+.btn_edit_pfl{
+    width: 26px;
+    height: 26px;
+    background-position: 0px -19px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn_edit_pfl:hover, .btn_edit_pfl:active, .btn_edit_pfl:focus,
+.btn_delete:hover, .btn_delete:active, .btn_delete:focus, 
+.btn_skype_icon:hover, .btn_skype_icon:active, .btn_skype_icon:focus,
+.btn_twitter_icon:hover, .btn_twitter_icon:active, .btn_twitter_icon:focus,
+.btn_gplus_icon:hover, .btn_gplus_icon:active, .btn_gplus_icon:focus,
+.btn_fb_icon:hover, .btn_fb_icon:active, .btn_fb_icon:focus,
+.btn_insta_icon:hover, .btn_insta_icon:active, .btn_insta_icon:focus,
+.btn_ln_icon:hover, .btn_ln_icon:active, .btn_ln_icon:focus,
+.btn_pin_icon:hover, .btn_pin_icon:active, .btn_pin_icon:focus,
+.btn_contact_mobile_icon:hover, .btn_contact_mobile_icon:active, .btn_contact_mobile_icon:focus,
+.btn_contact_work_icon:hover, .btn_contact_work_icon:active, .btn_contact_work_icon:focus,
+.btn_contact_home_icon:hover, .btn_contact_home_icon:active, .btn_contact_home_icon:focus,
+.btn_contact_fax_icon:hover, .btn_contact_fax_icon:active, .btn_contact_fax_icon:focus,
+.btn_contact_other_icon:hover, .btn_contact_other_icon:active, .btn_contact_other_icon:focus,
+.btn_contact_email_icon:hover, .btn_contact_email_icon:active, .btn_contact_email_icon:focus{
+    background-color: transparent;
+    border: none;
+}
+
+.evy_aboutme_education_content_cl01 .btn_delete{
+    top: 0px;
+}
+
+.btn_delete{
+    width: 26px;
+    height: 26px;
+    background-position: -54px -96px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.evy_form_edit_phn .btn_delete{
+    position: relative;
+}
+
+.btn_contact_mobile_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -68px -1733px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.btn_contact_work_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -102px -1733px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.btn_contact_home_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -37px -1767px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.btn_contact_fax_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -4px -1767px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.btn_contact_other_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -136px -1733px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.btn_contact_email_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -170px -1733px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+.btn_skype_icon{
+    width: 23px;
+    height: 23px;
+    /*background-position: -27px -19px;*/
+    background-position: -4px -1701px;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_twitter_icon{
+    width: 23px;
+    height: 19px;
+    /*background-position: -51px -19px;*/
+    background-position: -37px -1701px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_gplus_icon{
+    width: 23px;
+    height: 23px;
+    background-position: -70px -1701px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_fb_icon{
+    width: 23px;
+    height: 23px;
+    background-position: -103px -1701px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_insta_icon{
+    width: 23px;
+    height: 23px;
+    background-position: -136px -1701px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_ln_icon{
+    width: 23px;
+    height: 23px;
+    background-position: -169px -1701px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.btn_pin_icon{
+    width: 23px;
+    height: 23px;
+    background-position: -4px -1734px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: default;
+}
+
+.evy_aboutme_education_content{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #a6a6a6;
+    padding-bottom: 10px;
+}
+
+.evy_aboutme_education_content:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.evy_aboutme_education_content span{
+    display: block;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.evy_aboutme_education_content img{
+    width: 65px !important;
+    height: 65px !important;
+    float: left;
+    border: 1px solid #dbdbdb;
+}
+
+.evy_aboutme_education_content p{
+    margin: 5px 0px;
+}
+
+.evy_aboutme_education_content h5{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 87%;
+    word-wrap: break-word;
+}
+
+.evy_aboutme_education_content a{
+    color: #00719e;
+}
+
+.evy_aboutme_education_content_cl02{
+    position: absolute;
+    display: block;
+    bottom: 10px;
+}
+
+.evy_aboutme_education_content_cl01{
+    min-height: 95px;
+    overflow: hidden;
+}
+
+.evy_aboutme_bsns_content{
+    float: left;
+    margin-left: 15px;
+    width: 77%;
+}
+
+.evy_aboutme_top_left{
+    width: 100%;
+    padding-right: 427px;
+    left: -5px;
+}
+
+.evy_aboutme_top_right{
+    width: 422px !important;
+    position: absolute;
+    right: 15px;
+}
+
+.evy_wrk_exp.evy_pfl_hover {
+    width: 130px;
+    float: left;
+    margin-right: 10px;
+}
+
+#evy_aboutme_content_id07 .evy_aboutme_bsns_content{
+    width: 78%;
+}
+
+.evy_wrk_exp.evy_pfl_hover img{
+    float: right;
+    max-width: 130px;
+    height: auto !important;
+    width: auto !important;
+    max-height: 130px;
+    margin-bottom: 15px;
+    min-width: 65px;
+}
+
+#evy_pfl_bg_cl02{
+    padding-left: 5px;
+}
+
+.evy_aboutme_bsns_content h5{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.evy_aboutme_bsns_content a{
+    color: #00719e;
+}
+
+.evy_aboutme_bsns_content p{
+    margin: 5px 0px;
+}
+
+.evy_aboutme_icons_cl02{
+    position: absolute;
+    right: -6px;
+    z-index: 10;
+    top: -5px;
+}
+
+.evy_aboutme_icons_cl03{
+    position: absolute;
+    right: 20px;
+    z-index: 10;
+    top: 15px;
+}
+
+#evy_aboutme_content_id02, #evy_aboutme_content_id03,
+#evy_aboutme_content_id04, #evy_aboutme_content_id05,
+#evy_aboutme_content_id06, #evy_aboutme_content_id07,
+#evy_aboutme_content_id08, #evy_aboutme_content_id09,
+#evy_aboutme_content_id10, #evy_aboutme_content_id011,
+#evy_aboutme_content_id012, #evy_aboutme_content_id013{
+    border: none;
+    padding: 0px 20px 20px 20px;
+}
+
+#evy_aboutme_content_id09{
+    overflow: hidden;
+}
+
+#evy_aboutme_content_id10{
+    margin-top: 0px;
+}
+
+#evy_aboutme_content_id09 img{
+    width: 100% !important;
+    height: 105px !important;
+    min-width: 105px;
+    border: 1px solid #dbdbdb;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 15px;
+    min-width: 105px;
+}
+
+#evy_aboutme_content_id09 h5{
+    color: #00719e;
+    font-weight: normal;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    cursor: pointer;
+}
+
+#evy_aboutme_content_id09 span{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+#evy_aboutme_content_id09 .evy_aboutme_education_content{
+    overflow: hidden;
+}
+
+#evy_aboutme_content_id10 .evy_aboutme_education_content h5{
+    font-size: 13px;
+    border-bottom: 1px solid #dbdbdc;
+    min-height: 25px;
+    margin-bottom: 15px;
+}
+
+#evy_aboutme_content_id10 .evy_aboutme_education_content h5:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+#evy_aboutme_content_id10 .evy_aboutme_education_content h5 a{
+    color: #00719e;
+}
+
+.evy_aboutme_community{
+    border-bottom: 1px solid #dbdbdc;
+    overflow: hidden;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.evy_aboutme_community h4{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.evy_aboutme_community:last-child{
+    margin-right: 0px;
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.evy_aboutme_community_cl01{
+    float: left;
+    width: 105px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+}
+
+.evy_aboutme_community_cl01:nth-child(3n+1){
+    /*margin-right: 0px !important;*/
+}
+
+.evy_aboutme_community_cl01 .evy_cmnty_pfl_icon {
+    position: relative;
+    float: left;
+}
+
+.evy_aboutme_community_cl01 .evy_cmnty_pfl_icon .evy_cmnty_icon_actve, .evy_aboutme_community_cl01 .evy_cmnty_pfl_icon .evy_cmnty_icon_inactve{
+    bottom: 15px;
+}
+
+.btn_dwnld{
+    background-position: -81px -96px;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+.btn_dwnld:active, .btn_dwnld:hover,.btn_dwnld:focus{
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+#evy_aboutme_content_id04 .evy_aboutme_education_content,
+#evy_aboutme_content_id07 .evy_aboutme_education_content,
+#evy_aboutme_content_id011 .evy_aboutme_education_content{
+    border-bottom: 1px dashed #a6a6a6;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#evy_aboutme_content_id04 .evy_aboutme_education_content:last-child,
+#evy_aboutme_content_id07 .evy_aboutme_education_content:last-child,
+#evy_aboutme_content_id011 .evy_aboutme_education_content:last-child{
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#evy_aboutme_content_id04 .evy_cntct_ph_cl01{
+    /*width: 100%;*/
+}
+
+#evy_aboutme_content_id04 .evy_cntct_ph_cl01 span{
+    padding-left: 15px;
+}
+
+#evy_aboutme_content_id07 .evy_aboutme_education_content{
+    /*overflow: hidden;*/
+    min-height: 80px;
+}
+
+#evy_aboutme_content_id07 .evy_aboutme_education_content p{
+    float: left;
+    clear: both;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.evy_pos{
+    position: relative;
+}
+
+.btn_field_dlt{
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -54px -96px;
+    width: 26px;
+    height: 26px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    padding-right: 0px;
+    position: relative;
+    top: 9px;
+}
+
+/*About me page styles ends*/
+
+
+/*Profile Visitors page styles starts*/
+.evy_pfl_visitors_cl01{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 92px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+}
+
+.evy_pfl_visitors_cl01 .evy_edit_overflow{
+    right: 15px;
+    top: 15px;
+    position: absolute;
+}
+
+#evy_aboutme_content_id05 .evy_aboutme_education_content{
+    min-height: 40px;
+}
+
+#evy_aboutme_content_id05 .evy_edit_overflow, #evy_aboutme_content_id02 .evy_edit_overflow, #evy_aboutme_content_id06 .evy_edit_overflow,
+#evy_aboutme_content_id07 .evy_edit_overflow, #evy_aboutme_content_id08 .evy_edit_overflow{
+    right: 0px;
+    top: 0px;
+}
+
+.evy_pfl_visitors_cl01 .evy_edit_overflow .evy_rltn_edit_dlt{
+    min-width: 175px;
+}
+
+.evy_pfl_visitors_cl01 .evy_icon_connect{
+    position: absolute;
+    right: 12px;
+    bottom: 1px;
+}
+
+.evy_icon_connect i{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -159px -911px;
+    cursor: pointer;
+}
+
+.evy_community_details .evy_icon_connect{
+    position: absolute;
+    right: 7px;
+    bottom: 0px;
+}
+
+.evy_pfl_visitors_img{
+    position: absolute;
+    width: 90px;
+}
+
+.evy_pfl_visitors_img img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-right: 1px solid #dbdbdc;
+}
+
+.evy_pfl_visitors_cl02{
+    padding: 15px;
+    padding-left: 105px;
+    width: 100%;
+    height: 90px;
+}
+
+.evy_pfl_visitors_cl02 h4{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    float: none;
+}
+
+.evy_pfl_visitors_cl02 span{
+    display: block;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.evy_pfl_visitors_cl02 h4 a{
+    color: #4d4d4f;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.evy_pfl_visitors_cl02  a{
+    color: #00719e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.evy_pfl_visitors_deg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #F5F5F5;
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+}
+
+/*Profile Visitors page styles ends*/
+
+/*Connection Request Page styles starts*/
+
+.evy_cnctn_rqst_cl01 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 92px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+}
+
+.evy_cnctn_rqst_img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+.evy_cnctn_rqst_img img{
+    width: 90px;
+    height: 90px;
+    border-right: 1px solid #dbdbdb;
+    object-fit: cover;
+}
+
+.evy_cnctn_rqst_cl02 {
+    padding: 15px;
+    width: 100%;
+    padding-left: 110px;
+    height: 90px;
+}
+
+.evy_cnctn_rqst_cl02 .evy_cnctn_rqst_cl03{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+
+.evy_cnctn_rqst_cl03{
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+}
+
+.evy_cnctn_rqst_cl03 a{
+    color: #00719e;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+}
+
+.evy_cnctn_rqst_cl03 a:last-child{
+    margin-right: 0px;
+}
+
+.evy_cnctn_rqst_cl03 span{
+    display: inline-block !important;
+}
+
+.evy_cnctn_rqst_cl02 h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    max-width: 140px;
+}
+
+.evy_cnctn_rqst_cl02 a{
+    color: #4d4d4f;
+}
+
+.evy_cnctn_rqst_cl02 span {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.evy_cnctn_rqst_cl03 #evy_accept span{
+    color: #00719e;
+    border-right: 1px solid #4d4d4f;
+    padding-right: 20px;
+    line-height: 13px;
+}
+
+.evy_cnctn_rqst_cl03 .evy_decline span{
+    color: #00719e;
+    line-height: 13px;
+}
+
+#evy_cnctn_rqst_id02{
+    padding: 15px 20px;
+    background-color: #E4E4E6;
+    min-height: 91px;
+    height: auto;
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    z-index: 1;
+}
+
+#evy_cnctn_rqst_id02 h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#evy_cnctn_rqst_id02 span{
+    display: inline-block;
+    margin-bottom: -4px;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.evy_mng_nw_tile{
+    padding-top: 25px;
+}
+
+.evy_mng_nw_tile h4{
+    display: block;
+    float: none;
+}
+
+.evy_mng_nw_tile span{
+    display: block;
+}
+
+.evy_mng_nw_tile .evy_rltn_icon2{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.evy_mng_nw_tile .evy_rltn_icon2 .evy_rltn_edit_dlt{
+    min-width: 130px;
+}
+
+.evy_mng_nw_tile_cl01 .evy_cnctn_rqst_img{
+    background: #E4E4E6;
+    text-align: center;
+}
+
+.evy_mng_nw_tile_ltr{
+    font-size: 55px;
+    color: #A6A6A8;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    background: #E4E4E6;
+}
+
+.evy_new_mng_ntwrk{
+    float: right !important;
+    background: none !important;
+}
+
+.evy_new_mng_ntwrk a{
+    background: none !important;
+}
+
+.evy_msg{
+    float: right;
+    margin-left: 5px;
+}
+
+.evy_close{
+    float: right;
+    cursor: pointer;
+}
+
+.evy_close i{
+    background-position: -182px 0px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    left: 4px;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.evy_close span {
+    display: inline-block;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.evy_cnctn_rqst_cl04{
+    padding: 20px;
+    padding-bottom: 0px;
+    max-height: 282px;
+    overflow: auto;
+    margin-right: 10px;
+}
+
+.evy_cnctn_rqst_cl04::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.evy_cnctn_rqst_cl04::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.evy_cnctn_rqst_cl04::-webkit-scrollbar-thumb{
+    background-color: #4d4d4f;
+}
+
+#myModalaccept .modal-sm{
+    width: 380px;
+    margin: 30px auto;
+}
+
+#myModalaccept .modal-body{
+    height: 270px;
+    overflow: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.evy_cnctn_rqst_cl04 .checkbox:first-child{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.evy_cnctn_rqst_cl04 .checkbox{
+    padding: 9px 0px;
+    border-bottom: 1px solid #dbdbdb;
+    word-wrap: break-word;
+}
+
+.evy_cnctn_rqst_cl04 .form-group{
+    margin-bottom: 0px;
+}
+
+.evy_cnctn_rqst_cl04.form-group{
+    margin-bottom: 0px;
+}
+
+.evy_cnctn_mdl_eml input{
+    border-radius: 0px;
+    border: 1px solid #dbdbdb;
+}
+
+.evy_cnctn_mdl_eml .help-block{
+    margin-bottom: 0px;
+}
+
+.evy_cnctn_rqst_cl05{
+    padding: 20px;
+}
+
+#myModalaccept ::-webkit-scrollbar {
+    width: 3px;
+}
+
+#myModalaccept ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#myModalaccept ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+#myModalaccept ::-moz-scrollbar{
+    width: 3px;
+}
+
+#myModalaccept ::-moz-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#myModalaccept ::-moz-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/*Connection Request Page styles ends*/
+
+/*Add Contact page styles starts*/
+
+.evy_add_contact{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.evy_add_contact_cl01{
+    float: left;
+    width: 192px;
+}
+
+.evy_add_contact_cl03{
+    float: left;
+    /*width: 50%;*/
+    max-width: 602px;
+}
+
+.evy_add_contact_cl02 h4{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.evy_add_contact_cl02 img{
+    width: 192px;
+    height: 192px;
+    margin-bottom: 15px;
+}
+
+.evy_add_contact_cl02 button{
+    width: 100%;
+    background-color: #f58220;
+    border: none;
+    color: #fff;
+}
+
+.evy_add_contact_cl02 button:hover, .evy_add_contact_cl02 button:active, .evy_add_contact_cl02 button:focus{
+    background-color: #f58220;
+    border: none;
+    color: #fff;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 .evy_form_edit_name{
+    width: 33.33%;
+    margin-right: 0px;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 .evy_form_edit_name:last-child{
+    margin-right: 0px !important;
+    padding-right: 0px;
+}
+
+/*.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 .evy_form_edit_name*/
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03{
+    background: none;
+    border: none;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 label{
+    color: #4d4d4f;
+    word-wrap: break-word;
+    margin: 0px;
+}
+
+.evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 a{
+    color: #00719e;
+    font-weight: normal;
+}
+
+.evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01{
+    width: 31.08%;
+    margin-right: 19px;
+}
+
+.evy_add_contact_cl03 .evy_form_edit_addr input:last-child, .evy_add_contact_cl03 .evy_form_edit_addr_cl01:last-child{
+    margin-right: 0px !important;
+}
+
+.evy_add_contact_cl03 .evy_form_edit{
+    width: 48%;
+    margin-right: 20px;
+}
+
+.evy_add_contact_cl03 .evy_form_edit:last-child{
+    margin-right: 0px;
+}
+
+.evy_add_contact_cl03 .btn_field_dlt{
+    background-position: -54px -96px;
+    width: 26px;
+    height: 26px;
+    top: 6px;
+}
+
+.evy_add_contact_cl03 .evy_form_edit_email input{
+    /*width: 75%;*/
+    width: 87%;
+}
+
+.evy_add_contact_cl03 .evy_form_edit_phn input{
+    /*width: 32%;*/
+    width: 42%;
+}
+
+.evy_add_contact_cl03 .form-group.has-error .help-block{
+    width: 100%;
+    display: inline;
+    margin-bottom: 0px;
+}
+
+i.evy_add_contact_bck {
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -154px -46px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    top: 5px;
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+    float: left;
+}
+
+/*Add Contact page styles ends*/
+
+
+/*Relationship page styles starts*/
+
+.evy_relationship{
+    border: 1px solid #dbdbdc;
+    min-height: 55px;
+    padding:11px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    background-color: #F6f6f6;
+}
+
+.evy_cluster_text{
+    margin-bottom: 20px;
+}
+
+.evy_relationship_view{
+    width: 82px;
+    float: left;
+}
+
+.evy_relationship .evy_rltnshp_cl03{
+    border-left: 1px solid #dbdbdc;
+    padding-left: 15px;
+}
+
+.evy_tile_view{
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -53px -174px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.evy_list_view{
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -89px -174px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 15px;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.evy_rltn_cl01 {
+    position: relative;
+    width: 100%;
+    height: 92px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdc;
+}
+
+.evy_rltn_cl01 .evy_edit_overflow{
+    top: 15px;
+}
+
+.evy_rltn_cl01 .evy_icons{
+    bottom: 2px;
+}
+
+.evy_rltn_img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+.evy_rltn_img img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.evy_rltn_cl02 {
+    float: left;
+    padding: 15px;
+    width: 89%;
+    padding-left: 110px;
+}
+
+.evy_rltn_cl02 h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.evy_rltn_cl02 a{
+    color: #4d4d4f;
+}
+
+.evy_rltn_cl02 span {
+    display: block;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.evy_icons{
+    position: absolute;
+    float: right;
+    margin: 13px 15px 0px 0px;
+    right: 0;
+    text-align: right;
+}
+
+#evy_rltn_icon1 i{
+    background-image: url("../images/evy_sprite_41.png");
+    background-repeat: no-repeat;
+    background-position: -30px -333px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.evy_rltn_icon2{
+    cursor: pointer;
+}
+
+#evy_rltn_icon1, .evy_rltn_icon3, #evy_rltn_icon4, #evy_rltn_icon5, #evy_rltn_icon6,
+#evy_rltn_icon7, .evy_rltn_icon8, .evy_rltn_icon9, .evy_rltn_icon10 , .evy_rltn_icon11, .evy_rltn_icon12,
+.evy_rltn_icon13{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.evy_rltnshp_grid_cl01 #evy_rltn_icon1, .evy_rltnshp_grid_cl01 .evy_rltn_icon3, .evy_rltnshp_grid_cl01 #evy_rltn_icon4,
+.evy_rltnshp_grid_cl01 #evy_rltn_icon5, .evy_rltnshp_grid_cl01 #evy_rltn_icon6, .evy_rltnshp_grid_cl01 #evy_rltn_icon7,
+.evy_rltnshp_grid_cl01 .evy_rltn_icon8, .evy_rltnshp_grid_cl01 .evy_rltn_icon11, .evy_rltnshp_grid_cl01 .evy_rltn_icon13{
+    margin-right: 15px;
+}
+
+.evy_relation_grid  #evy_rltn_icon4, .evy_relation_grid .evy_rltn_icon3{
+    position: absolute !important;
+    top: 8px;
+    left: 30px;
+}
+
+.evy_duplicate_grid{
+    text-align: center;
+    position:relative;
+}
+
+.evy_relation_grid .evy_rltn_icon3, .evy_relation_grid #evy_rltn_icon7,
+.evy_relation_grid .evy_rltn_icon8, .evy_relation_grid .evy_rltn_icon11,
+.evy_relation_grid .evy_rltn_icon13{
+    position: absolute !important;
+    top: 8px !important;
+    /*left: 20px;*/
+}
+
+.evy_relation_grid .evy_rltn_icon3{
+    /*left: 32px !important;*/
+}
+
+.evy_relation_grid #evy_rltn_icon7{
+    left: 60px !important;
+}
+
+.evy_relation_grid .evy_rltn_icon8{
+    left: 75px !important;
+}
+
+.evy_relation_grid .evy_rltn_icon11{
+    left: 75px !important;
+}
+
+.evy_relation_grid .evy_rltn_icon12{
+    left: 75px !important;
+}
+
+.evy_relation_grid .evy_rltn_icon13{
+    left: 75px !important;
+}
+
+.evy_rltn_img .evy_rltn_icon9, .evy_rltn_img .evy_rltn_icon11,
+.evy_rltn_img .evy_rltn_icon13{
+    position: absolute;
+    bottom: 0px !important;
+    left: 5px !important;
+    top: auto !important;
+} 
+
+.evy_rltn_icon2 i{ /*overflow icon*/
+    background-image: url("../images/evy_sprite_41.png");
+    background-repeat: no-repeat;
+    background-position: -144px -843px;
+    width: 4px;
+    height: 19px;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    right: 0px;
+}
+
+.evy_rltn_conn_visible{
+    font-size: 12px;
+    font-style: italic;
+    position: relative;
+    top: -17px;
+    display: block;
+    width: 95%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0px 10px;
+}
+
+.evy_mng_nw_tile .evy_rltn_icon2 .evy_rltn_edit_dlt_cl01{
+    top: 28px;
+    right: 5px;
+}
+
+.evy_rltn_edit_dlt{
+    display: none;
+    background-color: transparent;
+    padding: 0px;
+    text-align: left;
+    z-index: 2;
+    cursor: pointer;
+    left: 10px;
+    position: relative;
+}
+
+.evy_rltn_edit_dlt_cl01{
+    background-color: #f58220;
+    position: relative;
+    top: 23px;
+    /*top: 10px;*/
+    min-width: 115px;
+    padding: 10px;
+    left: -10px;
+}
+
+.evy_rltn_add_nw{
+    width: 120px;
+}
+
+.evy_rltn_edit_dlt a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.evy_rltn_edit_dlt a:last-child{
+    margin-bottom: 0px;
+}
+
+.evy_rltn_icon2:hover .evy_rltn_edit_dlt, .evy_rltn_icon2:focus .evy_rltn_edit_dlt, .evy_rltn_icon2:active .evy_rltn_edit_dlt{
+    display: block !important;
+}
+
+.evy_rltn_img_upload{
+    display: none;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -167px -333px;
+    width: 33px;
+    height: 31px;
+    cursor: pointer;
+}
+
+.evy_rltn_img:hover .evy_rltn_img_upload{
+    display: block;
+}
+
+.evy_rltn_cl01 .evy_icons{
+    margin: 0px;
+    right: 8px;
+}
+
+.evy_rltn_cl01 .evy_icons .evy_rltn_icon3 i{
+    width: 24px;
+    height: 24px;
+    background-position: -158px -910px;
+}
+
+.evy_rltn_icon3 i{ /*connect icon*/
+    background-position: 0px -333px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+#evy_rltn_icon4 i{
+    display: inline-block;
+    width: 24px;
+    height: 23px;
+    /*background-position: -10px -1316px;*/
+    background-position: -141px -2666px;
+    position: relative;
+    top: 2px;
+}
+
+#evy_rltn_icon5 i{
+    background-position: -65px -333px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+#evy_rltn_icon7 i{
+    background-position: -169px -377px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.evy_rltn_icon8 i{ /*delete icon*/
+    background-position: -13px -787px;
+    width: 13px;
+    height: 16px;
+    display: inline-block;
+}
+
+.evy_rltn_icon9 i{
+    background-position: -8px -3062px;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.evy_rltn_cl01 .evy_rltn_icon9 i{
+    background-position: -50px -3108px;
+    width: 28px;
+    height: 28px;
+}
+
+.evy_rltn_icon10 i{
+    background-position:-34px -3066px;
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+}
+
+.evy_rltn_icon11 i{
+    background-position: -38px -3090px;
+    width: 22px;
+    height: 13px;
+    display: inline-block;
+}
+
+.evy_rltn_cl01  .evy_rltn_icon11 i{
+    background-position: -6px -3108px;
+    width: 28px;
+    height: 28px;
+}
+
+.evy_rltn_icon12 i{
+    background-position: -152px -887px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.evy_rltn_icon13 i{
+    background-position: -122px -887px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.evy_relationship .form-group{
+    margin-bottom: 0px;
+    float: left;
+    width: 30%;
+    margin-top: 1px;
+}
+
+.evy_relationship select{
+    width: 65%;
+    height: 28px;
+    padding: 4px 12px;
+    min-width: 140px;
+    background-color: #D0D1D6;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.evy_relationship .evy_tab_cl01{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.evy_relationship .evy_tab_cl01 a{
+    text-decoration: none;
+    color: #00719e;
+}
+
+#evy_relationship_id01 h4 {
+    float: left;
+}
+
+#evy_relationship_id01 button{
+    float: right;
+}
+
+.evy_relationship_cl01{
+    /*overflow: hidden;*/
+    /*padding-bottom: 40px;*/
+}
+
+/*.evy_relationship_cl01.evy_overview{
+    padding-bottom: 40px;
+}*/
+
+.evy_relationship_cl01 .panel{
+    background-color: #F5F5F5;
+    border-radius: 0px;
+}
+
+.evy_relationship_cl01 .panel .panel-heading{
+    padding: 20px;
+}
+
+.evy_relationship_cl01 .panel-group{
+    margin-bottom: 20px;
+}
+
+.evy_relationship_cl01 .panel .panel-body{
+    padding: 0px 10px;
+    border: none !important;
+}
+
+.evy_relationship_cl01 .panel .panel-title{
+    font-size: 16px;
+}
+
+.evy_community_content_main_cl01{
+    margin-bottom: 20px;
+    /*overflow: hidden;*/
+    background-color: #FFF;
+    position: relative;
+}
+
+.evy_relationship_cl01 .panel .panel-heading a, .evy_community_invite_cl01 .panel .panel-heading a{
+    display: inline-block !important;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.evy_relationship_cl01 .panel .panel-heading a:after, .evy_community_invite_cl01 .panel .panel-heading a:after{
+    background-image: url("../images/evy_sprite_41.png");
+    background-repeat: no-repeat;
+    background-position: -77px 0px;
+    width: 11px;
+    height: 6px;
+    float: right;
+    color: grey;
+    display: block;
+    content: "";
+}
+
+.evy_relationship_cl01 .panel .panel-heading a.collapsed:after, .evy_community_invite_cl01 .panel .panel-heading a.collapsed:after{
+    content:"";
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -77px 0px;
+    width: 11px;
+    height: 6px;
+    background-repeat: no-repeat;
+}
+
+#evy_rltn_unassigned .evy_rltn_cl01{
+    background-color: #F8F8F8;
+}
+
+/*New styles merin*/
+.evy_rltnshp_cl01{
+    margin-right: 0px;
+}
+
+.evy_rltnshp_cl01 select{
+    width: 100% !important;
+    height: 30px;
+    padding: 4px 5px;
+    background-color: #00719e;
+    color: #fff;
+}
+
+.evy_rltnshp_cl01 .evy_sub_list{
+    overflow: hidden;
+    width: 200px;
+    border-radius: 2px;
+    min-height: 31px;
+}
+
+.evy_insight_request .evy_rltnshp_cl01 .evy_sub_list{
+    width: 465px;
+}
+
+.evy_insight_request .evy_rltnshp_cl01 .evy_sub_listcl01{
+    width: 50%;
+}
+
+.evy_insight_request .evy_rltnshp_cl01 .evy_sub_listcl02{
+    width: 50%;
+}
+
+.evy_insight_request .evy_rltnshp_cl01 .evy_sub_list .radio{
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.evy_insight_request .evy_sub_listcl03 a{
+    padding: 0px;
+}
+
+.evy_rltnshp_cl01 .evy_sub_listcl01{
+    float: left;
+    width: 50%;
+}
+
+.evy_rltnshp_cl01 .evy_sub_listcl02{
+    float: left;
+    width: 50%;
+}
+
+.evy_rltnshp_cl01 .evy_sub_list button{
+    background-color: #F6F6F6;
+    color: #a6a6a6;
+    padding: 0px 20px;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #DBDBDB;
+}
+
+.evy_rltnshp_cl01 .evy_sub_list button.active, .evy_rltnshp_cl01 .evy_sub_list button:active{
+    background-color: #fff;
+    color: #4d4d4f;
+    font-weight: bold;
+    border: 1px solid #DBDBDB;
+    border-bottom: none;
+}
+
+.evy_sub_listcl03{
+    float: right;
+}
+
+.evy_sub_listcl03 a{
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.evy_rltnshp_cl01 .dropdown{
+    width: 125px;
+}
+
+.evy_rltnshp_cl01 .dropdown label{
+    width: 125px;
+    background-color: #00719e;
+    color: #fff;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    text-align: left;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.evy_rltnshp_cl01 .dropdown label .caret{
+    float: right;
+    margin-top: 8px;
+    border-top: 6px solid;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.evy_rltnshp_cl01 .dropdown-menu{
+    min-width: 125px;
+    margin-top: 0px;
+    border-radius: 0px;
+    background-color: #00719e;
+    color: #fff;
+}
+
+.evy_rltnshp_cl01 .dropdown-menu>li>a{
+    padding: 3px 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.evy_rltnshp_cl01 .dropdown-menu>li>a:hover{
+    background-color: #00719e;
+    color: #000;
+}
+
+.evy_rltnshp_cl02{
+    float: left;
+    padding: 5px 15px 5px 0px;
+}
+
+.evy_rltnshp_cl06{
+    float: left;
+    border-left: 1px solid #dbdbdb;
+    padding: 0px 15px 0px 15px;
+    margin-top: 6px;
+}
+
+.evy_rltnshp_cl02 a{
+    color: #00719e;
+    padding-right: 4px;
+}
+
+.evy_rltnshp_cl03{
+    float: left;
+    /*border-left: 1px solid #dbdbdb;*/
+    padding-left: 15px;
+    /*padding: 7px 0px 5px 15px;*/
+    padding: 6px 0px 5px 0px;
+}
+
+.evy_expand{
+    float: right !important;
+    background-position: -140px -333px !important;
+    width: 15px;
+    height: 15px !important;
+    background-color: transparent !important;
+    margin-top: 12px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.evy_collapse{
+    float: right !important;
+    background-position: -46px -787px !important;
+    width: 15px;
+    height: 15px !important;
+    background-color: transparent !important;
+    margin-top: 12px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.evy_import{
+    background-position: -130px -377px !important;
+    width: 19px;
+    height: 15px !important;
+    background-color: transparent !important;
+    background-image: url("../images/evy_sprite_41.png") !important;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+.evy_rltnshp_cl04{
+    float: left;
+}
+
+.evy_rltnshp_cl05{
+    float: right;
+    margin: 0px 15px;
+    margin-right: 0px;
+}
+
+.evy_rltnshp_cl04 a{
+    padding-right: 15px;
+    border-right: 2px solid #dbdbdc;
+    color: #00719e;
+    cursor: pointer;
+    padding-right: 15px;
+    margin-right: 10px;
+}
+
+/*.evy_rltnshp_cl04 a:first-child{
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}*/
+
+.evy_rltnshp_cl04 a:last-child{
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.evy_rltnshp_cl04 .modal-dialog{
+    width: 450px;
+}
+
+.evy_rltnshp_cl04 .modal-dialog .modal-body{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.evy_rltnshp_cl04 .modal-dialog .btn_form_cancel{
+    margin-left: 0px;
+}
+
+.evy_rltnshp_grid_cl01 .bottom.top{
+    background-color: #F5F5F5;
+    max-height: 45px; 
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_rltngrid_footer.grid_top_footer{
+    padding: 10px 20px 5px 20px;
+    min-height: 44px;
+    margin-top: 2px;
+    border-top: 1px solid #dbdbdb;
+    text-align: right;
+    background-color: #fff;
+}
+
+.evy_rltngrid_footer.grid_top_cnctnfooter{
+    margin-top: 0px;
+    border-top: none;
+    
+}
+
+.evy_rltnshp_grid_cl01 .bottom.top .evy_rltnship_buttons{
+    /*padding-top: 15px;*/
+    margin-right: 17px;
+}
+
+.evy_rltnshp_grid_cl01 .panel{
+    border-radius: 0px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid{
+    border-left: none;
+    border-right: none;
+}
+
+.evy_rltnshp_grid_cl01 .panel-body{
+    padding: 0px 10px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-row:nth-child(even) .ui-grid-cell{
+    background-color: #fff;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell .sortable{
+    padding-left: 5px;
+    padding-top: 0px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell{
+    /*border-right: none;*/
+    vertical-align: middle;
+    height: 39px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell .ui-grid-column-resizer.left{
+    left: -5px;
+    border-right: 1px solid #dbdbdb;
+    height: 40px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:last-child .ui-grid-column-resizer.right{
+    border-right: none;   
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(1){
+    min-width: 65px !important;
+    max-width: 65px !important;
+    padding-top: 11px;
+    padding-left: 44px;
+    vertical-align: sub;
+    border-right: 1px solid #dbdbdb;
+    height: 43px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-coluiGrid-000R{
+    padding-top: 7px;
+}
+
+/*
+.evy_rltnshp_grid_cl01 .ui-grid-coluiGrid-000D{
+    max-width: 200px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(2),
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(2){
+    max-width: 186px !important;
+    min-width: 186px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(3),
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(3){
+    max-width: 186px !important;
+    min-width: 186px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(4),
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(4){
+    max-width: 248px !important;
+    min-width: 248px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(5){
+    max-width: 248px !important;
+    min-width: 248px !important;
+}
+
+.evy_rltnshp_grid_cl01.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(5){
+    max-width: 255px !important;
+    min-width: 255px !important;
+}
+
+.evy_rltnshp_cnctn_grid.evy_rltnshp_grid_cl01.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(5){
+    max-width: 280px !important;
+    min-width: 280px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(5){
+    max-width: 254px !important;
+    min-width: 254px !important;
+}
+
+.evy_rltnshp_cnctn_grid.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(5){
+    max-width: 280px !important;
+    min-width: 280px !important;
+
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell:nth-child(6),
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(6){
+    max-width: 200px !important;
+    min-width: 200px !important;
+}
+
+.evy_rltnshp_cnctn_grid.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:nth-child(6){
+    max-width: 205px !important;
+    min-width: 205px !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-coluiGrid-000A{
+    max-width: 200px !important;
+}
+*/
+
+.evy_rltnshp_grid_cl01 .ui-grid-header-cell-primary-focus{
+    padding: 0px 5px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-filter-container{
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row{
+    border-bottom: 1px solid #dbdbdb !important;
+    overflow: hidden;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row:last-child{
+    border-bottom: none !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell{
+    padding-left: 4px;
+    min-height: 35px;
+    background-color: #fff !important;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell span{
+    display: block;
+    padding-top: 3px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-selection-row-header-buttons{
+    /*opacity: 1;*/
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell.ui-grid-row-header-cell{
+    border-bottom: 0px;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport .ui-grid-row .ui-grid-cell:first-child{
+    min-width: 65px !important;
+    max-width: 65px !important;
+    position: relative;
+    overflow: visible;
+}
+
+/*.evy_rltnshp_grid_cl01  .ui-grid-icon-up-dir, .evy_rltnshp_grid_cl01  .ui-grid-icon-down-dir{
+    display: none;
+}*/
+
+.evy_rltnshp_grid_cl01  .ui-grid-header-cell .ui-grid-sort-priority-number{
+    display: none;
+}
+
+.evy_rltnshp_grid_cl01 .grid{
+    /*height: auto !important;*/
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-viewport{
+    /*height: auto !important;*/
+    /*overflow-y: auto !important;*/
+    /*overflow: visible !important;*/
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-top-panel{
+    background: #fff;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-canvas{
+    border-bottom: 1px solid #dbdbdb;
+    height: auto !important;
+    padding-top: 0px;
+    /*overflow: visible !important;*/
+}
+
+.evy_rltnshp_grid_cl01 .evy_rltn_icon2, .evy_rltnshp_grid_cl01 #evy_rltn_icon1, .evy_rltnshp_grid_cl01 .evy_rltn_icon3,
+.evy_rltnshp_grid_cl01 #evy_rltn_icon4, .evy_rltnshp_grid_cl01 #evy_rltn_icon5, .evy_rltnshp_grid_cl01 #evy_rltn_icon7,
+.evy_rltnshp_grid_cl01 .evy_rltn_icon8, .evy_rltnshp_grid_cl01 .evy_rltn_icon9, .evy_rltnshp_grid_cl01 .evy_rltn_icon10,
+.evy_rltnshp_grid_cl01 .evy_rltn_icon11, .evy_rltnshp_grid_cl01 .evy_rltn_icon12, .evy_rltnshp_grid_cl01 .evy_rltn_icon13{
+    top: 4px;
+    position: relative;
+}
+
+.evy_rltngrid_footer{
+    padding: 14px 15px 10px 20px;
+    background-color: #f5f5f5;
+    min-height: 50px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.evy_per_page{
+    margin-right: 30px;
+}
+
+.evy_rltngrid_footer select#grid-items-per-page{
+    background: #fff;
+    border-radius: 5px;
+    width: 53px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 3px;
+    margin-right: 25px;
+}
+
+.evy_rltngrid_footer select#grid-items-per-page:disabled{
+    cursor: not-allowed;
+}
+.evy_rltngrid_footer_top{
+    float: left;
+}
+
+.evy_rltngrid_footer_top .evy_invite, .evy_rltngrid_footer_top .evy_cnct{
+    margin: 0px;
+}
+
+.evy_rltngrid_footer_top .evy_cnct{
+    margin-left: 10px;
+}
+
+.evy_rltngrid_footer .evy_rltnship_buttons{
+    padding-top: 0px;
+    margin-right: 0px;
+}
+
+.evy_rltngrid_footer .evy_rltnship_buttons .btn{
+    background-color: #f5f5f5;
+    border: 1px solid #dbdbdb;
+    margin: -3px;
+    /*border-radius: 0px;*/
+    /*padding: 3px 20px;*/
+    /*height: 30px;*/
+    border-radius: 50%;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.evy_rltngrid_footer .evy_rltnship_buttons .btn.active{
+    background-color: #fff;
+}
+
+.evy_rltngrid_footer .evy_rltnship_buttons .btn i{
+    color: #4D4D4F;
+}
+
+.evy_rltngrid_footer .evy_rltnship_buttons .btn:focus {
+    outline: none;
+}
+
+.evy_rltngrid_footer .evy_triangle-left{
+    background-position: -93px -882px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.evy_rltngrid_footer .evy_triangle-right{
+    background-position: -104px -882px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.evy_invite, .evy_cnct{
+    float: left;
+    margin: 15px 15px 7px 20px;
+    border-right: 1px solid #dbdbdb;
+    padding-right: 10px;
+    position: relative;
+}
+
+.evy_invite , .evy_cnct{
+    border-right: none;
+    padding-right: 0px;
+    min-width: 25px;
+    display: block;
+    width: 25px;
+}
+
+.evy_cnct{
+    border: none;
+    margin-left: 10px;
+}
+
+.evy_rltnshp_grid_cl01 .evy_invite input[type=checkbox], .evy_rltnshp_grid_cl01 .evy_cnct input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    top: 1px;
+    left: 0px;
+}
+
+.evy_rltnshp_grid_cl01 .checkbox-custom-label{
+    margin: 0px;
+    vertical-align: top;
+}
+
+.evy_rltnshp_grid_cl01 .checkbox-custom + .checkbox-custom-label:before{
+    vertical-align: top;
+}
+
+.evy_rltnshp_grid_cl01 .ui-grid-icon-ok:before{
+    background: #f58220;
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px;
+    border: none;
+    font-weight: 100;
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 1px;
+    /*left: 5px;*/
+    left: -4px;
+}
+
+.evy_invite span{
+    background-position: 0px -417px;
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+}
+
+.evy_cnct span{
+    background-position: -41px -417px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.evy_rltnship_buttons{
+    float: right;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.evy_rltnship_buttons .btn{
+    background-color: #f58220;
+    border: 1px solid #f58220;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.evy_rltnship_buttons .btn-default[disabled]{
+    background-color: #f5f5f5;
+    border: 1px solid #dbdbdc;
+    color: #c8c8c8;
+}
+
+.btn-default[disabled]{
+    background-color: #f5f5f5 !important;
+    border: 1px solid #dbdbdc !important;
+    color: #c8c8c8 !important;
+}
+
+.evy_expand_cl01{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    padding: 0px 10px;
+}
+
+.evy_expand_cl01 .evy_aboutme_section{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.evy_expand_cl01 .evy_aboutme_content,.evy_expand_cl01 .evy_aboutme_tab{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0px;
+}
+
+.evy_expand_cl01 .ui-grid-header-viewport, .evy_expand_cl01 .ui-grid-viewport{
+    width: 100% !important;
+}
+
+/*new styles merin ends*/
+
+/*Relationship page styles ends*/
+
+/*Manage Networks page styles starts*/
+.evy_mng_ntwrk{
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    min-height: 50px;
+    padding: 15px 20px !important;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.evy_mng_ntwrk .modal-dialog{
+    width: 380px;
+}
+
+.evy_mng_ntwrk_heading{
+    float: left;
+}
+
+.evy_mng_ntwrk_heading h4{
+    margin: 0px;
+}
+
+.evy_mng_ntwrk_add{
+    float: right;
+}   
+
+.add_modal-footer .evy_mng_ntwrk_add{
+    float: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.evy_mng_ntwrk_add a{
+    color: #00719e;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#evy_mng_ntwrk_table{
+    clear: both;
+    background-color: #fff;
+    min-height: 700px;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+}
+
+#evy_mng_ntwrk_table table{
+    width: 100%;
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#evy_mng_ntwrk_table table tr th{
+    height: auto;
+    padding: 10px;
+    border-bottom: none;
+}
+
+#evy_mng_ntwrk_table table tr td{
+    padding: 10px;
+}
+
+#evy_mng_ntwrk_table table tr td, #evy_mng_ntwrk_table table tr th{
+    border-right: none;
+    background-color: #fff !important;
+}
+
+.evy_ntwrk_add_cl01{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.evy_ntwrk_add_cl01 .form-group .form-control{
+    border-radius: 0px;
+}
+
+#evy_mng_ntwrk_table table tr td:nth-child(1), #evy_mng_ntwrk_table table tr th:nth-child(1){
+    padding-left: 20px;
+    border-left: none;
+    width: 20%;
+}
+
+#evy_mng_ntwrk_table table tr td:nth-child(1), #evy_mng_ntwrk_table table tr th:last-child{
+    width: 8%;
+}
+
+/*Manage Networks page styles starts*/
+
+.evy_aboutme_cl02 #evy_updated_pfl{
+    background-color: #4d4d4f;
+}
+
+.evy_aboutme_cl02 #evy_updated_pfl label{
+    color: #fff;
+}
+
+.evy_updated_pfl_bday{
+    font-weight: bold;
+    color: #f58220;
+    font-size: 16px !important;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.evy_updated_info {
+    word-wrap: break-word;
+}
+
+.evy_updated_value{
+    color: #000 !important;
+}
+
+.evy_clear:nth-child(3n+1){
+    clear: both;
+}
+
+.evy_clear:nth-child(1){
+    clear: none;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.gm-style .gm-style-iw{
+    width: 120px !important;
+}
+
+.evy_map_count{
+    border-top: 1px solid #dbdbdc;
+    clear: both;
+    height: 33px;
+    position: relative;
+}
+
+.evy_map_count_cl01{
+    width: 50%;
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0px;
+    height: 32px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.evy_map_count_cl01:first-child{
+    color: #6D9109;
+    border-right: 1px solid #dbdbdb;
+}
+
+.evy_map_count_cl01:nth-child(2){
+    color: #3AACB6;
+    background-color: #f5f5f5;
+}
+
+.evy_map_cnctn_count{
+    color: #6D9109;
+}
+
+.evy_map_cntct_count{
+    color: #3AACB6 !important;
+}
+
+.evy_map_total{
+    background-color: #78787A;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #5f5f60;
+    border-top: none;
+}
+
+.carousel{
+    border-left: 1px solid #dbdbdb;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* display: table-cell;/ */
+}
+
+.carousel-control.right, .carousel-control.left{
+    background: none;
+}
+
+.carousel-control.right{
+    right: 8px;
+}
+
+.carousel-inner .item{
+    -webkit-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev, .carousel-control .icon-next{
+    font-size: 15px;
+    color: #f58220;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.carousel-control:hover, .carousel-control:focus, .carousel-control{
+    opacity: 1;
+    width: auto;
+}
+
+.glyphicon-chevron-left,
+.evy_insights_carousal_cl01 .glyphicon-chevron-left{
+    content: '';
+    background-position: -176px -617px;
+    width: 30px;
+    height: 21px;
+}
+
+.glyphicon-chevron-right,
+.evy_insights_carousal .glyphicon-chevron-right{
+    content: '';
+    background-position: -120px -617px;
+    width: 30px;
+    height: 21px;
+}
+
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before, .evy_insights_carousal_cl01 .glyphicon-chevron-left:before,
+.evy_insights_carousal_cl01 .glyphicon-chevron-right:before{
+    content: none;
+}
+
+.evy_text_hd h4{
+    font-size: 18px !important;
+    color: #4d4d4f !important;
+    font-weight: bold !important;
+}
+
+.evy_text_hd label{
+    font-size: 12px;
+}
+
+.evy_video_txt{
+    font-size: 12px;
+}
+
+.evy_compare{
+    background-position: -52px -617px;
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+    top: 4px;
+    position: relative;
+}
+
+.evy_switch_map{
+    float: left;
+    padding-top: 3px;
+    display: inline-block;
+}
+
+.evy_map_change{
+    background-position: -10px -658px;
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    float: right;
+}
+
+.evy_country_view{
+    background-color: #b3d1ff;
+    min-height: 455px;
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+    clear: both;
+}
+
+.evy_country_view .evy_country_view_count_cl01, .evy_country_view .evy_country_view_count_cl02{
+    height: 80px !important;
+}
+
+th.evy_cnctn, td.evy_cnctn, .evy_report_clmnname.evy_cnctn, .evy_report_clmnvlue.evy_cnctn{
+    color: #6D9109;
+    border-right: 1px solid #dbdbdc;
+    border-bottom: 1px solid #dbdbdc !important;
+}
+
+th.evy_cntct, td.evy_cntct, .evy_report_clmnname.evy_cntct, .evy_report_clmnvlue.evy_cntct{
+    color: #3AACB6;
+    border-right: 1px solid #dbdbdc;
+    border-bottom: 1px solid #dbdbdc !important;
+}
+
+td.evy_cntct{
+    background-color: #F5F5F5;
+}
+
+th.evy_total, td.evy_total{
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+.evy_report_cntry_view{
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.evy_report_cntry_view .head{
+    float: left;
+}
+
+.evy_report_cntry_view .col-md-11, .evy_report_cntry_view .col-md-4, .evy_report_cntry_view .col-md-5, .evy_report_cntry_view .col-md-2,
+.evy_report_cntry_view .col-md-12, .evy_report_cntry_view .col-md-3, .evy_report_cntry_view .col-md-1{
+    padding: 0px;
+}
+
+.evy_report_username{
+    border-left: 1px solid #dbdbdc;
+    height: 45px;
+    color: #f58220;
+    font-size: 16px;
+    padding: 10px 15px !important;
+    border-top: none;
+    left: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.evy_report_username:last-child{
+    color: #00719e;
+}
+
+.evy_report_cntry_view_cl01{
+    height: 45px;
+    overflow: hidden;
+}
+
+.evy_report_clmnname{
+    padding: 12px 15px !important;
+    font-weight: bold;
+    border-right: 1px solid #dbdbdc;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdc;
+}
+
+.evy_report_cntryname, .evy_report_cntryvlue{
+    text-align: left !important;
+    border-bottom: 1px solid #dbdbdc;
+}
+
+.evy_report_cntryvlue{
+    font-weight: normal !important;
+}
+
+.evy_report_clmnvlue{
+    padding: 12px 15px !important;
+    border-right: 1px solid #dbdbdc;
+    font-weight: bold;
+    text-align: center;
+    height: 45px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.evy_report_clmnvlue.evy_cntct{
+    background-color: #f5f5f5;
+}
+
+.evy_report_clmnvlue.evy_total{
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #dbdbdc !important;
+}
+
+.evy_report_clmnvlue.evy_ctryname, .evy_report_clmnname.evy_ctryname{
+    text-align: left;
+}
+
+.evy_grndtotal{
+    height: 45px;
+    background-color: #4d4d4f;
+    color: #fff;
+    padding-top: 13px !important;
+    text-align: center;
+    border-bottom: 1px solid #606060;
+    left: 1px;
+}
+
+.evy_grndtotalvlue{
+    background-color: #4d4d4f;
+    color: #fff;
+    padding: 12px 15px !important;
+    height: 45px;
+    text-align: center;
+    border-bottom: 1px solid #606060;
+    left: 1px;
+}
+
+.evy_clmn_border{
+    border: none !important;
+}
+
+.evy_respnsv_total{
+    display: none;
+    background-color: #4d4d4f;
+    color: #fff;
+    padding: 12px 15px !important;
+    height: 45px;
+    overflow: hidden;
+}
+
+.evy_clmn_border_btm{
+    border-bottom: 1px dashed #a6a6a6;
+}
+
+.evy_cntct_ph.evy_clmn_border_btm{
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.evy_cntct_ph.evy_clmn_border_btm:first-child{
+    padding-top: 0px;
+}
+
+.evy_clmn_border_top{
+    border-top: 1px solid #dbdbdc;
+}
+
+.evy_country_view_cl01{
+    background-color: #b3d1ff;
+    float: left;
+    height: 120px;
+    width: 18.67%;
+    margin: 0px 20px 0px 0px;
+    margin-bottom: 20px;
+}
+
+.evy_country_view_cl01:nth-child(5n){
+    margin-right: 0px !important;
+}
+
+.evy_country_view_cl01:nth-child(3n){
+    border-right: none;
+}
+
+.evy_country_view_cl02{
+    background-color: #f5f5f5;
+    height: 120px;
+    text-align: center;
+    box-shadow: 1px 1px 3px #797979;
+}
+
+.evy_country_view_count{
+    display: block;
+    padding-top: 35px;
+    height: 81px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_country_view .evy_country_view_count span{
+    display: inline-block;
+    font-size: 18px;
+    color: #6D9109;
+    font-weight: bold;
+    border-right: 1px solid #dbdbdb;
+    padding-right: 5px;
+}
+
+.evy_country_view .evy_country_view_count span:last-of-type{
+    color: #3AACB6;
+    border: none;
+    padding-right: 0px;
+}
+
+.evy_country_view_name{
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.evy_country_view_name span{
+    display: inline-flex;
+    width: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_name span{
+    max-width: 47%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_name span:last-of-type{
+    text-align: left;
+}
+
+.evy_cmparsn_report{
+    border: 1px solid #dbdbdc;
+    min-height: 50px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.evy_cmparsn_report h4{
+    margin: 0px;
+}
+
+.evy_cmparsn_report_cl02{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dbdbdc;
+    border-bottom: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.evy_cmparsn_report_cl02 .evy_cmparsn_report_cl04{
+    border: 1px solid #dbdbdc;
+    padding: 0px;
+    float: right;
+    margin-right: 25px;
+}
+
+.evy_cmparsn_report_cl02 .evy_country_view_cl02{
+    box-shadow: none;
+    height: auto;
+}
+
+.evy_cmparsn_report_cl02 .evy_country_view_count_cl01, .evy_cmparsn_report_cl02 .evy_country_view_count_cl02{
+    padding: 15px 25px !important;
+}
+
+.evy_cmparsn_report_cl02 .evy_country_view_count{
+    height: 51px;
+}
+
+.evy_cmparsn_report_cl02 .evy_country_view_count_cl01 span, .evy_cmparsn_report_cl02 .evy_country_view_count_cl02 span{
+    font-size: 25px;
+}
+
+.evy_cmparsn_report_cl02 .evy_country_view_name{
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: normal;
+}
+
+.evy_cmparsn_report_cl03{
+    margin: auto;
+    width: 550px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    left: 28%;
+}
+
+.evy_cmparsn_report_cl03 img{
+    width: 82px;
+    height: 82px;
+    border: 1px solid #dbdbdc;
+    object-fit: cover;
+}
+
+.evy_cmparsn_report_usr1{
+    color: #f58220;
+    font-size: 16px;
+    display: inline-block;
+    width: 124px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.evy_cmparsn_report_usr2{
+    color: #00719e;
+    font-size: 16px;
+    display: inline-block;
+    width: 124px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.evy_cmparsn_report_cl04{
+    float: left;
+    border-right: 1px solid #dbdbdc;
+    padding: 30px;
+    padding-right: 60px;
+}
+
+
+.evy_cmparsn_report_cl04 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.evy_cmparsn_report_cl05{
+    background-color: #f58220;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.evy_cmparsn_report_cl06{
+    padding: 30px 10px;
+    text-align: right;
+    float: right;
+    right: 15px;
+    top: 15px;
+    position: absolute;
+}
+
+.evy_cmparsn_report_cl06 .evy_rltn_edit_dlt_cl01{
+    left: 0;
+}
+
+.evy_country_view_count_cl01, .evy_country_view_count_cl02{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 80px;
+    padding: 25px 10px;
+}
+
+.evy_cmparsn_report_cl04 .evy_country_view_count_cl01 span{
+    color: #6D9109;
+}
+
+.evy_cmparsn_report_cl04 .evy_country_view_count_cl02 span{
+    color: #3AACB6;
+}
+
+.evy_country_view_count_cl01{
+    background-color: #fff;
+    border-right: 1px solid #dbdbdc;
+}
+
+.evy_cmparsn_report_cl01{
+    position: relative;
+}
+
+.evy_country_view_count{
+    padding: 0px;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_count_cl02{
+    padding: 10px !important;
+    padding-bottom: 0px;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 50px;
+    position: relative;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view .evy_country_view_cl02, .evy_cmparsn_report_cl01 .evy_country_view_cl01{
+    height: 125px;
+}
+
+.evy_country_view_count_cl03{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.evy_country_view_count_cl04{
+    background-color: #E8E8E8;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    padding: 5px;
+    padding-top: 10px;
+    right: 0px;
+    text-align: center;
+}
+
+.evy_country_view_count_cl05{
+    left: 0px;
+    right: auto;
+    border-left: 1px solid #fff;
+}
+
+.evy_country_view_count_cl04 span{
+    color: #4d4d4f !important;
+}
+
+.arrow{
+    position: relative;
+    top: -1px;
+    width: 14px;
+    height: 9px;
+    background-position: -114px -843px;
+}
+
+.evy_country_view_count_cl05 .arrow{
+    left: 46%;
+    background-position: -114px -843px;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_count_cl01{
+    padding: 10px !important;
+    padding-bottom: 0px;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    border-right: 1px solid #dbdbdc;
+    height: 50px;
+    position: relative;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_name{
+    background-color: #fff;
+}
+
+.evy_cmparsn_report_cl01 .evy_country_view_cl01{
+    border: none;
+}
+
+.evy_cmparsn_report_hd{
+    width: 220px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.evy_cmprsn_icon{
+    background-position: -178px -729px;
+    width: 20px;
+    height: 34px;
+    display: inline-block;
+    margin: 0px 14px;
+    position: relative;
+    top: 15px;
+}
+
+.evy_cmprsn_icon2{
+    width: 58px;
+    height: 58px;
+    background-position: -83px -776px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.evy_cmprsn_arrow{
+    display: inline-block;
+    background-position: -147px -729px;
+    width: 21px;
+    height: 11px;
+    position: relative;
+    top: -21px;
+    left: 110px;
+}
+
+.evy_cmprsn_cnctn{
+    display: inline-block;
+    float: right;
+    background-position: -102px -729px;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.evy_report_tile{
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+.evy_report_tileCustom{
+    border: 1px solid #dddddd;
+    border-left: none;
+    margin-bottom: 0px;
+    width: 170px;
+    float: left;
+    height: 295px;
+    position: relative;
+}
+
+.evy_recent_reports_cl01Custom h5{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 5px;
+    /* width: 80%; */
+    width:100% !important;
+    margin-top:45px;
+    float: left;
+    min-height: 15px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+}
+
+.evy_report_tile_cl01{
+    float: left;
+    width: 48%;
+    /*width: 50%;*/
+    padding: 15px;
+    border-right: 1px solid #dbdbdc;
+    text-align: center;
+    background-color: #fff
+}
+
+.evy_report_tile_cl03{
+    border: none !important;
+    background-color: #f5f5f5;
+}
+
+.evy_report_tile_cl03 img{
+    width: 115px;
+}
+
+.evy_report_tile_cl01 img{
+    width: 114px;
+    height: 110px;
+    border: 1px solid #dbdbdb;
+    object-fit: cover;
+}
+
+.evy_report_tile_11 .evy_report_tile_cl01 img{
+    width: 114px;
+}
+
+.evy_report_tile_cl01 img{
+    /*width: 110px;*/
+    width: 100%;
+    max-width: 110px;
+}
+
+.evy_report_tile_usr1, .evy_report_tile_usr2{
+    top: 6px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.evy_report_tile_usr1{
+    font-size: 14px;
+    color: #f58220;
+    height: 20px;
+}
+
+.evy_report_tile_usr1 a{
+    font-size: 14px;
+    color: #f58220;
+}
+
+.evy_report_tile_usr2 a{
+    color: #00719e;
+    font-size: 14px;
+}
+
+.evy_report_tile_cl02{
+    position: absolute;
+    right: 10px;
+    padding-top: 5px;
+}
+
+.evy_report_tile_cl02 .evy_rltn_edit_dlt{
+    min-width: 115px;
+}
+
+.evy_report_tile .evy_cmprsn_icon{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+.evy_cmprsn_icon2{
+    position: absolute;
+    left: 38%;
+    top: 26%;
+}
+
+.evy_mng_nw_dtl.evy_insight_request{
+    border:none;
+    padding: 10px 15px;
+    /*padding-left: 10px;*/
+    margin: 0px;
+    min-height: 33px;
+    overflow: visible;
+    word-wrap:break-word;
+    margin: -15px -15px 20px -15px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_mng_nw_dtl.evy_insight_request h4{
+    margin-bottom: 0px;
+}
+
+.evy_mng_nw_dtl.evy_insight_request .evy_edit_overflow{
+    top: 10;
+}
+
+.evy_cmmnty_srch{
+    border: 1px solid #dbdbdb;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.evy_report_tile_1{
+    overflow: hidden;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+}
+.evy_report_tile_1Custom{
+    overflow: hidden;
+    position: relative;
+    height:90%
+}
+.evy_recent_reports_cl02custom{
+    float: left;
+    width: 115px;
+    position: relative;
+    height: 230px;
+}
+
+.evy_report_tile_cl01Custom{
+    border-right: 1px solid #dbdbdc;
+    text-align: center;
+    background-color: #fff;
+}
+
+.evy_recent_reports_tileCustom{
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.evy_cnctn_rqst_cl03Custom{
+        width: 100%;
+    height: 10%;
+    background-color: white;
+        text-align: center;
+}
+.evy_report_tile_cl01Custom{
+        width: 100%;
+}
+
+.evy_report_tile_cl01Custom img{
+    width:100%;
+}
+
+.evy_recent_reports_tileCustom > a{
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    text-decoration: underline;
+    color: #686869;
+        font-weight: 600;
+}
+.evy_recent_reports_cl01Custom{
+    width: 76%;
+    margin: auto;
+    text-align: center;
+}
+
+.evy_recent_reports_cl01Custom > h5{
+    color:#f58220;
+}
+
+.evy_recent_reports_tileCustom span {
+	background: url('../images/sprite_evy_00.png') no-repeat -13px -787px;
+	width: 13px;
+	height: 16px;
+}
+
+.evy_recent_reports_tileCustom > span:first-child{
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+}
+
+.evy_recent_reports_cl02custom > i{
+    background: url('../images/sprite_evy_00.png') no-repeat -108px -2240px;
+	width: 42px;
+	height: 41px;
+    position: absolute;
+    left: 33%;
+    top: 40%;
+}
+
+.evy_report_tile_cl01MoreThanOne{
+        float: left;
+     width: 100%; 
+     padding: 0px; 
+    border-right: 1px solid #dbdbdc;
+    text-align: center;
+    background-color: #fff;
+}
+
+.evy_report_tile_cl01MoreThanOne > img{
+    width: 57px;
+    height: inherit;
+    object-fit: cover;
+    float: left;
+}
+.evy_report_tile_cl01MoreThanOne > span{
+    width: 57px;
+    height: inherit;
+    object-fit: cover;
+    float: left;
+}
+
+.evy_report_tile .evy_report_tile_1{
+    /*overflow: visible;*/
+}
+
+.evy_report_tile_11 .evy_report_tile_cl01{
+    width: 50% !important;
+}
+
+.evy_report_tile .evy_cnctn_rqst_cl03{
+    margin-top: 0px;
+    text-align: left;
+    padding: 8px 0px;
+    background-color: #E8E8E8;
+    overflow: visible;
+    height: 37px;
+    padding-bottom: 0px;
+}
+
+.evy_report_tile .evy_report_collaboration_criteria{
+    height: 35px;
+    color: #01719F;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.evy_report_tile .evy_report_collaboration_criteria a{
+    color: #01719F;
+}
+
+.evy_report_tile_usr2 .evy_report_collaboration_criteria{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.evy_cnctn_rqst_cl03 .evy_report_time{
+    padding: 0px 10px;
+    position: relative;
+}
+
+.evy_cmparsn_report_cl05 .evy_report_time{
+    padding: 0px 10px;
+    position: absolute;
+    left: 0;
+    font-weight: normal;
+}
+
+.evy_cnctn_rqst_cl03 .evy_report_tile_cl02{
+    padding-top: 0px;
+    display: inline-block;
+}
+
+.evy_report_tile .evy_cnctn_rqst_cl05{
+    width: 63px;
+    float: right;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.evy_report_tile .evy_cnctn_rqst_cl03 #evy_accept i, .evy_report_tile .evy_cnctn_rqst_cl03 .evy_decline i{
+    top: 0px;
+}
+
+.evy_pdf{
+    background-position: -10px -617px;
+    width: 22px;
+    height: 21px;
+    display: inline-block;
+}
+
+.add_img{
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    margin-bottom: 15px;
+}
+
+.add_img input{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    width: 100%;
+    left: 0px;
+    font-size: 0px;
+    height: 32px;
+}
+
+.evy_choose_bg{
+    cursor: pointer;
+}
+
+.evy_choose_bg .add_img{
+    width: 154px;
+    position: absolute;
+    left: 0px;
+    cursor: pointer !important;
+}
+
+.evy_choose_bg .add_img input{
+    width: 150px !important;
+    height: 22px !important;
+    top: 0px;
+    position: relative !important;
+}
+
+.evy_comparewith{
+    margin-bottom: 0px;
+}
+
+.evy_comparewith i.evy_add_contact_bck{
+    top: -3px;
+}
+
+.evy_community_buttons .btn{
+    margin-top: 3px;
+    min-width: 70px;
+}
+
+.evy_community_buttons .btn_form_cancel{
+    background-color: #7a7a7c;
+    border: none;
+    color: #fff;
+    padding: 4px 10px !important;
+    margin-left: 5px;
+}
+
+.evy_community_buttons .btn:hover, .evy_community_buttons .btn:focus, .evy_community_buttons .btn:active{
+    padding: 4px 10px !important;
+}
+
+.evy_community_cl02{
+    border: 1px solid #dbdbdb;
+    padding: 8px 20px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+.evy_community_cl02 a{
+    float: left;
+    margin: 0px ;
+}
+
+.evy_community_cl02 h4{
+    margin: 0px;
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.evy_community_invite_cl01{
+    width: 100% !important;
+    padding: 0px !important;
+}
+
+.evy_community_invite_cl01 .panel-body{
+    padding: 0px;
+}
+
+.evy_community_invite_cl01 .panel-body tr{
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.evy_community_invite_cl01 .panel-body tr:last-child{
+    border-bottom: none;
+}
+
+.evy_community_invite_cl01 .panel-heading{
+    background: none;
+    position: relative;
+    min-height: 40px;
+}
+
+.evy_community_invite_cl01 .panel-group{
+    margin-bottom: 0px;
+}
+
+.evy_community_invite_cl01 .panel{
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    background: none;
+    border-radius: 0px;
+    margin-top: 0px !important;
+}
+
+.evy_community_invite_checkbox .evy_myworld_sidebar_input,
+.evy_community_invite_cl01 .evy_myworld_sidebar_input{
+    padding: 0px;
+    border: none;
+    overflow: visible;
+    z-index: 99;
+    /*top: -3px;*/
+    position: absolute;
+    top: 12px;
+}
+
+/*MYCHANGES*/
+
+.evy_request_report_tile {
+height:295px !important;
+}
+
+.evy_report_tile_1{
+	height:100% !important;
+    border-bottom: none;
+}
+
+.evy_recent_reports_tile{
+    width: 173px !important;
+    float: left !important;
+	height:100% !important;
+    padding:0px !important;
+}
+
+.evy_recent_reports_cl02 {
+	height: 100% !important;
+    width: 115px !important;
+    float: left !important;
+}
+
+.evy_cnctn_rqst_cl03{
+
+    position: absolute !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    left: 0px;
+}
+
+.evy_report_time {
+	width:100% !important;
+    text-align: center;
+}
+
+.evy_report_tile_cl01LessThanFour > .evy_pfl_hover > img{
+        width: 50px !important;
+        float: left;
+}
+
+.evy_recent_reports_cl03 .evy_cnctn_rqst_cl03 {
+    height: 40px;
+    line-height: 30px;
+}
+
+
+
+
+.evy_report_tile_11 .evy_report_tile_cl01{
+	width:100% !important;
+}
+
+.evy_recent_reports_cl02 .evy_report_tile_cl01{
+width:100% !important;
+padding:0px !important;
+}
+
+.evy_recent_reports_cl02 .evy_report_tile_cl01 img{
+	width:100% !important;
+    max-width:100% !important;
+}
+
+.evy_request_report_cl01{
+	padding-left:0px !important;
+}
+
+.evy_cmprsn_icon2{
+    width: 42px;
+    height: 41px;
+    left: 31%;
+    top: 33%;
+    background-position: -108px -2240px !important; 
+}
+
+.evy_stkhldr_icon_cl01{
+    left: 32% !important;
+    top: 32% !important;
+    background: url(../images/sprite_evy_00.png);
+    background-position: -78px -2622px !important;
+    width: 44px !important;
+    height: 43px !important;
+
+}
+
+
+
+.evy_community_invite_checkbox .checkbox-custom-label,
+.evy_community_invite_cl01 .checkbox-custom-label{
+    padding-left: 20px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.evy_community_invite_cl01 .checkbox-custom + .checkbox-custom-label:before{
+    position: absolute;
+    left: 0px;
+}
+
+.evy_community_invite_cl01 .checkbox-custom{
+    top: -2px;
+    left: 0px;
+}
+
+.evy_community_invite_checkbox .checkbox-custom + .checkbox-custom-label:before {
+    left: -5px;
+    top: -5px;
+    position: absolute;
+}
+
+.evy_community_invite_checkbox .checkbox-custom {
+    top: 3px;
+    left: -4px;
+}
+
+th.evy_community_invite_checkbox .checkbox-custom + .checkbox-custom-label:before {
+    left: -5px;
+    top: 0px;
+    position: absolute;
+}
+
+th.evy_community_invite_checkbox .checkbox-custom {
+     top: 28px;
+    left: -4px;
+}
+
+.evy_invited_mngr{
+    width: 100%;
+    margin: auto;
+}
+
+.evy_invited_mngr .evy_community_item, .evy_invited_mngr .evy_community_img{
+    height: 70px;
+}
+
+.evy_invited_mngr .evy_community_details{
+    height: 70px;
+    padding: 5px 10px;
+    color: #4d4d4f;
+}
+
+.evy_invited_mngr .evy_community_img{
+    height: 69px;
+    width: 70px;
+    position: absolute;
+}
+
+.evy_invited_mngr .evy_community_img img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.evy_invited_mngr .evy_community_item{
+    padding-left: 70px;
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px solid #dbdbdc;
+}
+
+.evy_invite-manager_popup .autocomplete{
+    margin: 0px;
+    padding: 0px;
+}
+
+.evy_invite-manager_popup .autocomplete .suggestion-item {
+    padding: 0px;
+}
+
+#evy_compare_table{
+    clear: both;
+    background-color: #fff;
+    min-height: 700px;
+    border: 1px solid #dbdbdb;
+}
+
+#evy_community_invite{
+    clear: both;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+}
+
+#evy_community_invite a{
+    margin-left: 8px;
+}
+
+.evy_community_invite_cl01 .panel-body  a{
+    width: 72%;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block !important;
+}
+
+#evy_community_invite input[type=checkbox]{
+    width: auto!important;
+}
+
+th.evy_community_invite_checkbox .evy_post_shre_input input{
+    top: 25px !important; 
+}
+
+th.evy_community_invite_checkbox input[type=checkbox] {
+    width: auto!important;
+    right: 0px;
+    position: relative;
+}
+
+#evy_compare_table table, #evy_community_invite table{
+    width: 100%;
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-bottom: 0px;
+    table-layout: fixed;
+}
+
+#evy_compare_table table tr th, #evy_community_invite table tr th{
+    height: auto;
+    padding: 15px;
+    border-bottom: none;
+}
+
+#evy_community_invite table tr th{
+    padding-right: 5px;
+}
+
+#evy_compare_table table thead tr th, #evy_community_invite table thead tr th{
+    border-right: none;
+    background-color: #F5F5F5;
+}
+
+#evy_compare_table table tr td, #evy_community_invite table tr td{
+    padding: 10px;
+    min-height: 40px;
+    padding-left: 15px;
+}
+
+#evy_compare_table table tr td, #evy_community_invite table tr td{
+    border-right: none;
+    background-color: #fff !important;
+}
+
+.evy_ntwrk_add_cl01{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.evy_ntwrk_add_cl01 .form-group .form-control{
+    border-radius: 0px;
+}
+
+.evy_profile-birth_date{
+    position: absolute;
+    bottom: 5px;
+    left: 195px;
+}
+
+.evy_profile-view_since{
+    position: absolute;
+    right: 13px;
+    bottom: 5px;
+}
+
+.evy_profile-view_since .evy_profile-view_date, .evy_profile-birth_date .evy_profile-view_date{
+    color: #cbcbcb;
+    font-size: 12px;
+}
+
+#evy_compare_table table tr th a{
+    display: block;
+    color: #4d4d4f;
+    font-weight: normal;
+}
+
+#evy_compare_table table tr td:nth-child(1), #evy_compare_table table tr th:nth-child(1),
+#evy_compare_table table tr td:nth-child(2), #evy_compare_table table tr th:nth-child(2),
+#evy_compare_table table tr td:nth-child(3), #evy_compare_table table tr th:nth-child(3),
+#evy_compare_table table tr td:nth-child(4), #evy_compare_table table tr th:nth-child(4){
+    width: 300px;
+}
+
+#evy_compare_table table tr td:nth-child(5), #evy_compare_table table tr th:nth-child(5){
+    width: 60px;
+}
+
+#evy_community_invite table tr th, #evy_community_invite table tr td{
+    padding-left: 20px;
+    border-left: none;
+    /*width: 20%;*/
+    word-wrap: break-word;
+    /*position: relative;*/
+}
+
+.evy_insights_ntwrk_tab_cl01 #evy_community_invite table tr td:nth-child(2){
+    position: relative;
+    background-color: transparent !important;
+}
+
+.evy_insights_ntwrk_tab_cl01 #evy_community_invite table tr td {
+    padding-left: 40px;
+}
+
+#evy_community_invite table tr td .evy_hdr_prospectplus_icon {
+    left: 18px;
+    top: 19px;
+    bottom: auto;
+    background-image: url("../images/evy_sprite_41.png");
+    background-position: -177px -2730px;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+.evy_community_invite_checkbox{
+    width: 15px !important;
+    padding-right: 0px!important;
+    padding-left: 40px!important;
+}
+
+#evy_community_invite table tr th.evy_community_invite_checkbox{
+    width: 15px;
+    position: relative;
+}
+
+#evy_community_invite table tr td.evy_community_invite_checkbox{
+    width: 15px; 
+    position: relative;
+}
+
+#evy_compare_table a, #evy_community_invite a{
+    display: inline;
+    /*display: inline-block;*/
+    color: #4d4d4f;
+    font-weight: normal;
+    margin-bottom: 5px;
+    /*width: 100%;*/
+}
+
+#evy_compare_table th a, #evy_community_invite th a{
+    display: inline-block;
+    width: 100%;
+}
+
+#evy_compare_table input, #evy_community_invite input{
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    /*width: 92%;*/
+    width: 80% !important;
+}
+
+#evy_compare_table table tr td img, #evy_community_invite table tr td img{
+    width: 32px;
+    height: 30px;
+    border: 1px solid #dbdbdb;
+    margin-right: 10px;
+    float: left;
+    object-fit: cover;
+}
+
+#evy_compare_table table tr td span, #evy_community_invite table tr td span{
+    display: -webkit-box;
+    display: block;
+}
+
+.evy_filter{
+    width: 9px;
+    height: 15px;
+    display: inline-block;
+    background-position: -63px -377px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.evy_compare_orng{
+    width: 13px;
+    height: 21px;
+    display: inline-block;
+    background-position: -18px -908px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+/*Insights page styles ends*/
+
+
+/*Preference Page Styles Starts*/
+
+.evy_preference{
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    min-height: 50px;
+    padding: 15px 20px !important;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.evy_preference h4{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evy_preference_cl01{
+    border: 1px solid #dbdbdc;
+    border-top: none;
+    overflow: hidden;
+    padding: 0px;
+    min-height: 500px;
+    background: #f5f5f5;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.evy_preference_cl01 ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.evy_preference_cl01 li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.evy_preference_arrow{
+    background-position: -45px -695px;
+    width: 11px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.evy_preference_cl01 li.active .evy_preference_arrow{
+    background-position: -76px -695px;
+}
+
+.evy_preference_cl01 li a{
+    color: #4d4d4f;
+    font-weight: normal;
+}
+
+.evy_preference_cl01 li.active{
+    border-right: none;
+    left: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.evy_preference_cl01 li.active a{
+    color: #00719e;
+    font-weight: bold;
+}
+
+.evy_preference_cl01 .col-md-3{
+    padding: 0px;
+}
+
+.evy_preference_cl01 .col-md-9{
+    background-color: #fff;
+    border-left: 1px solid #dbdbdb;
+    min-height: 700px;
+    padding: 0px;
+}
+
+.evy_preference_cl02{
+    width: 100%;
+    min-height: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+}
+
+.evy_preference_cl02 .panel.panel-default{
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+.evy_accordion_expand{
+    background-position: -101px 0px;
+    width: 14px;
+    height: 7px;
+    display: inline-block;
+}
+
+.evy_accordion_collapse{
+    background-position: -107px -695px;
+    width: 14px;
+    height: 7px;
+    display: inline-block;
+}
+
+.evy_preference_cl02 .panel.panel-default .panel-title{
+    cursor: pointer;
+    color: #00719e;
+    font-size: 14px;
+}
+
+.evy_preference_cl02 .panel.panel-default input{
+    width: 40%;
+    border-radius: 0px;
+}
+
+#Preference2 .evy_aboutme_pfledit_formbtn{
+    padding: 0px;
+}
+
+.evy_auth_details{
+    overflow: hidden;
+}
+
+.evy_auth_details label{
+    width: 100%;
+}
+
+.evy_auth_details input{
+    float: left;
+}
+.evy_auth_details button{
+    float: left;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.evy_auth_details button:active, .evy_auth_details button:focus, .evy_auth_details button:hover{
+    margin-top: 0px;
+}
+
+.evy_preference_cl02 .evy_profile_visibility .evy_profile_visibility_cl01{
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0px 10px;
+    padding: 5px 0px;
+}
+
+.evy_profile_visibility_cl01 .evy_profile_visibility_cl02{
+    display: inline-flex;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.evy_profile_visibility_cl01 .evy_profile_visibility_cl02:last-child{
+    margin-right: 0px;
+}
+
+.evy_profile_visibility_cl02 input{
+    width: 35px !important;
+}
+
+.evy_preference_error{
+    clear: both;
+}
+
+.evy_auth_details_cl01{
+    float: left;
+}
+
+.evy_auth_details_cl02{
+    margin-top: 20px;
+}
+
+.evy_auth_details_cl02 span{
+    color: #f58220;
+}
+
+.evy_profile_visibility .btn_form_save{
+    margin-left: 20px;
+}
+
+/*Preference Page Styles ends*/
+
+.evy_profile{
+    margin-top: 5px;
+}
+
+.evy_profile h4{
+    margin: 7px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evy_mtl_pfl{
+    width: 33.33333333333%;
+    height: 82px !important;
+    float: left;
+}
+
+.evy_mtl_pfl .evy_logo_expand_hvr{
+    right: 0px;
+    top: 0px;
+    left: auto;
+}
+
+.evy_shared_cnctn img{
+    width: 100% !important;
+    height: 82px !important;
+    /*float: left;*/
+    object-fit: cover;
+    /*left: 1px;*/
+    /*top: 1px;*/
+    position: relative;
+}
+
+.evy_aboutme_cl01.evy_aboutme_cl05.text-center{
+    overflow: visible;
+}
+
+.evy_shared_cnctn {
+    /*overflow: hidden;*/
+    height: 173px;
+    /* background: url("../images/shrd_cnctn_bg.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*left: -1px;*/
+    position: relative;
+    /*top: -2px;*/
+    width: 100%;
+}
+
+.evy_shared_cnctn_cl06{
+    width: 100%;
+    border-bottom: none;
+    position: relative;
+    height: 173px;
+    /* background: url("../images/shrd_cnctn_bg.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.evy_shared_cnctn_cl07{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding-top: 75px;
+    width: 50%;
+}
+
+#evy_pfl_dashbrd_id01 .evy_insight_tile03{
+    background: none;
+}
+
+.evy_shared_cnctn_cl01{ /* 1, 6 no of profiles*/
+    float: right;
+    background-color: #f58220;
+    width: 100%;
+    height: 82px;
+    color: #fff;
+    text-align: left;
+    /*padding: 10px 15px;*/
+    padding: 10px;
+    cursor: pointer;
+    /*display: table;*/
+    top: 0px;
+    position: relative;
+}
+
+.evy_shared_cnctn_cl03{ /*2, 7 no of profiles*/
+    width: 320px !important;
+}
+
+.evy_shared_cnctn_cl04{ /*5 no of profiles*/
+    width: 400px !important;
+}
+
+.evy_shared_cnctn_cl01 span{
+    display: block;
+    position: relative;
+}
+
+.evy_shared_cnctn_cl01 h4{
+    margin: 0px;
+    /*font-size: 19px;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.evy_shared_cnctn_cl01 .badge{
+    background-color: #fff;
+    color: #f58220;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 12px;
+    position: relative;
+    /*display: table-cell;
+    vertical-align: middle;*/
+    padding: 0px;
+    float: left;
+    padding-top: 5px;
+}
+
+.evy_shared_cnctn_cl01 .badge label{
+    font-size: 32px !important;
+    margin-top: 7px;
+}
+
+.evy_shared_cnctn_cl02{
+    padding-left: 10px;
+   /* display: table-cell;
+    vertical-align: middle;*/
+    float: left;
+    width: 65%;
+}
+
+.evy_shared_cnctn_icon{
+    position: absolute;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background-position: -2px -729px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.evy_preference_cl01 input[type='radio'] {
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    width:13px !important;
+    height:13px;
+    border:2px solid #dbdbdb;
+    border-radius:50% !important;
+    outline:none;
+    margin-right: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.evy_preference_cl01 input[type='radio']:checked {
+    background-position: -176px -695px;
+    width: 13px !important;
+    height: 13px;
+    margin-top: 4px;
+    border: 0px !important;
+    cursor: pointer;
+}
+
+#evy_rltn_icon6 i{
+    background-position: -138px -695px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+/*tooltip styles*/
+
+.tooltip-inner{
+    background-color: #4d4d4f;
+}
+
+.tooltip.top .tooltip-arrow{
+    border-top-color: #4d4d4f;
+}
+
+.fix-to-top .evy_aboutme_tab{
+    padding-top: 0px;
+    /* background-image: url("../images/trans_img.png"); */
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 20px 30px !important;
+    padding-top: 0px !important;
+}
+
+.evy_phone_checkbox{
+    position: absolute;
+    left:11px;
+}
+
+.evy_mail_checkbox{
+    position: absolute;
+    left:-10px;
+}
+
+.evy_tab_grid{
+    display: none;
+    background-color: #4d4d4f;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 37px;
+}
+
+.evy-search .results{
+    cursor: pointer;
+}
+
+.evy-search .results img{
+    object-fit: cover;
+}
+
+.evy_envoy_icon_actve, .evy_envoy_icon_inactve, .evy_envoy_icon_nonuser {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    z-index: 5;
+}
+
+.evy_envoy_icon_actve i{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-position: -51px -908px;
+}
+
+.evy_envoy_icon_inactve i{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-position: -95px -908px;
+}
+
+.evy_envoy_icon_nonuser i{
+    background-position: -133px -947px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+/*intermediate screens styles*/
+
+.evy_terms_condtn{
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    min-height: 50px;
+    padding: 14px 20px !important;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.evy_terms_condtn h4{
+    margin: 0px;
+}
+
+.evy_terms_condtn_cl01{
+    background-color: #fff;
+    border: 1px solid #dbdbdc;
+    border-top: none;
+    overflow: hidden;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    height: 720px;
+    overflow-y: scroll;
+}
+
+.evy_terms_condtn_cl01 h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.evy_terms_condtn_cl01 ol{
+    list-style-type: disc;
+}
+
+.evy_terms_condtn_cl02{
+    padding-left: 25px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.evy_terms_use{
+    background-color: #fff;
+    border: 1px solid #dbdbdc;
+    border-top: none;
+    overflow: hidden;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.evy_terms_use_cl01{
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.evy_terms_use_cl01 h5{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.evy_terms_use .evy_terms_condtn_cl01{
+    padding-left: 10px;
+    height: 100%;
+    overflow: visible;
+}
+
+.evy_already_exist .modal-content{
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 6px rgba(0,0,0,.4);
+}
+
+.evy_already_exist_cl01{
+    padding: 20px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.evy_already_exist_cl01 h5{
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: table-header-group;
+}
+
+.evy_already_exist_cl01 p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.evy_already_exist_cl02{
+    text-align: left !important;
+}
+
+.evy_already_exist .evy_aboutme_pfledit_formbtn{
+    background-color: #f5f5f5;
+}
+
+.evy_vrfctn_email{
+    background-color: #f5f5f5;
+    padding: 50px;
+    min-height: 740px;
+    position: relative;
+}
+
+.evy_vrfctn_email_cl01{
+    max-width: 635px;
+    margin: auto;
+    text-align: center;
+}
+
+.evy_vrfctn_email_cl02{
+    width: 100%;
+    background-color: #fff;
+    display: table;
+    min-height: 400px;
+    height: 400px;
+    /* background-image: url("../images/img_line.png"); */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.evy_vrfctn_email_cl03{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.evy_vrfctn_email_cl03 h3{
+    color: #f58220;
+}
+
+.evy_vrfctn_email_cl03 span{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.evy_vrfctn_email_cl03 a{
+    color: #00719e;
+}
+
+.evy_vrfctn_email_cl03 h6{
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.evy_vrfctn_email_cl03 img{
+    margin-bottom: 15px;
+}
+
+
+.evy_vrfctn_logo{
+    padding: 20px 0px 50px 0px;
+}
+
+.evy_vrfctn_email_cl03 button, .evy_vrfctn_email_cl03 button:hover, .evy_vrfctn_email_cl03 button:active, .evy_vrfctn_email_cl03 button:focus{
+    background-color: #f58220;
+    border: none;
+    padding: 6px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.evy_page_not_found .evy_not_verified{
+    max-width: 765px;
+    margin: 60px auto;
+}
+
+.evy_not_verified{
+    max-width: 540px;
+}
+
+.evy_not_verified_txt{
+    padding: 0px 50px;
+}
+
+.evy_not_verified_txt label{
+    margin-top: 7px;
+}
+
+.evy_page_not_found_txt{
+    text-align: center;
+}
+
+.evy_page_not_found_txt h2{
+    color: #f58220;
+}
+
+.evy_page_not_found_txt span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.evy_page_not_found_txt label{
+    /*margin-top: 10px;*/
+}
+
+.evy_page_not_found_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.evy_invte_user{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.evy_vrtcn_welcome{
+    color: #4d4d4f !important;
+    font-size: 22px;
+}
+
+.evy_frgt_pswrd{
+    width: 500px;
+    height: auto;
+}   
+
+.evy_frgt_pswrd .evy_vrfctn_email_cl02{
+    padding: 75px 80px;
+    min-height: 330px;
+}
+
+.evy_frgt_pswrd .evy_vrfctn_email_cl03 span{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.evy_frgt_pswrd .evy_vrfctn_email_cl03 input{
+    border-radius: 0px;
+    background-color: #F5F5F5;
+    text-align: center;
+    margin: 13px 0px;
+}
+
+.evy_reset_pswrd input{
+    text-align: left !important;
+}
+
+.evy_frgt_pswrd .evy_vrfctn_email_cl03 button{
+    padding: 7px 40px;
+    margin-top: 10px !important;
+    display: block;
+    margin: auto;
+}
+
+.evy_frgt_pswrd h3{
+    font-size: 22px;
+}
+
+.evy_frgt_pswrd label{
+    color: #f58220;
+}
+
+.evy_footer_interscreens{
+    background-color: #fff;
+    min-height: 150px;
+}
+
+.evy_footer_interscreens .evy_aboutme_footer{
+    border: none;
+    padding-top: 40px;
+}
+
+.evy_envy_team{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #f58220;
+}
+
+
+/*intermediate screens styles ends*/
+
+.evy_subheader .dropdown-menu{
+    width: 100%;
+    background-color: #4d4d4f;
+    color: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.evy_subheader .dropdown-menu a{
+    color: #fff;
+    padding: 7px 15px;
+}
+
+.evy_subheader .dropdown-menu a:active, .evy_subheader .dropdown-menu a:hover{
+    background: none;
+    color: #fff;
+}
+
+.evy_subheader.dropdown{
+    background-color: #f58220;
+    color: #fff;
+    width: 100%;
+    min-height: 35px;
+    text-align: left;
+    clear: both;
+    padding: 7px 15px;
+    display: none;
+}
+
+.evy_subheader_cl01{
+    display: none;
+    width: auto;
+    height: 35px;
+    background-color: #4d4d4f;
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+.evy_subheader_cl01 li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    /* background-image: url("../images/img_tab_border.png"); */
+    background-repeat: repeat-y;
+    background-position: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.evy_subheader_cl01 li .add_img input{
+    top: -15px;
+    left: -138px;
+    width: 128px;
+}
+
+.evy_subheader_cl01 li:last-child{
+    border-right: none;
+    margin-right: 0px;
+    padding-right: 0px;
+    background: none !important;
+}
+
+.evy_subheader_cl01 li a{
+    color: #fff !important;
+}
+
+.evy_subheader.dropdown label{
+    margin-bottom: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.evy_subheader.dropdown .caret{
+    float: right;
+    top: 8px;
+    position: relative;
+    border-top: 8px solid;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+#evy_rspnsv_dashboard{
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.evy_user_name {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    top: 6px;
+    max-width: 65px;
+    float: left;
+    margin-right: 2px;
+}
+
+.evy_grid_res_msg{
+    display: none;
+    text-align: center;
+}
+
+.evy_import_cntct_modal{
+    padding: 20px !important;
+    border-bottom: 1px solid #dddddd;
+}
+
+.evy_import_cntct_modal p{
+    margin-bottom: 0px;
+}
+
+.evy_upload_error{
+    color: #FF5C5C;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#evy_crop_bg .evy_upload_error{
+    color: #ddd;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 12px;
+    padding: 0px 5px;
+    font-style: italic;
+}
+
+.evy_community-popup_logo_container .evy_upload_error{
+    display: inline-block;
+}
+
+.evy_logo_expand_hvr img{
+    width: 170px !important;
+    height: 170px !important;
+    border: 7px solid #dbdbdb !important;
+    max-width: 170px;
+}
+
+.evy_report_tile_cl01.evy_report_tile_cl03 .evy_logo_expand_hvr{
+    right: 30px;
+    left: auto;
+}
+
+.evy_cmparsn_report_hd .evy_pfl_hover{
+    width: 82px;
+    height: 82px;
+    display: inline-block;
+}
+
+.evy_cmparsn_report_cl01 .evy_cmparsn_report_cl02,  .evy_cmparsn_report_cl01 .evy_cmparsn_report_cl02 .evy_cmparsn_report_cl03{
+    overflow: visible;
+}
+
+
+/*Coach Mark Styles*/
+
+.evy_abtme_chmrk{
+    position: absolute;
+    /*display: none;*/
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    padding: 15px;
+    right: 0px;
+    z-index: 1;
+    top: 35px;
+    border: 1px solid #ADADAF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #4d4d4f;
+    cursor: default;
+}
+
+.evy_subheader_cl01 li .evy_abtme_chmrk a{
+    color: #00719e !important;
+}
+
+.evy_abtme_chmrk h3{
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.evy_abtme_chmrk button{
+    background-color: #f58220;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.evy_abtme_chmrk:after,
+.evy_abtme_chmrk:before {
+    border-left: 18px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 15px solid #fff;
+    top: -13px;
+    content: '';
+    right: 40px;
+    margin-left: -22px;
+    position: absolute;
+}
+
+/* Styling for second triangle (border) */
+
+.evy_abtme_chmrk:before {
+    border-left: 18px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 15px solid #ADADAF;
+    border-top-color: inherit;
+    top: -15px;
+    margin-left: -26px;
+}
+
+.evy_subheader_cl01 .evy_abtme_chmrk{
+    left: -160px;
+    right: auto;
+    /*top: 45px;*/
+}
+
+.evy_subheader_cl01 .evy_abtme_chmrk:after, .evy_subheader_cl01 .evy_abtme_chmrk:before{
+    left: 70%;
+    right: auto;
+}
+
+.evy_subheader_cl01 .evy_abtme_chmrk:before{
+    /*top: -20px;*/
+    margin-left: -22px;
+    /*border-left: 13px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 19px solid #ADADAF;*/
+}
+
+.evy_evnt_chmrk{
+    /*left: -123px;*/
+    left: 0px;
+    right: auto;
+    top: 45px;
+}
+
+.evy_evnt_chmrk:after, .evy_evnt_chmrk:before{
+    /*left: 50px;*/
+    /*left: 169px;*/
+    left: 47px;
+    right: auto;
+}
+
+.evy_evnt_chmrk:after{
+    margin-left: -26px;
+}
+
+.evy_subheader.dropdown .evy_evnt_chmrk{
+    top: 45px;
+    left: 0px;
+}
+
+.evy_insights.evy_subheader.dropdown .evy_evnt_chmrk{
+    /*top: 75px;*/
+    top: 40px;
+}
+
+.evy_network.evy_subheader.dropdown .evy_evnt_chmrk{
+    /*top: 140px;*/
+    top: 40px;
+}
+
+.evy_subheader.dropdown .evy_evnt_chmrk:after, .evy_subheader.dropdown .evy_evnt_chmrk:before{
+    left: 45px;
+}
+
+.evy_myworld_button_container_left .evy_evnt_chmrk{
+    left: 0px;
+    top: 55px;
+    z-index: 10;
+}
+
+.evy_myworld_button_container_left .evy_evnt_chmrk:after, .evy_myworld_button_container_left .evy_evnt_chmrk:before{
+    left: 35px;
+}
+
+.evy_postchat_body_chat_cl02 .evy_logo_expand_hvr{
+    right: 0px;
+    left: auto;
+}
+
+.evy_logout{
+    min-height: 690px;
+}
+
+.evy_logout .text-center{
+    margin-top: 150px;
+}
+
+/****Email Unsubscribe page styles starts****/
+.evy_email_opt_out .navbar-header{
+    border-right: none;
+}
+
+.evy_email_unsubscribe_signin{
+    float:right;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.evy_email_unsubscribe{
+    min-height: 600px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+}
+
+.evy_email_unsubscribe_cl01{
+    display: table;
+    margin: auto;
+    height: 450px;
+}
+
+.evy_email_unsubscribe_cl02{
+    display: table-cell;
+    vertical-align: middle;
+    width: 635px;
+    text-align: center;
+}
+
+.evy_email_unsubscribe_cl02 h3{
+    margin-bottom: 20px;
+}
+
+.evy_email_unsubscribe_cl03{
+    border: 1px solid #dbdbdc;
+    height: 135px;
+    position: relative;
+}
+
+.evy_email_unsubscribe_cl04{
+    height: 66.5px;
+}
+
+.evy_email_unsubscribe_cl04:first-child{
+    background-color: #fff;
+    padding-top: 23px;
+}
+
+.evy_email_unsubscribe_cl04:last-child{
+    background-color: #ededed;
+    border-top: 1px solid #dbdbdb;
+}
+
+.evy_email_unsubscribe_cl04 .evy_aboutme_pfledit_formbtn{
+    text-align: center;
+}
+
+.evy_version_update .modal-body{
+    padding-bottom: 0px !important;
+}
+
+.evy_version_update .modal-body label{
+    margin-bottom: 0px;
+}
+
+.evy_request_modal{
+    position: relative;
+    overflow: hidden;
+}
+
+.evy_request_modal .checkbox-custom{
+    width: 15px !important;
+    top: 15px;
+    left: 15px;
+}
+
+.evy_request_modal .evy_signup_lbl_cl01 span{
+    display: inline-block;
+    position: relative;
+    margin-top: -20px;
+    padding-left: 30px;
+    cursor: default;
+    font-size: 14px;
+}
+
+
+tags-input .tags input, 
+tags-input .tags .tag-item,
+tags-input .autocomplete .suggestion-item,
+tags-input .autocomplete .suggestion-item em{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/** Choose Password**/
+
+.evy_choosepswrd_footer{
+    margin-bottom: -71px;
+}
+
+.evy_choosepswrd .checkbox-custom:checked + .evy_signup_lbl_cl01.checkbox-custom-label:before, 
+.evy_choosepswrd .checkbox-custom + .evy_signup_lbl_cl01.checkbox-custom-label:before{
+    position: absolute !important;
+    left: -15px !important;
+    top: 14px !important;
+}
+
+.evy_choosepswrd .evy_myworld_sidebar_input{
+    border: none;
+}
+
+.evy_choosepswrd .evy_vrfctn_email_cl03 span{
+    margin-top: 12px;
+    padding-left: 15px;
+    color: #9b9b9b;
+}
+
+.evy_choosepswrd .evy_vrfctn_email_cl03 span.evy_user-preference_error{
+    color: #a94442;
+    margin-top: 0px;
+}
+
+.evy_choosepswrd .evy_vrfctn_email_cl03 span a{
+    color: #9b9b9b;
+}
+
+.evy_choosepswrd .evy_vrfctn_email_cl02{
+    padding: 75px 40px;
+}
+
+
+.evy_onboard_confirmation{
+    padding: 20px;
+    position: relative;
+}
+
+.evy_onboard_confirmation_cl02 label{
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 15px;
+}
+
+.evy_onboard_confirmation_cl02 {
+    /* position: relative; */
+    min-height: 40px;
+}
+
+.evy_onboard_confirmation_cl02 button{
+/*    position: absolute;
+    bottom: 20px*/
+}
+
+.evy_onboard_confirmation_cl02 .evy_load_icon_sml{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    margin-top: 0px;
+}
+
+.evy_onboard_confirmation button{
+    background-color: #f58220;
+    border: none;
+    margin-right: 10px;
+    padding: 6px 25px;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.evy_onboard_confirmation_cl03 button{
+    margin: auto;
+    display: block;
+}
+
+
+.evy_onboard_confirmation_cl03 .evy_import_result_cl02{
+    padding: 0px;
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
+.evy_onboard_confirmation_cl03 .evy_import_result_cl03 {
+    text-align: center;
+}
+
+.evy_onboard_confirmation_no{
+    /*margin-left: 95px;*/
+    background-color: #7a7a7c !important;
+}
+
+.evy_confirm_onboard  .evy_invite_prvw{
+    width: 100%;
+}
+
+.evy_confirm_onboard .evy_aboutme_pfledit_formbtn .btn.btn_form_save {
+    position: relative;
+}
+
+.evy_confirm_onboard .evy_aboutme_pfledit_formbtn img.evy_load_icon_sml{
+    position: absolute;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+.email-preview-Modal .modal-dialog{
+    width:550px; 
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) !important;
+    -ms-transform: translate(-50%,-50%) !important;
+    transform: translate(-50%,-50%) !important;
+}
+
+
+/*Responsive styles starts*/
+@media (max-width: 1680px){}
+
+@media (max-width: 1475px){
+    .evy_userpfl_hover .evy_logo_expand_hvr{
+        right: 30px;
+        left: auto;
+    }
+}
+
+@media (max-width: 1366px){
+    .evy_aboutme_nav, .evy_aboutme_tab, .evy_aboutme_content, .evy_aboutme_footer, .evy_profile_bckground .evy_pfl_bg_cl01{
+        width: 100%;
+    }
+
+    .evy_profile_bckground #evy_pfl_bgnd{
+        padding: 20px 30px;
+        padding-bottom: 0px;
+    }
+
+    .evy_profile_bckground .evy_pfl_bg_cl01{
+        padding-bottom: 0px;
+    }
+
+    .evy_profile_bckground .evy_aboutme_tab{
+        padding: 0px;
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 1349px){
+    .checkbox-custom:checked + .evy_signup_lbl_cl01.checkbox-custom-label:before, .checkbox-custom + .evy_signup_lbl_cl01.checkbox-custom-label:before {
+        top: 0px; 
+        position: relative;
+        /*left: -30px;*/
+    }
+
+    .evy_aboutme_navcl02 {
+        padding: 16px 0px 14px 0px;
+    }
+
+    .evy_add_contact_cl03{
+        /*width: 45%;*/
+    }
+
+    .evy_aboutme_pfledit_cl03 .evy_form_edit_name, .evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01{
+        /*margin-right: 16px !important;*/
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_email input{
+        width: 85%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_phn input{
+        width: 40%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit{
+        margin-right: 18px;
+    }
+
+    .evy_shared_cnctn_cl01{
+        width: 100% !important;
+        left: 0px;
+    }
+}
+
+@media (max-width: 1319px){
+    .evy_aboutme_community_cl01{
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 1283px){
+    .evy_aboutme_community_cl01{
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 1277px){
+    .evy_aboutme_content_label{
+        width: 200px;
+        height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    #evy_aboutme_content_id07 .evy_aboutme_bsns_content{
+        margin-top: 15px;
+        width: 72% !important;
+    }
+
+    .evy_aboutme_education_content_cl02{
+        position: relative;
+        float: left;
+        top: 0px;
+    }
+
+    .evy_aboutme_icons_cl04{
+        bottom: 0px;
+    }
+
+    .evy_aboutme_cl02 .evy_aboutme_cl03{
+        width: 100%;
+    }
+
+    #evy_aboutme_rltn_id03{
+        padding-left: 7px;
+        padding-top: 23px;
+    }
+
+    #evy_aboutme_contact_id03{
+        border-top: 1px dashed #fff;
+        padding-left: 0px;
+        top: 5px;
+        padding-top: 3px;
+    }
+
+    #evy_aboutme_rltn_id02, #evy_aboutme_contact_id02, #evy_aboutme_pflvstr_id03{
+        padding-top: 8px;
+    }
+
+    .evy_aboutme_rltn, .evy_aboutme_contact{
+        padding-top: 22px;
+    }
+
+    .evy_aboutme_rltn{
+        padding-left: 7px;
+    }
+
+    .evy_aboutme_pflvstr{
+        text-align: center;
+        padding: 28px 5px !important;
+        padding-bottom: 29px !important;
+    }
+
+    #evy_aboutme_pflvstr_id01{
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+    }
+
+    #evy_aboutme_pflvstr_id02{
+        padding: 20px 0px;
+        padding-bottom: 0px;
+    }
+
+    #evy_aboutme_pflvstr_id03{
+        float: none;
+        margin-left: 0px;
+    }
+
+    .evy_add_contact_cl03{
+        /*width: 57%;*/
+    }
+
+    .evy_aboutme_pfledit_cl03 .evy_form_edit_name/*, .evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01*/{
+        margin-right: 23px;
+    }
+
+    .evy_aboutme_navcl02 li{
+        margin-right: 20px;
+    }
+
+    #evy_compare_table input, #evy_community_invite input{
+        width: 80%;
+    }
+
+    .evy_aboutme_community_cl01{
+        margin-right: 7px;
+    }
+
+    .evy_insight_tile01 .evy_aboutme_cl03{
+        padding: 25px 20px;
+    }
+
+    #evy_insight_cnctn_id02{
+        margin-left: 15px;
+    }
+
+    .evy_insights_ntwrk_cl04 .evy_carousal_expand{
+        width: 92%;
+    }
+
+    /****Insights new landing page styles*****/
+
+    .evy_insight_canvas .evy_insights_viewreport_main_piechart .chart-legend{
+        width: 55%;
+    }
+}
+
+@media (min-width: 1264px) and (max-width: 1264px){
+    #evy_pfl_dashbrd_id02 .evy_insight_tile03 img{
+        width: 18.39%;
+    }
+}
+
+@media (max-width: 1220px) {
+    #evy_insight_job_id01, #evy_insight_company_id01{
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+
+    .evy_aboutme_community_cl01{
+        margin-right: 20px;
+    }
+
+    .evy_aboutme_community_cl01:nth-child(3n+1){
+        /*margin-right: 20px !important;*/
+    }
+}
+
+@media (max-width: 1208px){
+    .evy_aboutme_rltn_cl01, .evy_aboutme_contact_cl01{
+        font-size: 28px !important;
+    }
+
+    .evy_insight_tile01 .evy_aboutme_cl03{
+        padding: 25px 20px;
+    }
+
+    .evy_insight_tile01 #evy_insight_cnctn_id01{
+        background-position: -19px -843px;
+        width: 44px;
+        height: 44px;
+        margin-top: 10px;
+    }
+
+    #evy_compare_table table tr td:nth-child(1), #evy_compare_table table tr th:nth-child(1),
+    #evy_compare_table table tr td:nth-child(2), #evy_compare_table table tr th:nth-child(2),
+    #evy_compare_table table tr td:nth-child(3), #evy_compare_table table tr th:nth-child(3),
+    #evy_compare_table table tr td:nth-child(4), #evy_compare_table table tr th:nth-child(4){
+        width: 230px;
+    }
+}
+
+@media (max-width: 1130px){
+    .evy_aboutme_rltn_cl01, .evy_aboutme_contact_cl01{
+        font-size: 26px !important;
+    }   
+}
+
+@media (max-width: 1100px){
+    .evy_aboutme_rltn_cl01, .evy_aboutme_contact_cl01{
+        font-size: 22px !important;
+    }
+
+    #evy_aboutme_content_id04 .evy_cntct_ph_cl01 .evy_phn_prfrd{
+        min-width: 181px;
+    }
+}
+
+@media (max-width: 1024px){
+    .evy_snapshot_video{
+        width: 100%;
+        max-width: 410px;
+        float: none;
+    }
+
+    .evy_aboutme_snapshot_content{
+        width: 100%;
+        float: none;
+    }
+
+    .evy_aboutme_cl02, .evy_aboutme_cl04{
+        min-height:175px !important;
+    }
+
+    #evy_mng_ntwrk_table table tr td:nth-child(1), #evy_mng_ntwrk_table table tr th:last-child{
+        width: 10%;
+    }
+
+    .evy_insight_tile01, .evy_aboutme_cl02, .evy_aboutme_cl04, .evy_insight_tile05, .evy_insight_tile03{
+        height: auto !important;
+    }
+
+    .evy_aboutme_cl03{
+        width: 50%;
+        float: left;
+    }
+
+    .carousel{
+        width: 100%;
+        border-top: 1px solid #dbdbdc;
+        border-left: none;
+    }
+
+    .evy_insight_tile03 a{
+        width: 20%;
+        height: 62px;
+    }
+
+    .evy_insight_tile03 a{
+        padding: 20px 15px;
+    }
+
+    .carousel{
+        border-top: none;
+    }
+}
+
+@media (max-width: 1025px){}
+
+@media (max-width: 1023px){
+    .evy_aboutme_nav, .evy_aboutme_content, .evy_aboutme_footer{
+        padding: 20px;
+    }
+
+    .evy_aboutme_nav{
+        padding: 10px 20px !important;
+    }
+
+    .evy_aboutme_top_right{
+        right: 5px;
+    }
+
+    .evy_profile_bckground #evy_pfl_bgnd{
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .evy_aboutme_tab{
+        padding: 20px 20px 0px 20px;
+    }
+
+    .fix-to-top .evy_aboutme_tab{
+        padding: 15px !important; 
+        padding-top: 0px !important;
+    }
+
+    .evy_aboutme_details h5{
+        font-size: 16px;
+    }
+
+    .evy_aboutme_cl02{
+        min-height: 120px;
+    }
+
+    .evy_aboutme_cl02{
+        width: 60%;
+    }
+
+    .evy_aboutme_cl03{
+        min-height: auto;
+        width: 50%;
+        float: left;
+    }
+
+    .evy_aboutme_rltn_cl01, .evy_aboutme_contact_cl01{
+        font-size: 28px;
+    }
+
+    .evy_aboutme_pflvstr{
+        padding: 20px 13px 13px 13px !important;
+        min-height: 70px;
+        margin-bottom: 0px;
+    }
+
+    .evy_aboutme_rltn, .evy_aboutme_contact{
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    #evy_aboutme_rltn_id01, #evy_aboutme_contact_id01{
+        float: none;
+        display: inline-block;
+    }
+
+    #evy_aboutme_pflvstr_id01{
+        background-position: -82px -129px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    #evy_aboutme_pflvstr_id03{
+        top: -3px;
+    }
+
+    #evy_aboutme_pflvstr_id03 label{
+        font-size: 32px;
+        line-height: 20px;
+    }
+
+    .evy_aboutme_content_label{
+        width: auto;
+    }
+
+    .evy_aboutme_bsns_content{
+        float: left;
+        width: 77%;
+    }
+
+    #evy_aboutme_rltn_id02{
+        position: relative;
+        top: -8px;
+    }
+
+    #evy_aboutme_pflvstr_id01, #evy_aboutme_pflvstr_id03{
+        display: block;
+        margin: auto;
+        top: 0px;
+    }
+
+    #evy_aboutme_contact_id02, #evy_aboutme_pflvstr_id03{
+        position: relative;
+    }
+
+    #evy_aboutme_rltn_id03, #evy_aboutme_contact_id03, #evy_aboutme_pflvstr_id02{
+        top: 15px;
+        padding-top: 8px;
+    }
+
+    #evy_aboutme_pflvstr_id02 label{
+        margin-top: 0px;
+    }    
+
+    #evy_aboutme_pflvstr_id02{
+        padding-top: 19px;
+    }
+
+    #evy_aboutme_pflvstr_id03{
+        margin-top: 6px;
+        margin-left: -4px;
+    }
+
+    #evy_aboutme_pflvstr_id02 label{
+        width: 70px;
+        word-wrap: break-word;
+    }
+
+    .evy_insight_tile01 .evy_aboutme_cl03{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .evy_user_name {
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*max-width: 200px;*/
+    }
+
+    #evy_pfl_bgnd{
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-width: 992px){
+    /*.evy_mng_ntwrk .modal-dialog, .evy_modal_dialog .modal-dialog{
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%) !important;
+        -ms-transform: translate(-50%,-50%) !important;
+        transform: translate(-50%,-50%) !important;
+    }
+
+    .evy_modal_dialog_normal .modal-dialog{
+        margin: 30px auto;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        -webkit-transform: translate3d(0,0,0) !important;
+        -ms-transform: translate3d(0,0,0) !important;
+        transform: translate3d(0,0,0) !important;
+    }*/
+}
+
+@media (max-width: 991px){
+    .evy_add_contact_cl03{
+        float: none;
+    }
+
+    .evy_add_contact_cl01{
+        width: auto;
+        float: none;
+    }
+
+    .evy_add_contact_cl02 button{
+        width: 125px;
+        margin-left: 20px;
+    }
+
+    .evy_add_contact_cl03 .evy_aboutme_pfledit_cl03{
+        padding: 0px;
+    }
+
+    .evy_add_contact_modal_dialog .evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 .evy_form_edit_name:last-child{
+        margin-right: 0px !important;
+    }
+
+    .evy_add_contact_modal_dialog .evy_add_contact_cl03 .evy_form_edit_addr input:last-child,
+    .evy_add_contact_modal_dialog .evy_add_contact_cl03 .evy_form_edit_addr_cl01:last-child{
+        margin-right: 0px !important;
+    }
+
+    .evy_aboutme_pfledit_cl03 .evy_form_edit_name, .evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01{
+        margin-right: 9px;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit{
+        width: 49%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit{
+        margin-right: 9px;
+    }   
+
+    .evy_add_contact_cl03 .evy_form_edit_phn input{
+        width: 44%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_email input {
+        width: 89%;
+    }
+
+    .evy_relationship select{
+        width: 65%;
+    }
+
+    #evy_mng_ntwrk_table table tr td:nth-child(1), #evy_mng_ntwrk_table table tr th:last-child{
+        width: 11%;
+    }
+
+    .evy_insight_tile02 .evy_insight_tile03, .evy_insight_tile03 a{
+        height: 71px !important;
+    }
+
+    .evy_insights_carousal_cl01, 
+    .evy_insights_ntwrk_cl04 .carousel, 
+    .evy_insights_carousal_cl02, .carousel,
+    .evy_insights_ntwrk_cl04 .evy_insights_carousal_cl01{
+        display: block;
+    }
+
+    .evy_insight_tile01 .evy_aboutme_cl03{
+        padding: 30px 10px;
+        height: 122px;
+    }
+
+    .evy_aboutme_navcl01 .navbar-form{
+        width: 100%;
+        border: none;
+    }
+
+    .evy_aboutme_community_cl01{
+        width: 105px;
+    }
+
+    .evy_preference_cl01 .col-md-9{
+        border-left: none;
+    }
+
+    .evy_cmprsn_icon2, .evy_stkhldr_icon_cl01{
+        left: 41% !important;
+    }
+
+    .evy_report_tile_cl02{
+        right: 15px;
+    }
+
+    .evy_aboutme_bsns_content{
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .evy_lng_content{
+        overflow: hidden;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content{
+        width: 31%;
+        float: left;
+        padding-bottom: 10px !important;
+        border-bottom: 1px dashed #a6a6a6 !important;
+        margin-right: 25px;
+        min-height: 111px;
+    }
+
+    .evy_edit_lngage_cl02{
+        width: 100%;
+        position: relative;
+        float: left;
+        border-right: 1px solid #dbdbdb;
+        min-height: 95px;
+    }
+
+    #evy_aboutme_edit_id06 .evy_edit_lngage_cl02{
+        min-height: auto !important;
+        border: none;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content:last-child{
+        margin-right: 0px;
+    }
+
+    .evy_lng_content .evy_edit_overflow{
+        right: 20px !important;
+        z-index: 1;
+    }
+
+    .evy_clear:nth-child(3n+1){
+        clear: none;
+    }
+
+    .evy_clear:nth-child(2n+1){
+        clear: both;
+    }
+}
+
+@media (max-width: 990px){
+    /*.evy_rltnshp_cl03{
+        border: none;
+        padding: 10px 0px;
+        padding-bottom: 0px;
+    }*/
+}
+
+@media (max-width: 960px){
+    .evy_vault_subtab .evy_subheader.dropdown, .evy_vault_subtab .evy_subheader_cl01{
+        display: block;
+    }
+
+    .evy_vault_subtab .nav-tabs{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .evy_vault_overview .evy_relationship_view{
+        float: none;
+        width: 90%;
+    }
+    .evy_vault_overview .evy_rltnshp_cl03{
+        width: 100%;
+        float: none;
+        padding-left: 0px;
+        border-left: none;
+        padding-top: 10px;
+    }
+    .evy_vault_overview .evy_rltnshp_cl04{
+        float: none;
+    }
+}
+
+@media (max-width: 860px){
+    #evy_aboutme_content_id06 .evy_aboutme_education_content{
+        width: 46%;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content:nth-child(2n){
+        border-right: none;
+        margin-right: 0px;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content:nth-child(2n) .evy_edit_lngage_cl02{
+        border-right: none;
+    }
+
+    .evy_page_not_found .evy_not_verified {
+        max-width: 100%;
+        margin: 20px auto;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px){
+    .evy_vault_overview .evy_rltnshp_cl03{
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    #evy_compare_table table tr td:nth-child(1), #evy_compare_table table tr th:nth-child(1),
+    #evy_compare_table table tr td:nth-child(2), #evy_compare_table table tr th:nth-child(2),
+    #evy_compare_table table tr td:nth-child(3), #evy_compare_table table tr th:nth-child(3),
+    #evy_compare_table table tr td:nth-child(4), #evy_compare_table table tr th:nth-child(4){
+        width: 22%;
+    }
+
+    #evy_compare_table table tr td:nth-child(5), #evy_compare_table table tr th:nth-child(5){
+        width: 12%;
+    }
+
+    .modal-dialog{
+        /*margin: 30px auto;*/
+    }
+
+    .evy_cmprsn_icon2{
+        left: 40%;
+    }
+}
+
+
+
+@media (max-width: 740px){
+    .evy_shared_cnctn_cl01 .badge{
+        display: table-cell !important;
+    }
+
+    .evy_wrk_exp.evy_pfl_hover img{
+        float: left;
+    }
+
+    #evy_aboutme_content_id07 .evy_aboutme_bsns_content{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 450px){
+    .modal-md {
+        width: 450px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 450px){
+    .evy_aboutme_tab, #evy_pfl_bgnd .evy_aboutme_tab{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .evy_aboutme_pfledit_cl03 .evy_form_edit_name, .evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01{
+        margin-right: 17px;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_email input{
+        width: 74%;
+    }
+    
+    .evy_add_contact_cl03 .evy_form_edit_phn input{
+        width: 31%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit {
+        width: 48%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit {
+        margin-right: 20px;
+    }
+
+    .evy_aboutme_tab{
+        height: auto;
+        min-height: auto;
+    }
+
+    .evy_profile_bckground .evy_pfl_bg_cl01{
+        padding-top: 20px;
+    }
+
+    #evy_pfl_dashbrd_id01{
+        min-height: 100%;
+    }
+
+    .evy_aboutme_tab .nav-tabs, .evy_myworld_tab .nav-tabs{
+        display: none;
+    }
+
+    .evy_subheader.dropdown, .evy_subheader_cl01{
+        display: block;
+    }
+
+    .evy_aboutme_cl03#evy_aboutme_relation{
+        width: 42% !important;
+        margin: auto !important;
+        float: none;
+    }
+
+    .evy_rltnshp_cl03{
+        float: left;
+        width: 100%;
+        border: none;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+
+    .evy_insight_request .evy_rltnshp_cl01{
+        float: none;
+    }
+
+    .evy_insight_request .evy_sub_listcl03{
+        width: 100%;
+        float: none;
+    }
+
+    .evy_insight_request .evy_sub_listcl03 a{
+        padding-bottom: 0px;
+    }
+
+    #evy_aboutme_pflvstr_id01, #evy_aboutme_pflvstr_id03{
+        display: inline-block;
+        margin-right: 10px;
+        float: none;
+    }
+
+    #evy_aboutme_pflvstr_id03{
+        margin-top: 0px;
+        top: -7px;
+    }
+
+    #evy_aboutme_pflvstr_id02 label, .evy_cnctn_lbl{
+        width: auto;
+    }
+
+    .evy_aboutme_pflvstr{
+        min-height: 112px;
+        padding-top: 37px !important;
+    }
+
+    .evy_aboutme_rltn{
+        padding-top: 21px;
+        padding-left: 20px;
+    }
+
+    .evy_user_name{
+        max-width: 100px;
+    }
+
+    .evy_expand{
+        margin-top: 3px;
+    }
+
+    #evy_pfl_bg_cl02{
+        display: none;
+    }
+
+    #evy_pfl_bg_cl03{
+        display: block;
+    }
+
+    .evy_cmprsn_icon2{
+        left: 43.6%;
+    }
+
+    .evy_insight_tile:nth-child(3){
+        border-right: 1px solid #dbdbdb;
+    }
+
+    .evy_insight_tile_cl04{
+        border: none;
+    }
+
+    .evy_aboutme_footer ul{
+        width: 100%;
+        text-align: center;
+    }
+
+    .evy_aboutme_top_left{
+        width: 100%;
+        padding-right: 4px !important;
+    }
+
+    .evy_shared_cnctn{
+        height: auto;
+    }
+
+    .evy_shared_cnctn_cl01 {
+        width: 43% !important;
+        
+    }
+    
+    .evy_mtl_pfl{
+        width: 19%;
+        height: 89px !important;
+    }
+
+    /*****Insights Landing page styles****/
+
+    .evy_insight_canvas .evy_insights_viewreport_main_piechart .chart-legend{
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    .evy_add_contact_cl03 .evy_aboutme_pfledit_cl03 .evy_form_edit_name, .evy_add_contact_cl03 .evy_form_edit,
+    .evy_add_contact_cl03 .evy_form_edit_addr input, .evy_add_contact_cl03 .evy_form_edit_addr_cl01{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_addr input{
+        margin-bottom: 5px;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_email input {
+        width: 84%;
+    }
+
+    .evy_form_edit_phn select{
+        width: 30%;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_phn input{
+        width: 29%;
+    }
+
+    .evy_form_edit_phn select.evy_cntry_code{
+        width: 25%;
+    }
+
+    .evy-search .results{
+        width: 100%;
+    }
+
+    .evy_insight_tile:nth-child(n){
+        padding: 0px !important;
+    }
+
+    #evy_insight_job_id01, #evy_insight_company_id01, #evy_insight_cnctn_id02{
+        width: 100%;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content{
+        width: 100%;
+        margin-right: 0px;
+        min-height: auto !important;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content .evy_edit_lngage_cl02{
+        border: none;
+        min-height: auto !important;
+    }
+
+    #evy_aboutme_content_id06 .evy_aboutme_education_content:last-child{
+        border-bottom: none !important;
+    }
+}
+
+@media (max-width: 639px){
+
+    .evy_profile-birth_date{
+        left: 170px;
+    }
+    #evy_pfl_bgnd{
+        padding: 15px;
+        padding-bottom: 5px;
+    }
+
+    .evy_pfl_img img{
+        float: none;
+    }
+
+    .evy_profile_bckground .evy_pfl_bg_cl01{
+        padding-top: 15px;
+    }
+
+    .evy_aboutme_cl02,.evy_aboutme_cl03, .evy_aboutme_cl04{
+        width: 100%;
+    }
+
+    .evy_aboutme_footer ul{
+        width: 88%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .evy_aboutme_content_label{
+        width: 170px;
+    }
+
+    .evy_pfl_img img, .evy_pfl_img,.evy_aboutme_pfledit_cl04 img{
+        width: 145px;
+        height: 145px;
+    }
+
+    .evy_aboutme_nav, .evy_aboutme_tab, .evy_aboutme_content, .evy_aboutme_footer,.evy_community_container{
+        padding: 15px;
+    }
+
+    .evy_profile_bckground #evy_pfl_bgnd{
+        padding: 15px;
+        padding-bottom: 0px;
+    }
+
+    .evy_aboutme_tab{
+        padding-bottom: 0px;
+    }
+
+    .evy_aboutme_tab .nav-tabs>li{
+        width: 100%;
+        float: none;
+    }
+
+    .evy_aboutme_tab .nav-tabs li.active img{
+        display: none;
+    }
+
+    .evy_aboutme_tab .nav-tabs>li{
+        background: none;
+    }
+
+    .evy_aboutme_tab .nav-tabs>li>a{
+        margin-right: 0px;
+    }
+
+    .evy_aboutme_tab .nav-tabs>li.evy_tab_cl01{
+        text-align: right;
+    }
+
+    .evy_aboutme_tab .nav-tabs, .evy_myworld_tab .nav-tabs{
+        display: none;
+    }
+
+    .evy_aboutme_tab select{
+        width: 100%;
+        border: 0px;
+        background-color: #f58220;
+        color: #FFF;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .evy_subheader.dropdown, .evy_subheader_cl01{
+        display: block;
+    }
+
+    .evy_aboutme_tab option{
+        display: block;
+        background-color: #4d4d4f;
+        padding: 10px 15px!important;
+    }
+
+    .evy_aboutme_tab select:focus{
+        outline: none;
+    }
+
+    /* Force table to not be like tables anymore */
+    #evy_mng_ntwrk_table table, #evy_mng_ntwrk_table thead, #evy_mng_ntwrk_table tbody, #evy_mng_ntwrk_table th, #evy_mng_ntwrk_table td,
+    #evy_mng_ntwrk_table tr {
+        display: block;
+    }
+
+
+    #evy_community_invite table, #evy_community_invite thead, #evy_community_invite tbody, #evy_community_invite th,
+    #evy_community_invite td, #evy_community_invite tr {
+        display: block;
+    }
+
+    #evy_community_invite table tr td, #evy_community_invite table tr th{
+        width: 100% !important;
+        padding: 5px 20px;
+    }
+
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #evy_mng_ntwrk_table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #evy_mng_ntwrk_table tr {
+        border: 1px solid #ccc;
+    }
+
+    #evy_community_invite tr{
+        border: 1px solid #ccc;
+    }
+
+    #evy_mng_ntwrk_table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+        white-space: normal;
+        text-align:left;
+    }
+
+    #evy_community_invite table tr td{
+        /*min-height: auto !important;*/
+    }
+
+    #evy_community_invite table tr td .evy_hdr_prospectplus_icon {
+        left: 7px;
+        top: 13px;
+    }
+
+    #evy_community_invite td{
+        border: none;
+        position: relative;
+        white-space: normal;
+        text-align:left;
+    }
+
+    #evy_mng_ntwrk_table td:before {
+        position: absolute;
+        top: 6px;
+        left: 20px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    #evy_mng_ntwrk_table table tr td:nth-child(1), #evy_mng_ntwrk_table table tr th:last-child{
+        width: 100%;
+    }
+
+    #evy_community_invite table tr td:nth-child(1), #evy_community_invite table tr td:nth-child(2),  #evy_community_invite table tr th:last-child{
+        width: 100%;
+    }
+
+    .evy_community_invite_checkbox{
+        padding-left: 13px !important;
+    }
+
+    #evy_community_invite table tr th:last-child{
+        padding-bottom: 15px;
+    }
+
+    .evy_community_invite_cl01 .evy_cmpr_rs_td{
+        padding-left: 70px !important;
+    }
+
+    #evy_mng_ntwrk_table td:before {
+        content: attr(data-title);
+    }
+
+    #evy_compare_table td:before {
+        /*content: attr(data-title);*/
+    }
+
+    .evy_rltnshp_cl03{
+        float: left;
+        padding: 10px 0px;
+        clear: both;
+        border-left: none;
+        padding-bottom: 0px;
+    }
+
+    .evy_relationship_view{
+        /*width: 121px;*/
+    }
+
+    #evy_aboutme_id01, .evy_aboutme_details{
+        min-height: 146px !important;
+    }
+
+    .evy_form_edit_phn input {
+        width: 24%;
+    }
+
+    .evy_email_dltbtn .btn_delete {
+        margin-left: 5px;
+    }
+
+    .evy_email_dltbtn .btn_add{
+        margin-left: 4px;
+    }
+
+    .evy_phne_add{
+        right: 5px;
+    }
+
+    .evy_aboutme_details{
+        padding-top: 35px;
+        padding-left: 170px;
+    }
+
+    .evy_user_icon .dropdown-menu{
+        top: 44px;
+        right: -1px;
+    }
+
+    .evy_form_edit{
+        width: 100%;
+    }
+
+    .evy_form_edit_phn select{
+        width: 30%;
+    }
+
+    #evy_rspnsv_dashboard{
+        width: 33%;
+        border-top: 1px solid #dbdbdb;
+        border-left: 1px solid #dbdbdb;
+    }
+
+    #evy_rspnsv_dashboard1{
+        width: 67%;
+    }
+
+    .evy_aboutme_cl02{
+        min-height: 87px !important;
+    }
+
+    .evy_form_edit{
+        margin-bottom: 10px;
+    }
+
+    .evy_form_edit:last-child{
+        margin-bottom: 0px;
+    }
+
+    .evy_email_dltbtn .btn_delete {
+        margin-left: 5px;
+    }
+
+    .evy_email_dltbtn{
+        margin-left: 9px;
+    }
+
+    .evy_email_dltbtn .btn_add{
+        margin-left: 7px;
+    }
+
+    .evy_email_unsubscribe_cl01,
+    .evy_email_unsubscribe_cl02{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .evy_video_popup_modal, .evy_video_popup_modal .modal-dialog, .evy_video_popup_modal iframe{
+        width: 100%;
+    }
+
+    .evy_vrfctn_email{
+        padding: 50px 0px;
+        width: 100%;
+    }
+
+    .evy_frgt_pswrd{
+        width: 100%;
+    }
+
+    .evy_vrfctn_logo img{
+        width: 279px;
+    }
+
+    .evy_frgt_pswrd .evy_vrfctn_email_cl02{
+        padding: 35px 15px;
+    }
+
+    .evy_rltnshp_grid_cl01, .evy_rltngrid_overview {
+        display: none;
+    }
+
+    .evy_grid_res_msg{
+        display: block;
+    }
+}
+
+@media (max-width: 582px){
+    #evy_aboutme_edit_id06 .evy_form_edit{
+        margin-right: 15px;
+    }
+
+    .evy_insight_request .evy_rltnshp_cl01 .evy_sub_list, .evy_insight_request .evy_rltnshp_cl01{
+        width: 100%;
+    }   
+
+    .evy_insight_request .evy_rltnshp_cl01 .evy_sub_listcl01, .evy_insight_request .evy_rltnshp_cl01 .evy_sub_listcl02{
+        width: 100%;
+    }
+
+    .evy_insight_request{
+        padding-left: 20px;
+    }
+
+    .evy_rltnshp_cl01 .evy_sub_list button{
+        min-height: 30px;
+        height: auto;
+    }
+
+    .evy_aboutme_rltn{
+        display: none;
+    }
+
+    #evy_aboutme_rltn_id03{
+        width: 100%;
+        text-align: center;
+        padding: 8px 2px;
+    } 
+
+    .evy_not_verified .evy_vrfctn_email_cl03 span{
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 480px){    
+    .evy_aboutme_pflvstr{
+        min-height: 82px;
+        padding-top: 23px !important;
+    }
+
+    #evy_aboutme_pflvstr_id02{
+        padding-top: 19px;
+    }
+
+    .evy_aboutme_content_label{
+        width: auto;
+    }
+
+    .evy_aboutme_cl02 .evy_aboutme_cl03{
+        width: 30%;
+    }
+
+    #evy_pfl_bgnd{
+        padding: 20px 15px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .evy_cmprsn_icon2{
+        left: 40.6%;
+    }
+}
+
+@media (max-width: 479px){
+
+    .evy_profile-birth_date{
+        left: 20px;
+    }
+    
+    .evy_aboutme_rltn{
+        display: none;
+    }
+
+    .evy_cmprsn_icon2{
+        left: 41.6%;
+    }
+
+    #evy_aboutme_rltn_id03{
+        text-align: center;
+        width: 100%;
+        top: 10px;
+    }
+
+    .evy_aboutme_pfledit_cl04 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .evy_snapshot_video{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .evy_aboutme_tab_cl01 li a{
+        padding: 0px 2px;
+    }
+
+    .evy_abtme_chmrk{
+        width: 275px;
+    }
+
+    .btn_dwnld{
+        float: left;
+        position: relative;
+        bottom: auto;
+    }
+
+    .evy_aboutme_bsns_content{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .evy_accept i, .evy_decline i{
+        top: 0px !important;
+    }
+
+    .evy_add_contact_cl03{
+        margin-top: 20px;
+    }
+
+    .evy_add_contact_cl03 .evy_form_edit_email input{
+        width: 100%;
+    }
+
+    .evy_form_edit_email .radio label {
+        padding-left: 30px;
+    }
+
+    #myModalaccept .modal-sm{
+        width: auto;
+    }
+
+    .evy_aboutme_tab .nav-tabs, .evy_myworld_tab .nav-tabs{
+        display: none;
+    }
+
+    .evy_aboutme_tab select{
+        width: 100%;
+        border: 0px;
+        background-color: #f58220;
+        color: #FFF;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .evy_aboutme_tab option{
+        display: block;
+        background-color: #4d4d4f;
+        padding: 10px 15px!important;
+    }
+
+    .evy_aboutme_tab select:focus{
+        outline: none;
+    }
+
+    .evy_icons{
+        width: 35%;
+    }
+
+    .evy_relationship .form-group{
+        width: 47%;
+    }
+
+    .evy_relationship select{
+        width: 100%;
+    }
+
+    .evy_rltnshp_cl03{
+        width: 100%;
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .evy_rltnshp_cl04 a{
+        display: block;
+        width: 100%;
+        border: none;
+        padding-left: 0px !important;
+        margin-top: 6px;
+    }
+
+    .evy_relationship_view{
+        width: 85px;
+        border-right: none;
+    }
+
+    .evy_rltnshp_cl01{
+        margin-right: 0px;
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+
+    .evy_rltnshp_cl01 .dropdown, .evy_rltnshp_cl01 .dropdown label, .evy_rltnshp_cl01 .dropdown-menu{
+        width: 100% !important;
+    }
+
+    .evy_insight_request .evy_rltnshp_cl01{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .evy_insight_request{
+        padding: 15px 20px;
+    }
+
+    .evy_pfl_img{
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .evy_aboutme_details{
+        padding-left: 20px;
+        margin: auto;
+    }
+
+    .evy_rspsnv_user{
+        width: 100%;
+    }
+
+    .evy_cmprsn_arrow{
+        display: none;
+    }
+
+    .evy_cmparsn_report_cl05 span{
+        display: block;
+        position: relative;
+    }
+
+    .evy_cmparsn_report_cl05 .evy_report_time{
+        position: relative !important;
+    }
+
+    .evy_cmparsn_report_cl02 .evy_cmparsn_report_cl04{
+        width: 70%;
+    }
+
+    .evy_cmprsn_cnctn{
+        float: none;
+    }
+
+    .evy_advncd_search{
+        width: 100%;
+        border-right: none;
+    }
+
+    .evy_aboutme_details{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .evy_aboutme_details{
+        min-height: 113px;
+    }
+
+    .evy_subheader_cl01{
+        padding: 8px 15px;
+    }
+
+    .evy_subheader_cl01 li{
+        margin-right: 6px !important;
+        padding-right: 6px !important;
+    }
+
+    .evy_subheader_cl01 li:last-child{
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .evy_aboutme_content_label{
+        width: 175px;
+    }
+
+    .evy_form_edit_phn input{
+        width: 50%;
+
+    }
+
+    #evy_aboutme_edit_id04 .evy_form_edit_phn select{
+        width: 25%;
+    }
+
+    .evy_form_edit_email input{
+        width: 100%;
+    }
+
+    .evy_form_edit_phn .radio input[type=checkbox]{
+        width: 15px;
+        margin-left: -10px;
+    }
+
+    .evy_form_edit_phn .radio label, .evy_form_edit_email .radio label{
+        padding-left: 20px;
+    }
+
+    .evy_form_edit_email .radio input[type=checkbox]{
+        width: 15px;
+        margin-left: 11px;
+    }
+
+    .evy_phne_add{
+        top: -49px !important;
+        left: 117px !important;
+        float: left !important;
+    }
+
+    .evy_custom_phn_add{
+        top: -45px !important;
+        left: 35px !important;
+    }
+
+    #evy_aboutme_edit_id04 .evy_form_edit_phn, #evy_aboutme_edit_id04 .evy_form_edit_email{
+        border-bottom: 1px solid #dbdbdc;
+        padding-bottom: 10px;
+    }
+
+    .evy_aboutme_pfledit_cl06, .evy_aboutme_pfledit_cl07{
+        width: 100%;
+        float: none;
+    }
+
+    .evy_aboutme_pfledit_cl06{
+        height: 280px;
+        border-bottom: 1px dashed #7b7b7d;
+    }
+
+    .evy_aboutme_pfledit_cl05{
+        height: 450px;
+    }
+
+    .evy_aboutme_pfledit_cl07 span{
+        width: 100%;
+        display: block;
+    }
+
+    .evy_crop_prvw_web{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .evy_crop_prvw_mbl{
+        display: inline-block;
+    }
+
+    .evy_aboutme_pfledit_cl07{
+        float: none !important;
+        height: 168px;
+    }
+
+    .evy_insight_map .evy_country_view{
+        padding: 10px;
+    }
+
+    #evy_aboutme_edit_id06 .evy_form_edit{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .evy_aboutme_pfledit_cl01 .evy_upload_btn{
+        display: block;
+        margin: 12px 15px;
+    }
+
+    .evy_cmpany_list_cl02{
+        width: 100%;
+        display: block; 
+    }
+
+    .evy_cmpany_list_cl03{
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        border-top: 1px solid #dbdbdb;
+        border-left: none;
+        height: auto !important;
+    }
+
+    .evy_btn_remove{
+        display: block;
+        width: 125px;
+        margin-left: 15px;
+    }
+
+    .evy_aboutme_pfledit_cl04{
+        overflow: hidden;
+    }
+
+    .evy_aboutme_pfledit_cl04 .add_img, .evy_aboutme_pfledit_cl04 img{
+        float: left;
+    }
+
+    .evy_email_dltbtn .btn_delete, .evy_email_dltbtn .btn_add{
+        margin-left: 10px;
+    }
+
+    .evy_insight_tile{
+        width: 100%;
+    }
+
+    .evy_insight_tile_cl02{
+        display: block;
+    }
+
+    .evy_insight_tile_cl03{
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .evy_shared_cnctn{
+        height: auto;
+    }
+
+    .evy_shared_cnctn_cl01 {
+        width: 100% !important;        
+    }
+
+    .evy_shared_cnctn_cl01 .badge label{
+        margin-top: 7px;
+    }
+
+    .evy_shared_cnctn_cl02{
+        padding-top: 7px;
+    }
+
+    .evy_mtl_pfl{
+        width: 33.33333%;
+        height: 82px !important;
+    }
+}
+
+@media (max-width: 440px){
+    .evy_vrfctn_email{
+        padding: 50px 0px;
+    }
+    
+    .evy_vrfctn_logo{
+        padding-bottom: 35px;
+    }
+    
+    .evy_vrfctn_logo img{
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .evy_subheader_cl01 li{
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .evy_aboutme_cl03#evy_aboutme_relation{
+        width: 62% !important;
+    }
+
+    .evy-search .results .title{
+        font-size: 13px;
+    }
+
+    .evy_insight_tile01{
+        height: auto !important;
+    }
+
+    .evy_insight_tile01 .evy_aboutme_cl03{
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .evy_insight_tile01 .badge, .evy_insight_tile01 #evy_insight_cnctn_id01{
+        display: block;
+    }
+
+    #evy_insight_job_id01, #evy_insight_company_id01, #evy_insight_cnctn_id02{
+        float: none;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .evy_insight_tile01 .badge, #evy_insight_cnctn_id02{
+        top: -9px;
+        position: relative;
+    }
+
+    .evy_insights_carousal_cl01 .badge{
+        padding-left: 0px;
+    }
+
+    .evy_icon_preferred i{
+        margin-right: 3px;
+    }
+
+    .evy_cntct_ph_cl02{
+        padding-left: 11px;
+    }
+
+    .evy_aboutme_community_cl01{
+        margin-right: 16px;
+    }
+
+    .evy_aboutme_community_cl01:nth-child(2n+1){
+        margin-right: 0px;
+    }
+
+    #evy_insight_crsl_main .carousel{
+        padding-left: 22px;
+    }
+
+    #evy_insight_crsl_main .carousel-control .glyphicon-chevron-left{
+        margin-left: -8px;
+    }
+
+    .evy_insights_carousal_content_cl01{
+        word-wrap: break-word;
+    }
+
+    .evy_edit_lngage{
+        margin: 0px -21px;
+        margin-bottom: 15px;
+    }
+
+    .evy_edit_lngage_cl01:first-child{
+        display: none;
+    }
+
+    .evy_myworld_post_comment_preview_inner{
+        padding: 0px;
+    }
+
+    .evy_myworld_post_comment_profile{
+        padding-right: 0px;
+    }    
+
+    .evy_cmprsn_icon2 {
+        left: 37.6%;
+    }
+
+    .evy_phn_prfrd {
+        min-width: 130px;
+        max-width: 130px;
+    }
+
+    .evy_insight_map_cl01 #navcontainer ul li,
+    .evy_insights_advnc_search #navcontainer ul li{
+        display: block;
+    }
+
+    .evy_insight_input_search input{
+        width: 77% !important;
+    }
+}
+
+.evy_myworld_content_mobile .evy_myworld_post_container .menu-category.tab_style{
+    width: 100% !important;
+}
+
+.evy_myworld_content_mobile .menu-category.evy_engage_tab .evy_myworld_post{
+    width: 100% !important;
+}
+
+.evy_myworld_post_container .menu-category.tab_style{
+    width: 66%;
+    margin: auto;
+    display: block;
+}
+
+.evy_pndg_cntry{
+    width: 70%;
+}
+
+.evy_pndg_cntry_cl01{
+    width: 90%;
+}
+
+.fixed{
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 0px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.evy_aboutme_tab.fixed .nav-tabs{
+    width: 1246px;
+    margin: auto;
+}
+
+.padding{
+    padding-top: 95px;
+}
+
+.MenuItemListDesc {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.MenuListItem{
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+}
+
+.keep_me_loggedin input{
+    width:15px !important;
+    margin-left: 19px;
+}
+
+.secondLevelHier{
+    max-height: 200px;
+}
+

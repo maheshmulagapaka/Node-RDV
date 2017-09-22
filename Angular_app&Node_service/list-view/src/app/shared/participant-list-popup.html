@@ -1,0 +1,26 @@
+ <div class="modal-dialog">
+   <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" (click)="close()" >&times;</button>
+      </div>
+      <div class="modal-body">
+            <div *ngFor="let contact of contactHolders">
+                <div class="contactsList_c01">
+                    <img *ngIf="contact.image_url" src="{{contact.image_url}}">
+                    <img *ngIf="!contact.image_url" src="../assets/images/img_pfl5.jpg">
+                </div>
+                <div class="contactsList_c02">
+                      <div *ngIf="contact.user_id == senderId"><a [href]="" target="_blank">Me</a></div>
+                    <div *ngIf="contact.user_id != senderId"><a [href]=""  target="_blank">{{contact.last_name}}{{contact.first_name}}</a></div>  
+                    <div>{{contact.title}}</div>
+                    <div>{{contact.company}}</div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-primary" (click)="confirm()">OK</button>
+         <button type="button" class="btn btn-default" (click)="close()" >Cancel</button>
+      </div>
+   </div>
+</div> 
+

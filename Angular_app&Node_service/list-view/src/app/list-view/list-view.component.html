@@ -1,0 +1,65 @@
+<style>
+   .tab-wrapper {
+   margin-left: 115px;
+   }
+   .nav {
+   border: none;
+   }
+</style>
+<div class="row">
+   <!--tab-->
+   <section class="evy_aboutme_section">
+      <!--about me section-->
+      <div class="container-fluid">
+         <div class="row">
+            <!--tab-->
+            <section class="evy_aboutme_section">
+               <!--about me section-->
+               <div class="evy_aboutme_content" set-class-when-at-top="fix-to-top_content">
+                  
+                  <div class="evy_insights_viewreport_cl01">
+                     <div class="evy_aboutme_tab_menu">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                           <li>
+                              <button href="#Neetwork_visualization" data-toggle="tab">
+                                 <img src="../assets/images/img_nwvislztn_active.png">
+                                 <span class="tab_name">Network Visualization</span>
+                              </button>
+                              <div class="coverBorder"></div>
+                           </li>
+                           <li class="active">
+                              <button href="#view_all_contacts" data-toggle="tab">
+                                 <img src="../assets/images/4bER5457.png">
+                                 <span class="tab_name">List View
+                                 <br> All Contactscls
+                                 </span>
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="evy_aboutme_tab_content col-md-11 col-sm-11">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                           <!--<div class="tab-pane" id="Neetwork_visualization"></div>-->
+                           <div class="tab-pane active view_all_contacts_tab" id="view_all_contacts">
+                              <div class="col-md-7  levelsView" >                
+                                 <!-- levelsViewHeader -->
+                                 <list-view-levels [testingReportId] = 'mode' (onSelect) = "retriveContacts($event)"></list-view-levels>
+                                 
+                              </div>
+                               <div class="col-md-5  contactsView" > 
+                                   <!-- contactsView -->     
+                                    <contacts></contacts>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <!--footer-->
+      </div>
+   </section>
+</div>

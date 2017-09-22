@@ -1,0 +1,531 @@
+.evy_aboutme_tab_content {
+    padding: 10px !important;
+    border: 1px solid #dbdbdb !important;
+    background-color: whitesmoke !important;
+}
+
+.evy_aboutme_tab_content  > .tab-content{
+        background-color: white !important;
+        border: 1px solid #dbdbdb;
+        margin-left: 11px;
+}
+
+.view_all_contacts_tab{
+    position: relative;
+    height: 100%;
+    margin-top: 0px !important;
+    padding: 10px; 
+    padding-top:0px;
+}
+.levelsView{     
+    height: 100%;
+
+}
+/*.firstLevelhier{
+        overflow:hidden;
+
+}*/
+.contactsView_c01{
+    overflow: hidden;
+    border-left: 1px solid #c6c5c5;
+    padding: 8px;
+}
+.contactsView{
+    padding: 0px !important;
+}
+.levelsView{
+    padding-right: 0px !important;
+}
+
+.contactsList_c01
+{
+    float: left;
+    display: inline-block;
+    width:50px;
+    height:100%;
+}
+.contactsList_c01 > img{
+    width: 50px;
+}
+
+.contactsList_c02{
+    display: inline-block;
+    float: left;
+    width: 175px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 7px;
+}
+
+.participantCount{
+    display: inline-block;
+    width:50px;
+    float: left;text-align: center;
+    cursor: pointer;
+}
+.contactsView{
+    /*overflow: auto;*/
+    height: 100%;
+}
+.contactsList{
+    border-bottom: 1px solid #c6c5c5;
+        margin-bottom: 15px;
+            height: 90px;
+    padding: 2px;
+
+}
+.evy_aboutme_tab_content{
+    margin-left: 115px;
+    padding: 0 0 0 130px;
+    height: 600px;
+}
+
+.ContactsViewHeader,.levelsViewHeader{
+height:40px;
+width:100%;
+border-bottom: 1px solid #dbdbdb;
+}
+.ContactsViewHeader > div{
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.ContactsViewHeader > div:nth-of-type(2){
+   margin-left: 110px;
+}
+.ContactsViewHeader > div:first-child span{
+    padding: 5px;
+}
+
+.breadcrumb-item{
+    font-weight: 700 !important;
+}
+.view_all_contacts_tab{
+    padding: 0px !important;
+}
+.contactsList {
+    padding:8px 8px 0px 8px 
+}
+
+.level_c01,.contactsParent{
+    overflow:auto;
+    height:536px;
+}
+.level_c01::-webkit-scrollbar-track,.contactsParent::-webkit-scrollbar-track,
+.level_c02::-webkit-scrollbar-track,.contactsParent::-webkit-scrollbar-track,
+.level_c03::-webkit-scrollbar-track,.contactsParent::-webkit-scrollbar-track,
+.level_c04::-webkit-scrollbar-track,.contactsParent::-webkit-scrollbar-track,
+.secondLevelHier::-webkit-scrollbar-track,.contactsParent::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.level_c01::-webkit-scrollbar,.contactsParent::-webkit-scrollbar,
+.level_c02::-webkit-scrollbar,.contactsParent::-webkit-scrollbar,
+.level_c03::-webkit-scrollbar,.contactsParent::-webkit-scrollbar,
+.level_c04::-webkit-scrollbar,.contactsParent::-webkit-scrollbar,
+.secondLevelHier::-webkit-scrollbar,.contactsParent::-webkit-scrollbar
+
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.level_c01::-webkit-scrollbar-thumb,.contactsParent::-webkit-scrollbar-thumb,
+.level_c02::-webkit-scrollbar-thumb,.contactsParent::-webkit-scrollbar-thumb,
+.level_c03::-webkit-scrollbar-thumb,.contactsParent::-webkit-scrollbar-thumb,
+.level_c04::-webkit-scrollbar-thumb,.contactsParent::-webkit-scrollbar-thumb,
+.secondLevelHier::-webkit-scrollbar-thumb,.contactsParent::-webkit-scrollbar-thumb
+
+
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(153, 153, 153, 0.64)
+}
+.filterContainer{
+    background: url('../images/evy_sprite_41.png') no-repeat 0 -174px;
+	width: 46px;
+	height: 42px;
+    display:inline-block;
+   position: absolute;
+   right: 0px;
+   cursor: pointer;
+   top:-1px;
+}
+
+.filter{
+    background-color: white;
+   width:255px;
+   height:510px;
+   border:1px solid #c6c5c5;
+   position:absolute;
+   right:0px;
+   z-index: 100;
+}
+
+.filter > div:nth-child(2){
+      margin-top: 50px;
+      margin-left: 10px;
+     
+}
+
+.filterHeader{
+    height:40px;
+    background-color: #4f4b4b;
+    color:white;
+}
+.filterHeader > div:first-child{
+    padding: 10px;
+    display: inline-block;
+}
+
+ .filterHeader > .close   {
+     padding: 10px;
+    color: white;
+    }
+.filterHeader > .close:hover{
+    color: white;
+}
+.levelsReordering{
+    background: #666 !important;
+    border: 1px solid #666 !important;
+    padding: 1px 5px !important;
+    font-size: 12px !important;
+    margin-left: 5px !important;
+    
+}
+.breadcrumb{
+    display: inline-block;
+    background-color: white !important;
+}
+
+.dragDrop{
+    background-color: #8B8B8B;
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    
+}
+
+.dragDropContainer{
+    margin:0px !important;
+}
+
+.reorderApply{
+    background-color: #f58220 !important;
+    border: none !important;
+margin-bottom: 13px !important;
+    margin-left: 20px;
+    color: #fff !important;
+    border-radius: 4px !important;
+}
+.reorderFooter{
+    padding: 0px !important;
+    text-align: left !important;
+
+}
+.contactsViewSortAndOrder{
+    position: relative;
+    width: 80px;
+    height: 20px;
+    margin-left: 35px;
+    font-size: 18px;
+}
+.sortByname,.sortBycount{
+    display: inline-block;
+    position: absolute;
+    width:53px;
+    cursor: pointer;
+}
+.sortByname > span{
+position: absolute;
+left: 0px;
+}
+.sortBycount> span{
+position: absolute;
+right: 0px;
+}
+.sortActive{
+    color:orange;
+}
+
+
+.sendRequest > div{
+    display:inline-block;
+    float: right;
+    width: 50px;
+}
+.sent{
+	background: url('../images/evy_sprite_41.png') no-repeat -11px -3138px;
+	width: 22px;
+	height: 20px;
+}
+.notSent{
+    background: url('../images/evy_sprite_41.png') no-repeat -10px -3163px;
+	width: 21px;
+	height: 19px;
+    cursor: pointer;
+}
+button > img{
+    margin-bottom: 37px;
+}
+
+.showSendMessage{
+    display: inline-block;
+    margin-left: 10px;
+    background: url('../images/evy_sprite_41.png') no-repeat -162px -1461px;
+	width: 21px;
+	height: 15px;
+}
+.loadIcon{
+    text-align: center;
+}
+/*
+.secondLevelHier{
+    margin-left: 20px;
+}*/
+
+.filterCriteriaLevel{
+    position: relative;
+    width: 100%;
+    padding: 0!important;
+    margin-bottom: 10px;
+}
+.filterCriteriaLevel label{
+    display: block;
+    margin: 0;
+        font-weight: 400;
+}
+.filterCriteriaLevel > div{
+    width: 100%;
+    padding: 0!important;
+    float: none!important;
+}
+
+tags-input .autocomplete {
+    margin-top: -1px;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 999;
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+}
+tags-input .tags {
+    margin: 0;
+    border: 1px solid #dbdbdb;
+    box-shadow: none;
+    max-height: 95px;
+    overflow-y: auto;
+
+    -webkit-appearance: textfield;
+    padding: 1px;
+    overflow: hidden;
+    word-wrap: break-word;
+    cursor: text;
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+}
+tags-input .tags.focused {
+    outline: 0;
+}
+
+tags-input .tags .input {
+    border: 0;
+    outline: 0;
+    margin: 2px;
+    padding: 0 0 0 5px;
+    float: left;
+    height: 26px;
+    font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+tags-input .autocomplete .suggestion-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-height: 280px;
+    overflow-y: auto;
+    position: relative;
+}
+tags-input .autocomplete .suggestion-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 16px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.tag-item span {
+    display: block;
+    padding-right: 17px;
+    padding-top: 2px;
+}
+
+tags-input .tags .tag-item .remove-button {
+    background-color: #FFF;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    padding: 0 3px;
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    cursor: pointer;
+}
+
+tags-input .tags .tag-item {
+    background: #7A7A7C;
+    border-radius: 0;
+    line-height: 20px;
+    height: auto;
+    min-height: 26px;
+    max-width: 100%;
+    position: relative;
+}
+tags-input .tags .tag-item {
+    color: #fff;
+    margin: 2px;
+    padding: 0 5px;
+    display: inline-block;
+    float: left;
+    font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    border: 1px solid #acacac;
+}
+tags-input .tags .tag-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.applyFilter,.resetFilter{
+    border: none!important;
+   width: 35%;
+    border-radius: 5px;
+    background-color: #f58220!important;
+    outline: 0;
+    color: white;
+    box-shadow: none;
+    padding: 7px;
+}
+
+.levelclose{
+   	background: url('../images/evy_sprite_41.png') no-repeat -17px -3201px;
+	width: 7px;
+	height: 14px;
+    /*background-color: red*/
+}
+.levelOpen{
+    background: url('../images/evy_sprite_41.png') no-repeat -35px -3205px;
+	width: 14px;
+	height: 7px;
+    /*background-color: yellow;*/
+}
+
+.levelOpenClose{
+    width:17px;
+    height:13px;
+    display:inline-block
+}
+
+.ContactsViewHeader > div:first-child{
+    margin-left: 13px;
+}
+
+.panel-default>.panel-heading{
+background-color: white !important;
+}
+accordion-group  .panel-default{
+    border: none !important;
+     border-bottom: 1px solid #c6c5c5 !important; 
+    border-radius: 0px !important;
+}
+.panel-group .panel{
+        margin-right: 20px;
+}
+.panel-default>.panel-heading{
+    color:#00719e !important;
+    cursor: pointer
+}
+[role=button]{
+    font-size: 14px !important;
+}
+.panel{
+    box-shadow: none !important;
+}
+
+.contactsList  > .contactsList_c02 >div:first-child{
+    color: #00719e;
+}
+.levelsLoading > img{
+    /*display: inline-block;*/
+    width:25px;
+    height: 25px;
+}
+.levelCount{
+    padding-left:4px; 
+}
+
+.sortByNameAscActive{
+    background: url('../images/sprite_evy_00.png') no-repeat -16px -3401px;
+	width: 25px;
+	height: 19px;
+}
+
+.sortByNameAscDeactive{
+	background: url('../images/sprite_evy_00.png') no-repeat -16px -3377px;
+	width: 25px;
+	height: 19px;
+}
+
+.sortByNameDescActive{
+	background: url('../images/sprite_evy_00.png') no-repeat -76px -3402px;
+	width: 25px;
+	height: 19px;
+}
+
+.sortByNameDescDective{
+   background: url('../images/sprite_evy_00.png') no-repeat -76px -3376px;
+	width: 25px;
+	height: 19px;
+}
+
+.sortByCountAscActive{
+	background: url('../images/sprite_evy_00.png') no-repeat -44px -3401px;
+	width: 25px;
+	height: 19px;
+}
+.sortByCountAscDeactive{
+	background: url('../images/sprite_evy_00.png') no-repeat -44px -3377px;
+	width: 25px;
+	height: 19px;
+}
+.sortByCountDescActive{
+	background: url('../images/sprite_evy_00.png') no-repeat -104px -3402px;
+	width: 25px;
+	height: 19px;
+}
+
+.sortByCountDescDective{
+	background: url('../images/sprite_evy_00.png') no-repeat -104px -3376px;
+	width: 25px;
+	height: 19px;
+}
+
+

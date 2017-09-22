@@ -1,0 +1,42 @@
+ <div class="ContactsViewHeader">
+<div>{{numberOfContacts}}<span>Contacts</span></div>
+<div>Participants</div>
+<div class="contactsViewSortAndOrder">
+<div  class="sortByname" >
+   			<span id="sortbyname" title="Sodt By Name" [ngClass]= "{'sortByNameAscActive': srtByName.ascActiv ,'sortByNameAscDeactive': srtByName.ascDeact , 'sortByNameDescActive' : srtByName.descActiv, 'sortByNameDescDective' : srtByName.descDeact }"  (click)="sortByName()"></span>										
+    </div>
+    <div  class="sortBycount">
+       		<span id="sortbycount" title="Sodt By Count" [ngClass]= "{'sortByCountAscActive': srtByCount.ascActiv ,'sortByCountAscDeactive': srtByCount.ascDeact , 'sortByCountDescActive' : srtByCount.descActiv, 'sortByCountDescDective' : srtByCount.descDeact }" (click)="sortByCount()"></span>										
+    </div>
+</div>
+</div> 
+
+<div class="contactsParent"  infiniteScroll
+                [infiniteScrollDistance]="1"
+                [infiniteScrollThrottle]="500"
+                (scrolled)="loadMoreContacts()"
+                [scrollWindow]="false">
+    <div class="loadIcon" *ngIf="contactsLoadingIcon"><img src="../assets/images/ey_loading_new.gif"></div>
+
+        <div class="contactsList" *ngFor="let contact of contactList,let i = index">
+        <div class="contactsList_c01">
+            <img *ngIf="contact.image_url" src="{{contact.image_url}}">
+            <img *ngIf="!contact.image_url" src="../assets/images/img_pfl5.jpg">
+        </div>
+        <div class="contactsList_c02">
+            <div *ngIf="contact.first_name">{{contact.last_name}},{{contact.first_name}}</div>
+            <div *ngIf="contact.title">{{contact.title}}</div>
+            <div *ngIf="contact.company">{{contact.company}}</div>
+            <div *ngIf="contact.country">{{contact.country}}</div>
+        </div>
+        <div class="participantCount" (click)="participantListing(contact.contact_id)">{{contact.participant_count}}</div>
+        
+        <div class="sendRequest" *ngIf="isSendReqEnabled">
+            <div  *ngIf="contact.request_sent == null"><img src="../assets/images/ey_loading_new.gif"></div>
+            <div class="sent" *ngIf="contact.request_sent == 1"></div>
+            <div class="notSent" *ngIf="contact.request_sent != 1 && contact.request_sent != null" (click)="sendDiscussionRequest(contact.contact_id,i)"></div>
+        </div>
+        </div>
+</div> 
+
+

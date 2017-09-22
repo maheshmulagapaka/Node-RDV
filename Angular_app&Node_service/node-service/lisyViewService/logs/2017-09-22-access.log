@@ -1,0 +1,9 @@
+2017-09-22T04:10:42.401Z - info: service initialized
+2017-09-22T06:18:43.757Z - error: invalid reportId
+2017-09-22T06:50:41.118Z - error:  code=665, message=unauthorized user
+2017-09-22T06:52:27.089Z - error:  code=665, message=unauthorized user
+2017-09-22T06:55:21.150Z - error:  code=665, message=unauthorized user
+2017-09-22T07:04:23.515Z - error:  code=665, message=unauthorized user
+2017-09-22T07:09:19.779Z - error:  code=665, message=unauthorized user
+2017-09-22T07:22:11.462Z - error:  code=665, message=unauthorized user
+2017-09-22T07:25:28.606Z - error: From Fusionrequestreport code=665, message=unauthorized user

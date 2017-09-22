@@ -1,0 +1,55 @@
+<!-- <div  class="filterContainer"  (click)="listViewFilter()"></div>
+<div class="filter" > -->
+   <div class="filterHeader">
+      <div>Filter Levels</div>
+      <button class='close' title='close' (click)='closeFilter()'>&times;</button>
+   </div>
+   <div>
+      <div class="filterCriteriaLevel" *ngIf="filterCriteria[0]">
+         <div *ngIf="filterCriteria[0] != 'title_group'"> <label> {{filterCriteria[0]}}</label></div>
+         <div *ngIf="filterCriteria[0] == 'title_group'"> <label> title</label></div>
+         <div>
+            <tag-input [(ngModel)]="firstFilter"    [onlyFromAutocomplete]="true"   (onTextChange)="showFilterData(filterCriteria[0])" (onRemove)='tagRemoved()' >
+            <tag-input-dropdown  [focusFirstElement] = 'true'  [limitItemsTo] = '5'  [appendToBody] = 'false'  [autocompleteObservable]="requestAutocompleteItems"></tag-input-dropdown>
+            </tag-input>
+         </div>
+      </div>
+      <div class="filterCriteriaLevel" *ngIf="filterCriteria[1]">
+         <div *ngIf="filterCriteria[1] != 'title_group'"> <label> {{filterCriteria[1]}}</label></div>
+         <div *ngIf="filterCriteria[1] == 'title_group'"> <label> title</label></div>
+         <div>
+            <tag-input *ngIf = 'filterCriteria[1] != "participant"' [(ngModel)]="secondFilter" [onlyFromAutocomplete]="true"  (onTextChange)="showFilterData(filterCriteria[1])" (onRemove)='tagRemoved()'>
+            <tag-input-dropdown  [focusFirstElement] = 'true' [limitItemsTo] = '5' [appendToBody] = 'false' [autocompleteObservable]="requestAutocompleteItems"></tag-input-dropdown> 
+            </tag-input>
+            <tag-input *ngIf = 'filterCriteria[1] == "participant"' [(ngModel)]="secondFilter" [onlyFromAutocomplete]="true"  (onTextChange)="showParticipantFilterData($event)">
+            <tag-input-dropdown  [focusFirstElement] = 'true' [limitItemsTo] = '5' [appendToBody] = 'false'  [autocompleteItems]="participantsData"></tag-input-dropdown>  
+            </tag-input>
+         </div>
+      </div>
+      <div class="filterCriteriaLevel" *ngIf="filterCriteria[2]">
+         <div *ngIf="filterCriteria[2] != 'title_group'"> <label> {{filterCriteria[2]}}</label></div>
+         <div *ngIf="filterCriteria[2] == 'title_group'"> <label> title</label></div>
+         <div>                                      
+            <tag-input *ngIf = 'filterCriteria[2] == "participant"' [(ngModel)]="thirdFilter" [onlyFromAutocomplete]="true"  (onTextChange)="showParticipantFilterData($event)" (onRemove)='tagRemoved()'>
+            <tag-input-dropdown  [focusFirstElement] = 'true' [limitItemsTo] = '5' [appendToBody] = 'false'  [autocompleteItems]="participantsData"></tag-input-dropdown>  
+            </tag-input>
+            <tag-input *ngIf = 'filterCriteria[2] != "participant"' [(ngModel)]="thirdFilter" [onlyFromAutocomplete]="true"  (onTextChange)="showFilterData(filterCriteria[2])">
+            <tag-input-dropdown  [focusFirstElement] = 'true' [limitItemsTo] = '5' [appendToBody] = 'false' [autocompleteObservable]="requestAutocompleteItems"></tag-input-dropdown>
+            </tag-input>
+         </div>
+      </div>
+      <div class="filterCriteriaLevel" *ngIf="filterCriteria[3]">
+         <div *ngIf="filterCriteria[3] != 'title_group'"> <label> {{filterCriteria[3]}}</label></div>
+         <div *ngIf="filterCriteria[3] == 'title_group'"> <label> title</label></div>
+         <div>
+            <tag-input [(ngModel)]="fourthFilter" [onlyFromAutocomplete]="true"  (onTextChange)="showParticipantFilterData($event)" (onRemove)='tagRemoved()'>
+            <tag-input-dropdown [focusFirstElement] = 'true' [limitItemsTo] = '5' [appendToBody] = 'false'  [autocompleteItems]="participantsData"></tag-input-dropdown>
+            </tag-input>
+         </div>
+      </div>
+      <div *ngIf="firstFilter.length !=0 || secondFilter.length !=0 || thirdFilter.length !=0 ||fourthFilter.length !=0">
+         <button class="applyFilter"  (click)="applyFilter()">Apply</button>
+         <button class="resetFilter"  (click)="resetFilter()">Reset</button> 
+      </div>
+   </div>
+<!-- </div> -->
